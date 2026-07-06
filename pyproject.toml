@@ -1,0 +1,12 @@
+[project]
+name = "rag-document-assistant"
+version = "0.1.0"
+description = "Помощник, отвечающий по документации MDN на русском со ссылками на источники"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]
