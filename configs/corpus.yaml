@@ -1,0 +1,41 @@
+# Источник документов. Корпус тот же, что в semantic-search-engine: русские
+# страницы MDN Web Docs, тот же отбор страниц. Отличие одно: здесь хранится
+# исходный Markdown, а не очищенный текст, потому что для RAG нужны заголовки
+# разделов (ссылки на раздел, нарезка по разделам) и блоки кода (в них часто
+# и есть ответ).
+
+name: mdn-ru
+source:
+  repo: mdn/translated-content
+  # commit ветки main, зафиксированный при сборке (git ls-remote);
+  # semantic-search-engine грузил ветку main без фиксации commit'а
+  ref: f39fd206b38a94264315eb2bcacb705bd8b5d326
+  listing_path: files/ru/_wikihistory.json
+  docs_prefix: files/ru
+  base_url: https://raw.githubusercontent.com
+  page_url_template: https://developer.mozilla.org/ru/docs/{slug}
+  license: CC-BY-SA-2.5
+  license_url: https://creativecommons.org/licenses/by-sa/2.5/
+  attribution: MDN Web Docs contributors
+
+# Отбор страниц — как в semantic-search-engine (configs/corpus.yaml там же)
+selection:
+  include_prefixes: [Web, Learn_web_development, Glossary, WebAssembly, Games, Mozilla, MDN]
+  exclude_prefixes: [conflicting, orphaned]
+  # порог считается по очищенному тексту semsearch.mdn.markdown_to_text,
+  # чтобы состав документов совпал с корпусом semantic-search-engine
+  min_chars: 200
+
+# Отпечаток корпуса semantic-search-engine (data/corpus/mdn-ru.meta.json там же).
+# После загрузки он пересчитывается тем же способом: совпадение означает, что
+# у двух проектов один и тот же набор документов с тем же текстом.
+reference_fingerprint_sha256: 0f5e613ef25d14835578eb8bb317a8dfbceb1f69eb59ea9c7adc5204031343fe
+
+download:
+  workers: 8
+  timeout_seconds: 30
+  retries: 3
+
+paths:
+  raw_dir: data/raw/mdn-ru
+  documents: data/processed/documents.jsonl
