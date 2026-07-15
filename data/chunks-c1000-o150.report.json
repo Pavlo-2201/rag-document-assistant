@@ -1,0 +1,16 @@
+{
+  "config": {
+    "chunk_size": 1000,
+    "overlap": 150
+  },
+  "documents": 2570,
+  "chunks": 16890,
+  "chunks_per_document_median": 3.0,
+  "chunk_chars_median": 766,
+  "chunk_chars_p95": 985,
+  "chunk_chars_max": 1000,
+  "total_chunk_chars": 11913677,
+  "duplication_ratio": 1.0817,
+  "seconds": 0.1,
+  "fingerprint_sha256": "33f9b1ac1e2f0934ff77e03c6afa628a971f33c138d4a48114177ed1bf9e255b"
+}
