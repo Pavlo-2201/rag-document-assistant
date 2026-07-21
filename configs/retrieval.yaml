@@ -1,0 +1,24 @@
+# Модели для поиска по фрагментам. Записи lsa-300 и e5-small повторяют
+# configs/models.yaml из semantic-search-engine; у e5-small добавлен каталог с
+# заранее скачанными весами (huggingface.co в окружении сборки недоступен).
+
+models:
+  lsa-300:
+    backend: lsa
+    dim: 300
+    normalize: true
+    notes: TF-IDF + усечённое SVD, обучается на текстах фрагментов (не на запросах).
+
+  e5-small:
+    backend: sentence-transformers
+    model_name: intfloat/multilingual-e5-small
+    revision: 614241f622f53c4eeff9890bdc4f31cfecc418b3
+    local_path: models/e5-small
+    # E5 обучена с префиксами; без них качество заметно падает
+    query_prefix: "query: "
+    document_prefix: "passage: "
+    pooling: mean
+    normalize: true
+    max_seq_length: 512
+    batch_size: 32
+    notes: Многоязычная E5, 384 измерения, лицензия MIT. Веса проверены по sha256 (см. README).

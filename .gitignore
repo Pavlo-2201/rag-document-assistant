@@ -3,6 +3,7 @@ data/raw/
 data/processed/
 data/indexes/
 data/cache/
+models
 models/
 *.gguf
 *.safetensors
