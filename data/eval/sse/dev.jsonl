@@ -1,0 +1,36 @@
+{"query_id": "dev-001", "query": "сколько элементов в массиве", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/Array/length", "grade": 2}, {"slug": "Glossary/Array", "grade": 1}]}
+{"query_id": "dev-002", "query": "как оставить в массиве только подходящие элементы", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/Array/filter", "grade": 2}]}
+{"query_id": "dev-003", "query": "отсортировать массив по возрастанию", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/Array/sort", "grade": 2}]}
+{"query_id": "dev-004", "query": "проверить есть ли значение в массиве", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/Array/includes", "grade": 2}, {"slug": "Web/JavaScript/Reference/Global_Objects/Array/indexOf", "grade": 1}]}
+{"query_id": "dev-005", "query": "заменить часть строки на другую", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/String/replace", "grade": 2}, {"slug": "Web/JavaScript/Reference/Global_Objects/String/replaceAll", "grade": 1}]}
+{"query_id": "dev-006", "query": "разбить строку на части по разделителю", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/String/split", "grade": 2}]}
+{"query_id": "dev-007", "query": "превратить объект в строку json", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/JSON/stringify", "grade": 2}]}
+{"query_id": "dev-008", "query": "разобрать json из текста", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/JSON/parse", "grade": 2}]}
+{"query_id": "dev-009", "query": "дождаться выполнения нескольких асинхронных операций сразу", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/Promise/all", "grade": 2}, {"slug": "Web/JavaScript/Reference/Global_Objects/Promise/allSettled", "grade": 1}]}
+{"query_id": "dev-010", "query": "как написать асинхронную функцию", "relevant": [{"slug": "Web/JavaScript/Reference/Statements/async_function", "grade": 2}, {"slug": "Web/JavaScript/Reference/Operators/await", "grade": 1}]}
+{"query_id": "dev-011", "query": "что такое замыкание в javascript", "relevant": [{"slug": "Web/JavaScript/Guide/Closures", "grade": 2}]}
+{"query_id": "dev-012", "query": "как перехватить ошибку и не уронить программу", "relevant": [{"slug": "Web/JavaScript/Reference/Statements/try...catch", "grade": 2}]}
+{"query_id": "dev-013", "query": "округлить число до двух знаков после запятой", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/Number/toFixed", "grade": 2}]}
+{"query_id": "dev-014", "query": "получить случайное число", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/Math/random", "grade": 2}]}
+{"query_id": "dev-015", "query": "короткая запись функции со стрелкой", "relevant": [{"slug": "Web/JavaScript/Reference/Functions/Arrow_functions", "grade": 2}]}
+{"query_id": "dev-016", "query": "распаковать значения массива в отдельные переменные", "relevant": [{"slug": "Web/JavaScript/Reference/Operators/Destructuring", "grade": 2}, {"slug": "Web/JavaScript/Reference/Operators/Spread_syntax", "grade": 1}]}
+{"query_id": "dev-017", "query": "подписаться на нажатие кнопки", "relevant": [{"slug": "Web/API/EventTarget/addEventListener", "grade": 2}]}
+{"query_id": "dev-018", "query": "найти элемент на странице по селектору", "relevant": [{"slug": "Web/API/Document/querySelector", "grade": 2}, {"slug": "Web/API/Element/querySelector", "grade": 1}]}
+{"query_id": "dev-019", "query": "сохранить данные в браузере чтобы они не пропали после перезагрузки", "relevant": [{"slug": "Web/API/Window/localStorage", "grade": 2}, {"slug": "Web/API/Web_Storage_API", "grade": 1}, {"slug": "Web/API/Window/sessionStorage", "grade": 1}]}
+{"query_id": "dev-020", "query": "как сделать запрос к серверу из javascript", "relevant": [{"slug": "Web/API/Fetch_API/Using_Fetch", "grade": 2}, {"slug": "Web/API/XMLHttpRequest_API/Using_XMLHttpRequest", "grade": 1}]}
+{"query_id": "dev-021", "query": "запретить всплытие события к родителю", "relevant": [{"slug": "Web/API/Event/stopPropagation", "grade": 2}, {"slug": "Web/API/Event/stopImmediatePropagation", "grade": 1}]}
+{"query_id": "dev-022", "query": "добавить класс элементу из кода", "relevant": [{"slug": "Web/API/Element/classList", "grade": 2}]}
+{"query_id": "dev-023", "query": "создать новый элемент и вставить его в документ", "relevant": [{"slug": "Web/API/Document/createElement", "grade": 2}, {"slug": "Web/API/Node/appendChild", "grade": 1}]}
+{"query_id": "dev-024", "query": "выполнить код через несколько секунд", "relevant": [{"slug": "Web/API/Window/setTimeout", "grade": 2}]}
+{"query_id": "dev-025", "query": "плавная покадровая анимация в браузере", "relevant": [{"slug": "Web/API/Window/requestAnimationFrame", "grade": 2}]}
+{"query_id": "dev-026", "query": "страница не найдена какой код ответа", "relevant": [{"slug": "Web/HTTP/Reference/Status/404", "grade": 2}]}
+{"query_id": "dev-027", "query": "сервер сломался внутренняя ошибка", "relevant": [{"slug": "Web/HTTP/Reference/Status/500", "grade": 2}]}
+{"query_id": "dev-028", "query": "сервер отказал в доступе к ресурсу", "relevant": [{"slug": "Web/HTTP/Reference/Status/403", "grade": 2}, {"slug": "Web/HTTP/Reference/Status/401", "grade": 1}]}
+{"query_id": "dev-029", "query": "адрес страницы изменился навсегда", "relevant": [{"slug": "Web/HTTP/Reference/Status/301", "grade": 2}]}
+{"query_id": "dev-030", "query": "ошибка при обращении к другому домену из браузера", "relevant": [{"slug": "Web/HTTP/Guides/CORS", "grade": 2}]}
+{"query_id": "dev-031", "query": "как работают куки", "relevant": [{"slug": "Web/HTTP/Guides/Cookies", "grade": 2}, {"slug": "Web/HTTP/Reference/Headers/Set-Cookie", "grade": 1}]}
+{"query_id": "dev-032", "query": "как указать тип содержимого в ответе", "relevant": [{"slug": "Web/HTTP/Reference/Headers/Content-Type", "grade": 2}]}
+{"query_id": "dev-033", "query": "управление кэшированием ответов сервера", "relevant": [{"slug": "Web/HTTP/Reference/Headers/Cache-Control", "grade": 2}]}
+{"query_id": "dev-034", "query": "отправить данные формы на сервер", "relevant": [{"slug": "Web/HTTP/Reference/Methods/POST", "grade": 2}, {"slug": "Web/API/FormData", "grade": 1}]}
+{"query_id": "dev-035", "query": "как разложить блоки по сетке", "relevant": [{"slug": "Web/CSS/Guides/Grid_layout/Basic_concepts", "grade": 2}, {"slug": "Web/CSS/Reference/Properties/grid-template-columns", "grade": 1}]}
+{"query_id": "dev-036", "query": "выровнять элементы по центру контейнера", "relevant": [{"slug": "Web/CSS/Guides/Flexible_box_layout/Aligning_items", "grade": 2}, {"slug": "Web/CSS/Reference/Properties/justify-content", "grade": 1}, {"slug": "Web/CSS/Reference/Properties/align-items", "grade": 1}]}

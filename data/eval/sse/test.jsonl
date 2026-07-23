@@ -1,0 +1,36 @@
+{"query_id": "test-001", "query": "как узнать длину строки", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/String/length", "grade": 2}]}
+{"query_id": "test-002", "query": "перебрать все элементы массива по очереди", "relevant": [{"slug": "Web/JavaScript/Reference/Statements/for...of", "grade": 2}, {"slug": "Web/JavaScript/Reference/Global_Objects/Array/forEach", "grade": 1}]}
+{"query_id": "test-003", "query": "склеить два массива в один", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/Array/concat", "grade": 2}]}
+{"query_id": "test-004", "query": "убрать пробелы по краям строки", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/String/trim", "grade": 2}]}
+{"query_id": "test-005", "query": "преобразовать текст в число", "relevant": [{"slug": "Web/JavaScript/Reference/Global_Objects/parseInt", "grade": 2}, {"slug": "Web/JavaScript/Reference/Global_Objects/parseFloat", "grade": 1}]}
+{"query_id": "test-006", "query": "что означает ключевое слово this", "relevant": [{"slug": "Web/JavaScript/Reference/Operators/this", "grade": 2}]}
+{"query_id": "test-007", "query": "чем отличается объявление переменной let от var", "relevant": [{"slug": "Web/JavaScript/Reference/Statements/let", "grade": 2}, {"slug": "Web/JavaScript/Reference/Statements/var", "grade": 1}]}
+{"query_id": "test-008", "query": "как описать класс и создать объект", "relevant": [{"slug": "Web/JavaScript/Reference/Classes", "grade": 2}]}
+{"query_id": "test-009", "query": "что такое промис", "relevant": [{"slug": "Glossary/Promise", "grade": 2}, {"slug": "Web/JavaScript/Reference/Global_Objects/Promise", "grade": 1}]}
+{"query_id": "test-010", "query": "убрать элемент со страницы средствами стилей", "relevant": [{"slug": "Web/CSS/Reference/Properties/display", "grade": 2}, {"slug": "Web/CSS/Reference/Properties/visibility", "grade": 1}]}
+{"query_id": "test-011", "query": "сделать уголки блока скруглёнными", "relevant": [{"slug": "Web/CSS/Reference/Properties/border-radius", "grade": 2}]}
+{"query_id": "test-012", "query": "добавить тень вокруг блока", "relevant": [{"slug": "Web/CSS/Reference/Properties/box-shadow", "grade": 2}]}
+{"query_id": "test-013", "query": "сделать элемент полупрозрачным", "relevant": [{"slug": "Web/CSS/Reference/Properties/opacity", "grade": 2}]}
+{"query_id": "test-014", "query": "расположить элемент поверх остальных", "relevant": [{"slug": "Web/CSS/Reference/Properties/z-index", "grade": 2}, {"slug": "Web/CSS/Guides/Positioned_layout/Understanding_z-index", "grade": 1}]}
+{"query_id": "test-015", "query": "закрепить блок на месте при прокрутке страницы", "relevant": [{"slug": "Web/CSS/Reference/Properties/position", "grade": 2}]}
+{"query_id": "test-016", "query": "что делать если содержимое не влезает в блок", "relevant": [{"slug": "Web/CSS/Reference/Properties/overflow", "grade": 2}]}
+{"query_id": "test-017", "query": "плавное изменение цвета при наведении мыши", "relevant": [{"slug": "Web/CSS/Reference/Properties/transition", "grade": 2}]}
+{"query_id": "test-018", "query": "как сделать анимацию средствами css", "relevant": [{"slug": "Web/CSS/Guides/Animations/Using", "grade": 2}, {"slug": "Web/CSS/Reference/Properties/animation", "grade": 1}]}
+{"query_id": "test-019", "query": "как считается ширина блока вместе с рамкой и отступами", "relevant": [{"slug": "Web/CSS/Reference/Properties/box-sizing", "grade": 2}, {"slug": "Web/CSS/Guides/Box_model/Introduction", "grade": 1}]}
+{"query_id": "test-020", "query": "расстояние между колонками сетки", "relevant": [{"slug": "Web/CSS/Reference/Properties/gap", "grade": 2}]}
+{"query_id": "test-021", "query": "разные стили под разную ширину экрана", "relevant": [{"slug": "Web/CSS/Guides/Media_queries/Using", "grade": 2}, {"slug": "Web/CSS/Reference/At-rules/@media", "grade": 1}]}
+{"query_id": "test-022", "query": "переменные в стилях чтобы не повторять значения", "relevant": [{"slug": "Web/CSS/Guides/Cascading_variables/Using_custom_properties", "grade": 2}, {"slug": "Web/CSS/Reference/Properties/--*", "grade": 1}]}
+{"query_id": "test-023", "query": "какой селектор победит если правил несколько", "relevant": [{"slug": "Web/CSS/Guides/Cascade/Specificity", "grade": 2}]}
+{"query_id": "test-024", "query": "поставить картинку фоном блока", "relevant": [{"slug": "Web/CSS/Reference/Properties/background-image", "grade": 2}, {"slug": "Web/CSS/Reference/Properties/background", "grade": 1}]}
+{"query_id": "test-025", "query": "подключить собственный шрифт на сайт", "relevant": [{"slug": "Web/CSS/Reference/At-rules/@font-face", "grade": 2}]}
+{"query_id": "test-026", "query": "выровнять текст по центру", "relevant": [{"slug": "Web/CSS/Reference/Properties/text-align", "grade": 2}]}
+{"query_id": "test-027", "query": "двусторонняя связь с сервером без перезапросов", "relevant": [{"slug": "Web/API/WebSocket", "grade": 2}, {"slug": "Glossary/WebSockets", "grade": 1}]}
+{"query_id": "test-028", "query": "чтобы сайт работал без интернета", "relevant": [{"slug": "Web/API/Service_Worker_API/Using_Service_Workers", "grade": 2}, {"slug": "Web/API/Service_Worker_API", "grade": 1}]}
+{"query_id": "test-029", "query": "рисовать графику прямо в браузере", "relevant": [{"slug": "Web/API/Canvas_API", "grade": 2}, {"slug": "Web/API/Canvas_API/Tutorial", "grade": 1}]}
+{"query_id": "test-030", "query": "узнать где находится пользователь", "relevant": [{"slug": "Web/API/Geolocation/getCurrentPosition", "grade": 2}, {"slug": "Web/API/Geolocation", "grade": 1}]}
+{"query_id": "test-031", "query": "перетаскивание элементов мышью", "relevant": [{"slug": "Web/API/HTML_Drag_and_Drop_API", "grade": 2}]}
+{"query_id": "test-032", "query": "хранить много данных в браузере в виде базы", "relevant": [{"slug": "Web/API/IndexedDB_API", "grade": 2}, {"slug": "Glossary/IndexedDB", "grade": 1}]}
+{"query_id": "test-033", "query": "изменить адрес страницы без перезагрузки", "relevant": [{"slug": "Web/API/History_API/Working_with_the_History_API", "grade": 2}, {"slug": "Web/API/History_API", "grade": 1}]}
+{"query_id": "test-034", "query": "загрузить файл на сервер из формы", "relevant": [{"slug": "Web/API/FormData", "grade": 2}]}
+{"query_id": "test-035", "query": "каким методом запрашивают данные с сервера", "relevant": [{"slug": "Web/HTTP/Reference/Methods/GET", "grade": 2}]}
+{"query_id": "test-036", "query": "передать токен авторизации в заголовке", "relevant": [{"slug": "Web/HTTP/Reference/Headers/Authorization", "grade": 2}]}

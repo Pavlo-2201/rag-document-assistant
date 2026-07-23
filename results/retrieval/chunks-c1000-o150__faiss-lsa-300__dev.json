@@ -1,0 +1,2662 @@
+{
+  "retriever": "faiss:lsa-300",
+  "queries": 36,
+  "metrics": {
+    "recall@1": 0.0556,
+    "recall@5": 0.1713,
+    "recall@10": 0.3102,
+    "mrr@10": 0.1599,
+    "ndcg@10": 0.1939
+  },
+  "seconds_per_query": 0.0117,
+  "per_query": [
+    {
+      "query_id": "dev-001",
+      "query": "сколько элементов в массиве",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "mrr@10": 0.1111,
+        "ndcg@10": 0.2487
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/Array/length": 2,
+        "Glossary/Array": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-48ee73eb1190",
+          "title": "Упорядоченные наборы данных",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-725432515343",
+          "title": "Array.prototype.splice()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-21702cd82c06",
+          "title": "Повторное введение в JavaScript (JS учебник)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c9d6c57d0bc1",
+          "title": "Массивы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7d4b3a16e562",
+          "title": "Array",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-cf65779529bb",
+          "title": "Array.prototype.concat()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-229020eaf80b",
+          "title": "Типизированные массивы JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-77b4f0bfe3a9",
+          "title": "AnalyserNode.getByteFrequencyData()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-685e2f3986cb",
+          "title": "Array.length",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-67bcced2422d",
+          "title": "TypedArray.prototype.join()",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-48ee73eb1190:4283-4974",
+        "mdnru-725432515343:4347-4620",
+        "mdnru-21702cd82c06:18276-18970",
+        "mdnru-c9d6c57d0bc1:3214-3914",
+        "mdnru-c9d6c57d0bc1:4925-5153"
+      ]
+    },
+    {
+      "query_id": "dev-002",
+      "query": "как оставить в массиве только подходящие элементы",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/Array/filter": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-48ee73eb1190",
+          "title": "Упорядоченные наборы данных",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-725432515343",
+          "title": "Array.prototype.splice()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-21702cd82c06",
+          "title": "Повторное введение в JavaScript (JS учебник)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c9d6c57d0bc1",
+          "title": "Массивы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7d4b3a16e562",
+          "title": "Array",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-cf65779529bb",
+          "title": "Array.prototype.concat()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-229020eaf80b",
+          "title": "Типизированные массивы JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-77b4f0bfe3a9",
+          "title": "AnalyserNode.getByteFrequencyData()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5a095529d4f6",
+          "title": "Array.prototype.pop()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-685e2f3986cb",
+          "title": "Array.length",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-48ee73eb1190:4283-4974",
+        "mdnru-725432515343:4347-4620",
+        "mdnru-21702cd82c06:18276-18970",
+        "mdnru-c9d6c57d0bc1:4925-5153",
+        "mdnru-c9d6c57d0bc1:3214-3914"
+      ]
+    },
+    {
+      "query_id": "dev-003",
+      "query": "отсортировать массив по возрастанию",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.5,
+        "ndcg@10": 0.6309
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/Array/sort": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-cf65779529bb",
+          "title": "Array.prototype.concat()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9b489a8443f6",
+          "title": "Array.prototype.sort()",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-64d3c71bfe26",
+          "title": "Array.prototype.slice()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-48ee73eb1190",
+          "title": "Упорядоченные наборы данных",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-363586770fd8",
+          "title": "TypedArray.prototype.set()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-21702cd82c06",
+          "title": "Повторное введение в JavaScript (JS учебник)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7d4b3a16e562",
+          "title": "Array",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-725432515343",
+          "title": "Array.prototype.splice()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7244fa1531a9",
+          "title": "Array.prototype.map()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-679fb07ea77e",
+          "title": "Spread syntax",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-cf65779529bb:627-1595",
+        "mdnru-9b489a8443f6:0-658",
+        "mdnru-64d3c71bfe26:1769-2634",
+        "mdnru-48ee73eb1190:9993-10885",
+        "mdnru-48ee73eb1190:10741-11505"
+      ]
+    },
+    {
+      "query_id": "dev-004",
+      "query": "проверить есть ли значение в массиве",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/Array/includes": 2,
+        "Web/JavaScript/Reference/Global_Objects/Array/indexOf": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-363586770fd8",
+          "title": "TypedArray.prototype.set()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-cf65779529bb",
+          "title": "Array.prototype.concat()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-725432515343",
+          "title": "Array.prototype.splice()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3070e4f3992d",
+          "title": "Array.prototype.find()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a1c4739b6ad4",
+          "title": "Массив",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c9d6c57d0bc1",
+          "title": "Массивы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-185e913f0c79",
+          "title": "Atomics",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-48ee73eb1190",
+          "title": "Упорядоченные наборы данных",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5a095529d4f6",
+          "title": "Array.prototype.pop()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-685e2f3986cb",
+          "title": "Array.length",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-363586770fd8:189-1059",
+        "mdnru-cf65779529bb:1455-1842",
+        "mdnru-725432515343:4347-4620",
+        "mdnru-3070e4f3992d:937-1036",
+        "mdnru-a1c4739b6ad4:0-744"
+      ]
+    },
+    {
+      "query_id": "dev-005",
+      "query": "заменить часть строки на другую",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/String/replace": 2,
+        "Web/JavaScript/Reference/Global_Objects/String/replaceAll": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-91d024737242",
+          "title": "Полезные методы для строк",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-65c86fc92891",
+          "title": "Руководство по Django часть 2: создание скелета",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c0ca71451c38",
+          "title": "Работа с текстом — строки в JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-231e6abe73d2",
+          "title": "Введение в серверную часть",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3d6898c863b0",
+          "title": "String",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-67782170971d",
+          "title": "Лексический синтаксис",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-d5f5e65f953d",
+          "title": "Шаблоны совпадения в расширении",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7a1a06d0526c",
+          "title": "Идентификатор",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-6589c0a6a2aa",
+          "title": "Intl.Collator.prototype.compare",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7d33bcdde72c",
+          "title": "Грамматика и типы",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-91d024737242:5841-6647",
+        "mdnru-65c86fc92891:7704-8262",
+        "mdnru-c0ca71451c38:4383-5041",
+        "mdnru-91d024737242:0-774",
+        "mdnru-91d024737242:3482-4278"
+      ]
+    },
+    {
+      "query_id": "dev-006",
+      "query": "разбить строку на части по разделителю",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.1,
+        "ndcg@10": 0.2891
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/String/split": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-91d024737242",
+          "title": "Полезные методы для строк",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3d6898c863b0",
+          "title": "String",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-231e6abe73d2",
+          "title": "Введение в серверную часть",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7a1a06d0526c",
+          "title": "Идентификатор",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-543c7d9544e0",
+          "title": "<p>: Элемент текстового абзаца",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3abc850c152c",
+          "title": "CRLF",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-06f2b65f1c3a",
+          "title": "Формат Web Video Text Tracks (WebVTT)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-79bca0ac3fa8",
+          "title": "Кодирование и декодирование в формате Base64",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-101b7e7cc5dc",
+          "title": "Аттестация: Структурирование данных о планетах",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b59e3543fda5",
+          "title": "String.prototype.split()",
+          "grade": 2
+        }
+      ],
+      "top_chunks": [
+        "mdnru-91d024737242:3482-4278",
+        "mdnru-91d024737242:16814-17452",
+        "mdnru-3d6898c863b0:997-1367",
+        "mdnru-231e6abe73d2:12564-12922",
+        "mdnru-7a1a06d0526c:0-466"
+      ]
+    },
+    {
+      "query_id": "dev-007",
+      "query": "превратить объект в строку json",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.3333,
+        "ndcg@10": 0.5
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/JSON/stringify": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-e7dbdd05861b",
+          "title": "Работа с JSON",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-08da13fcf7c6",
+          "title": "JSON.parse()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3947f99b741a",
+          "title": "JSON.stringify()",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-14de05d49bee",
+          "title": "JSON",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5a8bd93c7c91",
+          "title": "eval()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-95f2101e92e4",
+          "title": "Инициализация объектов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-94d60c5f144c",
+          "title": "JSON",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5afeab3a07b7",
+          "title": "Интернационализация",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ab0e418e00dd",
+          "title": "Висящие запятые",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-1b8688310737",
+          "title": "Написание клиентских приложений с помощью веб-сокетов",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-e7dbdd05861b:14885-15747",
+        "mdnru-08da13fcf7c6:2381-2496",
+        "mdnru-3947f99b741a:0-862",
+        "mdnru-e7dbdd05861b:2142-2448",
+        "mdnru-e7dbdd05861b:16353-16996"
+      ]
+    },
+    {
+      "query_id": "dev-008",
+      "query": "разобрать json из текста",
+      "metrics": {
+        "recall@1": 1.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 1.0
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/JSON/parse": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-08da13fcf7c6",
+          "title": "JSON.parse()",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-14de05d49bee",
+          "title": "JSON",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e7dbdd05861b",
+          "title": "Работа с JSON",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fb86f69b1908",
+          "title": "TypeError: cyclic object value",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3947f99b741a",
+          "title": "JSON.stringify()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-94d60c5f144c",
+          "title": "JSON",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fb878f1af68a",
+          "title": "SyntaxError: JSON.parse: bad parsing",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ab0e418e00dd",
+          "title": "Висящие запятые",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-1b8688310737",
+          "title": "Написание клиентских приложений с помощью веб-сокетов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7e727856d8a5",
+          "title": "manifest.json",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-08da13fcf7c6:2381-2496",
+        "mdnru-14de05d49bee:2245-3057",
+        "mdnru-e7dbdd05861b:16353-16996",
+        "mdnru-e7dbdd05861b:5046-5834",
+        "mdnru-e7dbdd05861b:14885-15747"
+      ]
+    },
+    {
+      "query_id": "dev-009",
+      "query": "дождаться выполнения нескольких асинхронных операций сразу",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/Promise/all": 2,
+        "Web/JavaScript/Reference/Global_Objects/Promise/allSettled": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-8f04895c0871",
+          "title": "Делаем асинхронное программирование более простым с async и await",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c67aa2bb7119",
+          "title": "Введение в асинхронный JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-73561588b482",
+          "title": "Express/Node introduction",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0fe50a637666",
+          "title": "Асинхронный",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-547add826749",
+          "title": "Использование промисов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c4535437e559",
+          "title": "IndexedDB",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-356755bd5c6f",
+          "title": "Синхронные и асинхронные запросы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-414a4258d020",
+          "title": "Асинхронный JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-bf268a7f6f08",
+          "title": "Оптимизация запуска",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-cd9c44344aea",
+          "title": "Promise",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-8f04895c0871:11005-11980",
+        "mdnru-c67aa2bb7119:8330-8961",
+        "mdnru-73561588b482:16685-17566",
+        "mdnru-c67aa2bb7119:9487-9806",
+        "mdnru-c67aa2bb7119:9808-10736"
+      ]
+    },
+    {
+      "query_id": "dev-010",
+      "query": "как написать асинхронную функцию",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr@10": 0.5,
+        "ndcg@10": 0.5213
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Statements/async_function": 2,
+        "Web/JavaScript/Reference/Operators/await": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-8f04895c0871",
+          "title": "Делаем асинхронное программирование более простым с async и await",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ed5266c34dc9",
+          "title": "async function",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-414a4258d020",
+          "title": "Асинхронный JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-92a9fb99e3dd",
+          "title": "Колбэк-функция",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c67aa2bb7119",
+          "title": "Введение в асинхронный JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-992b82aaaf67",
+          "title": "async function expression",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-73561588b482",
+          "title": "Express/Node introduction",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-356755bd5c6f",
+          "title": "Синхронные и асинхронные запросы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-547add826749",
+          "title": "Использование промисов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9fe7c9b18192",
+          "title": "AsyncFunction",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-8f04895c0871:11005-11980",
+        "mdnru-8f04895c0871:10283-11003",
+        "mdnru-8f04895c0871:0-867",
+        "mdnru-ed5266c34dc9:418-1268",
+        "mdnru-414a4258d020:599-1595"
+      ]
+    },
+    {
+      "query_id": "dev-011",
+      "query": "что такое замыкание в javascript",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/JavaScript/Guide/Closures": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-9b48dbecbaf0",
+          "title": "Учебники",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5b93f953d993",
+          "title": "Введение в JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-21702cd82c06",
+          "title": "Повторное введение в JavaScript (JS учебник)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c9d6c57d0bc1",
+          "title": "Массивы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a677f3632bfe",
+          "title": "Введение в web APIs",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f8d27e1f3bb3",
+          "title": "JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e14356067045",
+          "title": "Основы JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-05362819738a",
+          "title": "Что такое JavaScript?",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-cdaa4c1c2c2e",
+          "title": "ARIA",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7772ee0294ae",
+          "title": "Обёртка",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-9b48dbecbaf0:1930-2426",
+        "mdnru-5b93f953d993:1089-1638",
+        "mdnru-21702cd82c06:1382-1922",
+        "mdnru-c9d6c57d0bc1:21738-22064",
+        "mdnru-a677f3632bfe:3048-3774"
+      ]
+    },
+    {
+      "query_id": "dev-012",
+      "query": "как перехватить ошибку и не уронить программу",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Statements/try...catch": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-8bfc78447414",
+          "title": "Что пошло не так? Устранение ошибок JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-8b788340bf0f",
+          "title": "Отладка HTML",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ff8fca2e656f",
+          "title": "Error",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c124d7f4c41f",
+          "title": "JavaScript ссылки на ошибки",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-530d46f72882",
+          "title": "MediaError.code",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-547add826749",
+          "title": "Использование промисов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-28774678ea23",
+          "title": "SyntaxError: missing } after function body",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fe4df10cba9b",
+          "title": "DOMParser",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a823178a7f11",
+          "title": "PositionError",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-660c239584ee",
+          "title": "Ошибка: CORS disabled",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-8bfc78447414:665-1460",
+        "mdnru-8bfc78447414:1315-1695",
+        "mdnru-8bfc78447414:5003-5236",
+        "mdnru-8b788340bf0f:2556-3241",
+        "mdnru-8bfc78447414:5238-5924"
+      ]
+    },
+    {
+      "query_id": "dev-013",
+      "query": "округлить число до двух знаков после запятой",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/Number/toFixed": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-7d33bcdde72c",
+          "title": "Грамматика и типы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-67782170971d",
+          "title": "Лексический синтаксис",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fa7d42cc152d",
+          "title": "TypedArray",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7884fff28a64",
+          "title": "Базовая математика в JavaScript — числа и операторы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-44584762d02c",
+          "title": "Number.prototype.toExponential()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-09aad75dc412",
+          "title": "Типы и структуры данных JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-1d80b832cc40",
+          "title": "Числа и даты",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-2ba25645dbe2",
+          "title": "<integer>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-803013e77425",
+          "title": "Значения свойств CSS",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-857427348c4e",
+          "title": "BigInt",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-7d33bcdde72c:16337-17013",
+        "mdnru-67782170971d:8480-9043",
+        "mdnru-fa7d42cc152d:5354-5944",
+        "mdnru-7884fff28a64:1250-2213",
+        "mdnru-44584762d02c:374-1273"
+      ]
+    },
+    {
+      "query_id": "dev-014",
+      "query": "получить случайное число",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Global_Objects/Math/random": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-09aad75dc412",
+          "title": "Типы и структуры данных JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4797ff4feac5",
+          "title": "Number.isSafeInteger()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fa7d42cc152d",
+          "title": "TypedArray",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-67782170971d",
+          "title": "Лексический синтаксис",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-27d086dbe630",
+          "title": "BigInt",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-803013e77425",
+          "title": "Значения свойств CSS",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-2ba25645dbe2",
+          "title": "<integer>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7d33bcdde72c",
+          "title": "Грамматика и типы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-8bfc78447414",
+          "title": "Что пошло не так? Устранение ошибок JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-1d80b832cc40",
+          "title": "Числа и даты",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-09aad75dc412:3366-3913",
+        "mdnru-4797ff4feac5:681-1493",
+        "mdnru-fa7d42cc152d:5354-5944",
+        "mdnru-67782170971d:8480-9043",
+        "mdnru-27d086dbe630:0-267"
+      ]
+    },
+    {
+      "query_id": "dev-015",
+      "query": "короткая запись функции со стрелкой",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.1111,
+        "ndcg@10": 0.301
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Functions/Arrow_functions": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-e96f778db694",
+          "title": "Функции — Переиспользуемые блоки кода",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b705ff878bd5",
+          "title": "Функция",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5f58760173b2",
+          "title": "Глобальная функция setTimeout()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9855617f9ce9",
+          "title": "Функции",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-036ac23f534f",
+          "title": "Реализация функции обнаружения",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-19e7f184dcd0",
+          "title": "Функции первого класса",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-57667090a943",
+          "title": "Функции",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a810cfd74882",
+          "title": "Замыкания",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ccecd14bbd60",
+          "title": "Стрелочные функции",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-21702cd82c06",
+          "title": "Повторное введение в JavaScript (JS учебник)",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-e96f778db694:5632-5994",
+        "mdnru-b705ff878bd5:0-455",
+        "mdnru-5f58760173b2:0-88",
+        "mdnru-9855617f9ce9:22425-23235",
+        "mdnru-036ac23f534f:986-1104"
+      ]
+    },
+    {
+      "query_id": "dev-016",
+      "query": "распаковать значения массива в отдельные переменные",
+      "metrics": {
+        "recall@1": 0.5,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.8262
+      },
+      "relevant": {
+        "Web/JavaScript/Reference/Operators/Destructuring": 2,
+        "Web/JavaScript/Reference/Operators/Spread_syntax": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-817573f1b24a",
+          "title": "Деструктурирующее присваивание",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-a1c4739b6ad4",
+          "title": "Массив",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b72e4f5c8b4c",
+          "title": "Переменные - место хранения необходимой информации",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-76dbd72e9257",
+          "title": "Переменная",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c9d6c57d0bc1",
+          "title": "Массивы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-d4444e0571a0",
+          "title": "Array.prototype.join()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5e12556acfa7",
+          "title": "var",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-df18f3481d47",
+          "title": "Constant",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-363586770fd8",
+          "title": "TypedArray.prototype.set()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7d4b3a16e562",
+          "title": "Array",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-817573f1b24a:1371-1654",
+        "mdnru-a1c4739b6ad4:0-744",
+        "mdnru-b72e4f5c8b4c:12131-12885",
+        "mdnru-76dbd72e9257:0-222",
+        "mdnru-c9d6c57d0bc1:585-1286"
+      ]
+    },
+    {
+      "query_id": "dev-017",
+      "query": "подписаться на нажатие кнопки",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/EventTarget/addEventListener": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-38fa1aa48275",
+          "title": "MouseEvent.button",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-630240c7a7c2",
+          "title": "Значения клавиш",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3013a13096c2",
+          "title": "MouseEvent.buttons",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0894f4363612",
+          "title": "Справочник по событиям",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-eebbcb598364",
+          "title": "События указателя",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5d54d681a060",
+          "title": "Пользовательский интерфейс",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0290619e0fc6",
+          "title": "Реализация элементов управления с помощью API Gamepad",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3ab86c6a5210",
+          "title": "HTMLButtonElement",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f5e14f0ed690",
+          "title": "Введение в события",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ad0abe36d037",
+          "title": "<button> - элемент кнопки",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-38fa1aa48275:912-1473",
+        "mdnru-38fa1aa48275:0-910",
+        "mdnru-630240c7a7c2:52095-53084",
+        "mdnru-3013a13096c2:874-1459",
+        "mdnru-0894f4363612:5964-6915"
+      ]
+    },
+    {
+      "query_id": "dev-018",
+      "query": "найти элемент на странице по селектору",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/Document/querySelector": 2,
+        "Web/API/Element/querySelector": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-ac2e6619947c",
+          "title": "Селекторы CSS",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-d5b022587f5e",
+          "title": "Основы CSS",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-81a1d47e6433",
+          "title": "Каскад и наследование",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-56d9adb0914b",
+          "title": "CSS-селектор",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-11b46f0e5b30",
+          "title": "Комбинаторы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7da7530fb03e",
+          "title": "CSS-селекторы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-95aaea65e2a5",
+          "title": "Специфичность",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5af54e443e42",
+          "title": "Breadcrumb Navigation",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-397b96f76bcc",
+          "title": "Список селекторов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ce0fd3abe37b",
+          "title": ":is()",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-ac2e6619947c:5456-5994",
+        "mdnru-d5b022587f5e:4253-5243",
+        "mdnru-ac2e6619947c:4660-5602",
+        "mdnru-81a1d47e6433:3259-4218",
+        "mdnru-56d9adb0914b:516-1085"
+      ]
+    },
+    {
+      "query_id": "dev-019",
+      "query": "сохранить данные в браузере чтобы они не пропали после перезагрузки",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/Window/localStorage": 2,
+        "Web/API/Web_Storage_API": 1,
+        "Web/API/Window/sessionStorage": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-d2b0385a5ab6",
+          "title": "scripting",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e6b8468c5d9b",
+          "title": "<merror>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3c3bb3f7ac5b",
+          "title": "USB.requestDevice()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-45692e81c7c9",
+          "title": "content_security_policy",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c52d6fdd5b6d",
+          "title": "visibility",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-770244b6c9f8",
+          "title": "SVGTextContentElement",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-da8e30c031d8",
+          "title": "Client-side storage",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e16c8c5f03e2",
+          "title": "<pattern>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-21cc543373c5",
+          "title": "Browser storage limits and eviction criteria",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4eab9070b430",
+          "title": "History.replaceState()",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-d2b0385a5ab6:994-1020",
+        "mdnru-e6b8468c5d9b:977-1003",
+        "mdnru-3c3bb3f7ac5b:1743-1769",
+        "mdnru-45692e81c7c9:4512-4538",
+        "mdnru-c52d6fdd5b6d:4149-4175"
+      ]
+    },
+    {
+      "query_id": "dev-020",
+      "query": "как сделать запрос к серверу из javascript",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/Fetch_API/Using_Fetch": 2,
+        "Web/API/XMLHttpRequest_API/Using_XMLHttpRequest": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-47dc365c2af7",
+          "title": "Клиент-сервер",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7e761a906f87",
+          "title": "Получение данных с сервера",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-991d33633cf2",
+          "title": "Коды состояния ответа HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-255fa548fd25",
+          "title": "Отказ в обслуживании (DoS-атака)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f5ba97a7d815",
+          "title": "Что такое веб-сервер",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fc06256adb92",
+          "title": "Выполняемые на сервере веб-фреймворки",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f1834a479cf0",
+          "title": "Обзор протокола HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e6d3ffd43153",
+          "title": "Cross-Origin Resource Sharing (CORS)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-383cfb59e161",
+          "title": "Перенаправления в HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-231e6abe73d2",
+          "title": "Введение в серверную часть",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-47dc365c2af7:9006-9149",
+        "mdnru-7e761a906f87:9347-9827",
+        "mdnru-991d33633cf2:9221-10182",
+        "mdnru-255fa548fd25:0-853",
+        "mdnru-f5ba97a7d815:5081-5661"
+      ]
+    },
+    {
+      "query_id": "dev-021",
+      "query": "запретить всплытие события к родителю",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/Event/stopPropagation": 2,
+        "Web/API/Event/stopImmediatePropagation": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-8f75ee2852b1",
+          "title": "HTMLElement: pointerover event",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0894f4363612",
+          "title": "Справочник по событиям",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f5e14f0ed690",
+          "title": "Введение в события",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-23441fcef18f",
+          "title": "readystatechange",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3c1416905390",
+          "title": "pointer-events",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5c818fb2efd3",
+          "title": "SpeechSynthesisUtterance",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-444e0cd865aa",
+          "title": "Animation",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c00145ca29e2",
+          "title": "Element",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f818bd6a105a",
+          "title": "Window",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-eebbcb598364",
+          "title": "События указателя",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-8f75ee2852b1:760-1036",
+        "mdnru-0894f4363612:14241-15070",
+        "mdnru-f5e14f0ed690:30253-31116",
+        "mdnru-23441fcef18f:955-1052",
+        "mdnru-3c1416905390:4325-5070"
+      ]
+    },
+    {
+      "query_id": "dev-022",
+      "query": "добавить класс элементу из кода",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/Element/classList": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-f2768fdc652f",
+          "title": "Классы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3a41e71cacfd",
+          "title": "Публичные поля классов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-66730e25bfe9",
+          "title": "Node.js server without a framework",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e6abe9efc50e",
+          "title": "Использование пользовательских элементов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-6412161a3eaa",
+          "title": "Приватные поля класса",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-6913ff6d628c",
+          "title": "Начало работы с CSS",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f712083716c4",
+          "title": "class expression",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-286c9f7aab19",
+          "title": "Прототипно-ориентированное программирование",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-631a07de7a91",
+          "title": "class",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7f290693cc96",
+          "title": "class",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-f2768fdc652f:893-1341",
+        "mdnru-3a41e71cacfd:7465-7710",
+        "mdnru-66730e25bfe9:2458-2600",
+        "mdnru-e6abe9efc50e:1313-1928",
+        "mdnru-6412161a3eaa:0-456"
+      ]
+    },
+    {
+      "query_id": "dev-023",
+      "query": "создать новый элемент и вставить его в документ",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/Document/createElement": 2,
+        "Web/API/Node/appendChild": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-ebc8a5fa64c8",
+          "title": "Управление документами",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-8e31bc607bf0",
+          "title": "<use>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b9603b1b7b9f",
+          "title": "Document.createDocumentFragment()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-37c0e9a1f6c9",
+          "title": "DOMImplementation.createHTMLDocument()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-cf1b6b12a414",
+          "title": "DataTransfer",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e8c5ded33815",
+          "title": "Элемент",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fe6ee9663d0d",
+          "title": "XSLT",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c485f33b6cb7",
+          "title": "Веб-компоненты",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a7c3cd6cfc40",
+          "title": "Работа с History API",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7cfed0b21033",
+          "title": "Введение в контексты форматирования",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-ebc8a5fa64c8:2923-3194",
+        "mdnru-8e31bc607bf0:0-69",
+        "mdnru-b9603b1b7b9f:0-781",
+        "mdnru-37c0e9a1f6c9:1107-2097",
+        "mdnru-cf1b6b12a414:2258-2712"
+      ]
+    },
+    {
+      "query_id": "dev-024",
+      "query": "выполнить код через несколько секунд",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/Window/setTimeout": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-05362819738a",
+          "title": "Что такое JavaScript?",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9ade530f77a1",
+          "title": "Принятие решений в вашем коде — условные конструкции",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-049625243e12",
+          "title": "asm.js",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0b3f358abfb4",
+          "title": "Зацикливание кода",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-2ffd6f376b34",
+          "title": "Псевдокод",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e2f134af493c",
+          "title": "Порядок выполнения и обработка ошибок",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c954e5025528",
+          "title": "Цикл событий",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-64dee47e7df3",
+          "title": "Продвинутое форматирование текста",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-740f5bf32ca4",
+          "title": "Управление мышью",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5591f08721b9",
+          "title": "Компиляция кода C/C++ в WebAssembly",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-05362819738a:17947-18805",
+        "mdnru-9ade530f77a1:19671-20430",
+        "mdnru-049625243e12:750-1430",
+        "mdnru-0b3f358abfb4:2626-3414",
+        "mdnru-2ffd6f376b34:0-253"
+      ]
+    },
+    {
+      "query_id": "dev-025",
+      "query": "плавная покадровая анимация в браузере",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/API/Window/requestAnimationFrame": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-e83ae539ca9b",
+          "title": "animation-direction",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-444e0cd865aa",
+          "title": "Animation",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5dedaab61665",
+          "title": "Производительность анимации и частота кадров",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-2be561259b27",
+          "title": "Использование CSS-анимации",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ba6e001c65ee",
+          "title": "Производительность CSS и JavaScript анимации",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9d68bbc24b40",
+          "title": "<length>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-da94d82988ed",
+          "title": "CSS Animations",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c3c9e635b835",
+          "title": "CSS Animations tips and tricks",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3e64972957e1",
+          "title": "animation-delay",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-db85c2cd18f0",
+          "title": "animation-play-state",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-e83ae539ca9b:1657-1746",
+        "mdnru-444e0cd865aa:2263-2700",
+        "mdnru-5dedaab61665:2609-3460",
+        "mdnru-2be561259b27:0-941",
+        "mdnru-ba6e001c65ee:5669-5994"
+      ]
+    },
+    {
+      "query_id": "dev-026",
+      "query": "страница не найдена какой код ответа",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.1,
+        "ndcg@10": 0.2891
+      },
+      "relevant": {
+        "Web/HTTP/Reference/Status/404": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-f9c5dcf10ddb",
+          "title": "451 Unavailable For Legal Reasons",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4b44ad43fec4",
+          "title": "HTTP сессия",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-383cfb59e161",
+          "title": "Перенаправления в HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-991d33633cf2",
+          "title": "Коды состояния ответа HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9d24bd5e48a7",
+          "title": "Кешируемые методы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4278b3f09a8c",
+          "title": "301 Moved Permanently",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9888d8619526",
+          "title": "204 No Content",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-556cc921c428",
+          "title": "302 Found",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-dffb381669e7",
+          "title": "203 Non-Authoritative Information",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f873cba8fb1f",
+          "title": "404 Not Found",
+          "grade": 2
+        }
+      ],
+      "top_chunks": [
+        "mdnru-f9c5dcf10ddb:0-252",
+        "mdnru-4b44ad43fec4:5945-6442",
+        "mdnru-383cfb59e161:3851-4696",
+        "mdnru-991d33633cf2:0-514",
+        "mdnru-9d24bd5e48a7:740-1669"
+      ]
+    },
+    {
+      "query_id": "dev-027",
+      "query": "сервер сломался внутренняя ошибка",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.5,
+        "ndcg@10": 0.6309
+      },
+      "relevant": {
+        "Web/HTTP/Reference/Status/500": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-f5ba97a7d815",
+          "title": "Что такое веб-сервер",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f5dd9ffc79e2",
+          "title": "500 Internal Server Error",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-04d35b9e1e4d",
+          "title": "Использование отправляемых сервером событий",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-991d33633cf2",
+          "title": "Коды состояния ответа HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-8bfc78447414",
+          "title": "Что пошло не так? Устранение ошибок JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-547add826749",
+          "title": "Использование промисов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0ca356f41e99",
+          "title": "502 Bad Gateway",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f0a1862fbda4",
+          "title": "406 Not Acceptable",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-021ad2d04d07",
+          "title": ".htaccess ( hypertext access )",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f873cba8fb1f",
+          "title": "404 Not Found",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-f5ba97a7d815:5518-6143",
+        "mdnru-f5dd9ffc79e2:0-950",
+        "mdnru-04d35b9e1e4d:4674-5188",
+        "mdnru-991d33633cf2:10542-11538",
+        "mdnru-991d33633cf2:11390-12328"
+      ]
+    },
+    {
+      "query_id": "dev-028",
+      "query": "сервер отказал в доступе к ресурсу",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/HTTP/Reference/Status/403": 2,
+        "Web/HTTP/Reference/Status/401": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-6e919f6d8f5d",
+          "title": "CDN",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-255fa548fd25",
+          "title": "Отказ в обслуживании (DoS-атака)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-991d33633cf2",
+          "title": "Коды состояния ответа HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c37dfbf4c4ec",
+          "title": "HTTP-кеширование",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-dcc4a59cb696",
+          "title": "511 Network Authentication Required",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f873cba8fb1f",
+          "title": "404 Not Found",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-5a2ec09b8abd",
+          "title": "HTTP аутентификация",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-47dc365c2af7",
+          "title": "Клиент-сервер",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-dcdf245e5a0c",
+          "title": "CONNECT",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-894ce467e2ab",
+          "title": "Django Руководство часть 11: Разворачивание сайта на сервере",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-6e919f6d8f5d:424-1046",
+        "mdnru-255fa548fd25:0-853",
+        "mdnru-991d33633cf2:6202-7194",
+        "mdnru-6e919f6d8f5d:0-566",
+        "mdnru-c37dfbf4c4ec:313-1041"
+      ]
+    },
+    {
+      "query_id": "dev-029",
+      "query": "адрес страницы изменился навсегда",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/HTTP/Reference/Status/301": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-ecf7a135566b",
+          "title": "Руководство часть 5: Создание домашней страницы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4012d53e6dff",
+          "title": "Создание гиперссылок",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f921288034b0",
+          "title": "URL()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3b49683ca5a0",
+          "title": "Руководство Django Часть 8: Аутентификация и авторизация пользователя",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-383cfb59e161",
+          "title": "Перенаправления в HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-89e165b0f0c8",
+          "title": "Что такое URL-адрес?",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b3e7b450183c",
+          "title": "Как создавать и редактировать страницы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4ea8391c10be",
+          "title": "Задание: DIY Django мини блог",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-657110fa5bb9",
+          "title": "Руководство часть 6: Отображение списков и детальной информации",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-60413f078673",
+          "title": "Изображения в HTML",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-ecf7a135566b:4036-4767",
+        "mdnru-ecf7a135566b:6119-7101",
+        "mdnru-4012d53e6dff:8714-9542",
+        "mdnru-f921288034b0:1285-1636",
+        "mdnru-ecf7a135566b:20144-20499"
+      ]
+    },
+    {
+      "query_id": "dev-030",
+      "query": "ошибка при обращении к другому домену из браузера",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/HTTP/Guides/CORS": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-8bfc78447414",
+          "title": "Что пошло не так? Устранение ошибок JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-660c239584ee",
+          "title": "Ошибка: CORS disabled",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b6fc72120206",
+          "title": "Как работает Интернет",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-8b788340bf0f",
+          "title": "Отладка HTML",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0b217b6faf19",
+          "title": "Что такое доменные имена",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-547add826749",
+          "title": "Использование промисов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ff8fca2e656f",
+          "title": "Error",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e6b8468c5d9b",
+          "title": "<merror>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-45692e81c7c9",
+          "title": "content_security_policy",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3c3bb3f7ac5b",
+          "title": "USB.requestDevice()",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-8bfc78447414:1315-1695",
+        "mdnru-8bfc78447414:665-1460",
+        "mdnru-8bfc78447414:2710-3648",
+        "mdnru-8bfc78447414:3504-4381",
+        "mdnru-8bfc78447414:5238-5924"
+      ]
+    },
+    {
+      "query_id": "dev-031",
+      "query": "как работают куки",
+      "metrics": {
+        "recall@1": 0.5,
+        "recall@5": 0.5,
+        "recall@10": 1.0,
+        "mrr@10": 1.0,
+        "ndcg@10": 0.918
+      },
+      "relevant": {
+        "Web/HTTP/Guides/Cookies": 2,
+        "Web/HTTP/Reference/Headers/Set-Cookie": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-21174face5e9",
+          "title": "HTTP-куки",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-8d299906aee1",
+          "title": "Распространённые вопросы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-caf527f34006",
+          "title": "Cookie",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a677f3632bfe",
+          "title": "Введение в web APIs",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9bbe1b2c4dd1",
+          "title": "Переполнение содержимого",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b6fc72120206",
+          "title": "Как работает Интернет",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9ddc87732bda",
+          "title": "Set-Cookie",
+          "grade": 1
+        },
+        {
+          "doc_id": "mdnru-5ae657160180",
+          "title": "cookies",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-74837da10eca",
+          "title": "Как работает Веб",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f5ba97a7d815",
+          "title": "Что такое веб-сервер",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-21174face5e9:7920-8793",
+        "mdnru-21174face5e9:5876-6761",
+        "mdnru-21174face5e9:7299-8062",
+        "mdnru-21174face5e9:6763-7445",
+        "mdnru-21174face5e9:3411-4360"
+      ]
+    },
+    {
+      "query_id": "dev-032",
+      "query": "как указать тип содержимого в ответе",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/HTTP/Reference/Headers/Content-Type": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-36f893735bb7",
+          "title": "422 Unprocessable Entity",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-bda9d63dc754",
+          "title": "Веб-безопасность",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e5dddcdef038",
+          "title": "<menclose>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b8dc2cbaacb3",
+          "title": "MediaSource",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0ef63ef49d5e",
+          "title": "Использование XMLHttpRequest",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c37dfbf4c4ec",
+          "title": "HTTP-кеширование",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-928bfeacff58",
+          "title": "HEAD",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3e933da1ab3e",
+          "title": "XMLHttpRequest.response",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4d50e9a738e4",
+          "title": "<script>: элемент для написания скриптов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0db74320497d",
+          "title": "MIME types",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-36f893735bb7:0-785",
+        "mdnru-bda9d63dc754:14810-15220",
+        "mdnru-e5dddcdef038:0-97",
+        "mdnru-b8dc2cbaacb3:1273-1929",
+        "mdnru-0ef63ef49d5e:1391-1674"
+      ]
+    },
+    {
+      "query_id": "dev-033",
+      "query": "управление кэшированием ответов сервера",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.1667,
+        "ndcg@10": 0.3562
+      },
+      "relevant": {
+        "Web/HTTP/Reference/Headers/Cache-Control": 2
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-991d33633cf2",
+          "title": "Коды состояния ответа HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4b44ad43fec4",
+          "title": "HTTP сессия",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-47dc365c2af7",
+          "title": "Клиент-сервер",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c37dfbf4c4ec",
+          "title": "HTTP-кеширование",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-cc64415686a1",
+          "title": "409 Conflict",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fc844d0e77ef",
+          "title": "Cache-Control",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-56e4daa14a08",
+          "title": "Как работают браузеры",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f873cba8fb1f",
+          "title": "404 Not Found",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f5ba97a7d815",
+          "title": "Что такое веб-сервер",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-383cfb59e161",
+          "title": "Перенаправления в HTTP",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-991d33633cf2:11390-12328",
+        "mdnru-4b44ad43fec4:5945-6442",
+        "mdnru-47dc365c2af7:9006-9149",
+        "mdnru-991d33633cf2:516-1191",
+        "mdnru-991d33633cf2:7052-7739"
+      ]
+    },
+    {
+      "query_id": "dev-034",
+      "query": "отправить данные формы на сервер",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/HTTP/Reference/Methods/POST": 2,
+        "Web/API/FormData": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-c640a49a3104",
+          "title": "Отправка данных формы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ad0abe36d037",
+          "title": "<button> - элемент кнопки",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-bb6c9b0bb680",
+          "title": "Отправка форм при помощи JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b4cb96320df1",
+          "title": "Учебник Express часть 6: Работа с формами",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0ae7c1966d6e",
+          "title": "Валидация форм на стороне клиента",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e2df58a05071",
+          "title": "Руководство часть 9: Работа с формами",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-717fe35b1c87",
+          "title": "Руководство по HTML-формам",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fdeef933c1be",
+          "title": "<input type=\"radio\">",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7e761a906f87",
+          "title": "Получение данных с сервера",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-84a537cd6664",
+          "title": "EventSource",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-c640a49a3104:0-936",
+        "mdnru-ad0abe36d037:4075-4859",
+        "mdnru-c640a49a3104:14853-15287",
+        "mdnru-bb6c9b0bb680:2239-2603",
+        "mdnru-c640a49a3104:9133-10127"
+      ]
+    },
+    {
+      "query_id": "dev-035",
+      "query": "как разложить блоки по сетке",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
+      },
+      "relevant": {
+        "Web/CSS/Guides/Grid_layout/Basic_concepts": 2,
+        "Web/CSS/Reference/Properties/grid-template-columns": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-42de5d431e21",
+          "title": "Выравнивание блоков в CSS разметке Grid",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-72cc2b1b5a1f",
+          "title": "Grids",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-739bfbe69a6c",
+          "title": "Realizing common layouts using CSS Grid Layout",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f3daf8a71cb4",
+          "title": "Блок (скриптинг)",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a6061baa7ded",
+          "title": "Атрибут justify-items",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-689d96ebb368",
+          "title": "Отзывчивый дизайн",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-cb229a2fbcca",
+          "title": "Разметка и содержащий блок",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-290e87195a4c",
+          "title": "Модель визуального форматирования",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9bbe1b2c4dd1",
+          "title": "Переполнение содержимого",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-591d5f4c6686",
+          "title": "Grid Column",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-42de5d431e21:1441-2365",
+        "mdnru-72cc2b1b5a1f:28969-29811",
+        "mdnru-739bfbe69a6c:5287-5913",
+        "mdnru-739bfbe69a6c:7403-8382",
+        "mdnru-739bfbe69a6c:8238-9205"
+      ]
+    },
+    {
+      "query_id": "dev-036",
+      "query": "выровнять элементы по центру контейнера",
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.6667,
+        "recall@10": 0.6667,
+        "mrr@10": 0.3333,
+        "ndcg@10": 0.4674
+      },
+      "relevant": {
+        "Web/CSS/Guides/Flexible_box_layout/Aligning_items": 2,
+        "Web/CSS/Reference/Properties/justify-content": 1,
+        "Web/CSS/Reference/Properties/align-items": 1
+      },
+      "top_documents": [
+        {
+          "doc_id": "mdnru-09cb4f12a790",
+          "title": "align-content",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9956b2695084",
+          "title": "Разбираемся с обёртыванием Flex элементов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-376e2193796c",
+          "title": "Выравнивание элементов во Flex контейнере",
+          "grade": 2
+        },
+        {
+          "doc_id": "mdnru-891a66f868ce",
+          "title": "justify-content",
+          "grade": 1
+        },
+        {
+          "doc_id": "mdnru-f5121820f25b",
+          "title": "Основные понятия Flexbox",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-66457fb67a26",
+          "title": "Флекс-элемент",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a6061baa7ded",
+          "title": "Атрибут justify-items",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f6caa396c1e3",
+          "title": "Связь Grid-разметки с другими методами",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3bf279a06956",
+          "title": "CSS Flexible Box Layout",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3d7a0e1c44fb",
+          "title": "Flexbox",
+          "grade": 0
+        }
+      ],
+      "top_chunks": [
+        "mdnru-09cb4f12a790:5005-5789",
+        "mdnru-9956b2695084:5873-6256",
+        "mdnru-376e2193796c:0-787",
+        "mdnru-9956b2695084:2540-3220",
+        "mdnru-09cb4f12a790:2782-3690"
+      ]
+    }
+  ],
+  "split": "dev",
+  "chunks": "chunks-c1000-o150"
+}
