@@ -1,0 +1,24 @@
+{"id": "u-dev-01", "split": "dev", "kind": "out_of_domain", "question": "Как настроить автоматическое масштабирование подов в Kubernetes?", "absent_terms": ["Kubernetes"]}
+{"id": "u-dev-02", "split": "dev", "kind": "out_of_domain", "question": "Как объявить опциональную переменную в языке Swift?", "absent_terms": ["Swift"]}
+{"id": "u-dev-03", "split": "dev", "kind": "missing_fact", "question": "Сколько стоит подписка MDN Plus в месяц?", "absent_terms": ["MDN Plus"]}
+{"id": "u-dev-04", "split": "dev", "kind": "out_of_domain", "question": "Как создать новый компонент во фреймворке Svelte?", "absent_terms": ["Svelte"]}
+{"id": "u-dev-05", "split": "dev", "kind": "out_of_domain", "question": "Как прочитать файл синхронно функцией fs.readFileSync в Node.js?", "absent_terms": ["readFileSync"]}
+{"id": "u-dev-06", "split": "dev", "kind": "missing_fact", "question": "Какое место занимает JavaScript в рейтинге языков программирования TIOBE?", "absent_terms": ["TIOBE"]}
+{"id": "u-dev-07", "split": "dev", "kind": "out_of_domain", "question": "Как отправить сообщение пользователю через Telegram Bot API?", "absent_terms": ["Telegram"]}
+{"id": "u-dev-08", "split": "dev", "kind": "out_of_domain", "question": "Как настроить Prettier, чтобы код форматировался при сохранении файла?", "absent_terms": ["Prettier"]}
+{"id": "u-dev-09", "split": "dev", "kind": "missing_fact", "question": "В какой версии Chrome появилась поддержка свойства gap для flex-контейнеров?", "absent_terms": ["Chrome 84"]}
+{"id": "u-dev-10", "split": "dev", "kind": "out_of_domain", "question": "Как написать запрос с фрагментами в GraphQL?", "absent_terms": ["GraphQL"]}
+{"id": "u-dev-11", "split": "dev", "kind": "out_of_domain", "question": "Как подключить Tailwind CSS к проекту?", "absent_terms": ["Tailwind"]}
+{"id": "u-dev-12", "split": "dev", "kind": "out_of_domain", "question": "Как развернуть сервис в кластере Docker Swarm?", "absent_terms": ["Swarm"]}
+{"id": "u-test-01", "split": "test", "kind": "out_of_domain", "question": "Как создать новый проект в Android Studio?", "absent_terms": ["Android Studio"]}
+{"id": "u-test-02", "split": "test", "kind": "out_of_domain", "question": "Как запустить корутину в Kotlin?", "absent_terms": ["Kotlin", "корутин"]}
+{"id": "u-test-03", "split": "test", "kind": "out_of_domain", "question": "Как в Next.js сделать страницу с серверным рендерингом?", "absent_terms": ["Next.js"]}
+{"id": "u-test-04", "split": "test", "kind": "out_of_domain", "question": "Как создать конвейер рендеринга GPURenderPipeline в WebGPU?", "absent_terms": ["WebGPU", "GPURenderPipeline"]}
+{"id": "u-test-05", "split": "test", "kind": "missing_fact", "question": "Сколько процентов разработчиков используют JavaScript по опросу Stack Overflow Developer Survey?", "absent_terms": ["Developer Survey"]}
+{"id": "u-test-06", "split": "test", "kind": "out_of_domain", "question": "Как настроить обмен данными между 1С и сайтом на Битриксе?", "absent_terms": ["Битрикс", "Bitrix"]}
+{"id": "u-test-07", "split": "test", "kind": "out_of_domain", "question": "Как оформить подписку на тариф Vercel Pro?", "absent_terms": ["Vercel"]}
+{"id": "u-test-08", "split": "test", "kind": "missing_fact", "question": "Какое сочетание клавиш открывает инструменты разработчика в Яндекс Браузере?", "absent_terms": ["Яндекс Браузер", "Яндекс.Браузер"]}
+{"id": "u-test-09", "split": "test", "kind": "out_of_domain", "question": "Как настроить Ingress-контроллер в Kubernetes?", "absent_terms": ["Kubernetes"]}
+{"id": "u-test-10", "split": "test", "kind": "out_of_domain", "question": "Как в Jenkins настроить уведомления о результатах сборки?", "absent_terms": ["Jenkins"]}
+{"id": "u-test-11", "split": "test", "kind": "out_of_domain", "question": "Как объявить data class в Kotlin?", "absent_terms": ["Kotlin"]}
+{"id": "u-test-12", "split": "test", "kind": "missing_fact", "question": "Какой средний доход frontend-разработчика в Москве?", "absent_terms":["зарплат", "доход разработчик"]}

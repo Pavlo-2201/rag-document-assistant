@@ -31,6 +31,11 @@ def main() -> int:
     parser.add_argument("--model-path", default=DEFAULT_GGUF)
     parser.add_argument("--top-k", type=int, default=5)
     parser.add_argument("--max-context-tokens", type=int, default=2000)
+    parser.add_argument("--min-score", type=float, default=None,
+                        help="порог близости лучшего фрагмента (косинус e5); ниже — отказ без вызова модели")
+    parser.add_argument("--refusal", default="strict", choices=["strict", "lenient"], help="правило отказа в промпте")
+    parser.add_argument("--no-retry-empty", action="store_true",
+                        help="не переспрашивать модель, если она ответила одними номерами фрагментов")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
 
@@ -41,7 +46,10 @@ def main() -> int:
         model = args.retriever.split(":", 1)[1]
         retriever = load_dense(chunks, Path("data/indexes") / f"{Path(args.chunks).stem}__{model}")
     llm = make_backend({"backend": args.backend, "model_path": args.model_path})
-    pipeline = RAGPipeline(retriever, llm, GenerationConfig(args.top_k, args.max_context_tokens))
+    config = GenerationConfig(top_k=args.top_k, max_context_tokens=args.max_context_tokens,
+                              min_retrieval_score=args.min_score, refusal=args.refusal,
+                              retry_empty=not args.no_retry_empty)
+    pipeline = RAGPipeline(retriever, llm, config)
     answer = pipeline.answer(args.question)
     print(json.dumps(answer.to_dict(), ensure_ascii=False, indent=2) if args.json else format_answer(answer))
     return 0
