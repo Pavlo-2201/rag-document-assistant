@@ -1,0 +1,380 @@
+{
+  "split": "dev",
+  "refusal_rule": "strict",
+  "retriever": "faiss:e5-small",
+  "llm": "llama.cpp:qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "without_threshold": {
+    "answerable": {
+      "questions": 36,
+      "refused": 18,
+      "refused_by": {
+        "retrieval": 0,
+        "model": 10,
+        "empty": 8
+      },
+      "answered_with_sources": 14,
+      "answered_without_sources": 4,
+      "answered_after_removing_refusal_sentence": 3
+    },
+    "unanswerable": {
+      "questions": 12,
+      "refused": 11,
+      "refused_by": {
+        "retrieval": 0,
+        "model": 10,
+        "empty": 1
+      },
+      "answered_with_sources": 1,
+      "answered_without_sources": 0,
+      "answered_after_removing_refusal_sentence": 0
+    },
+    "sources_outside_context": 0,
+    "invalid_citations_removed": 1,
+    "balanced_accuracy": 0.7083
+  },
+  "threshold_sweep": [
+    {
+      "threshold": null,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.8525,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.853,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.8532,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.8548,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.858,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.8604,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.8616,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.8631,
+      "answerable_refused": 18,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.7083
+    },
+    {
+      "threshold": 0.8647,
+      "answerable_refused": 19,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6944
+    },
+    {
+      "threshold": 0.8658,
+      "answerable_refused": 19,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6944
+    },
+    {
+      "threshold": 0.8673,
+      "answerable_refused": 19,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6944
+    },
+    {
+      "threshold": 0.8684,
+      "answerable_refused": 19,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6944
+    },
+    {
+      "threshold": 0.8698,
+      "answerable_refused": 20,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.872,
+      "answerable_refused": 20,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.8736,
+      "answerable_refused": 21,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6667
+    },
+    {
+      "threshold": 0.8745,
+      "answerable_refused": 22,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6528
+    },
+    {
+      "threshold": 0.8751,
+      "answerable_refused": 22,
+      "unanswerable_refused": 11,
+      "balanced_accuracy": 0.6528
+    },
+    {
+      "threshold": 0.876,
+      "answerable_refused": 22,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6944
+    },
+    {
+      "threshold": 0.8766,
+      "answerable_refused": 23,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.877,
+      "answerable_refused": 23,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.8771,
+      "answerable_refused": 23,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.8776,
+      "answerable_refused": 23,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.8788,
+      "answerable_refused": 23,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.8798,
+      "answerable_refused": 23,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.8809,
+      "answerable_refused": 23,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6806
+    },
+    {
+      "threshold": 0.8821,
+      "answerable_refused": 24,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6667
+    },
+    {
+      "threshold": 0.8833,
+      "answerable_refused": 24,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6667
+    },
+    {
+      "threshold": 0.8845,
+      "answerable_refused": 24,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6667
+    },
+    {
+      "threshold": 0.8859,
+      "answerable_refused": 24,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6667
+    },
+    {
+      "threshold": 0.8877,
+      "answerable_refused": 24,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6667
+    },
+    {
+      "threshold": 0.8897,
+      "answerable_refused": 25,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6528
+    },
+    {
+      "threshold": 0.8914,
+      "answerable_refused": 25,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6528
+    },
+    {
+      "threshold": 0.8921,
+      "answerable_refused": 26,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6389
+    },
+    {
+      "threshold": 0.8923,
+      "answerable_refused": 26,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6389
+    },
+    {
+      "threshold": 0.8929,
+      "answerable_refused": 26,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6389
+    },
+    {
+      "threshold": 0.8944,
+      "answerable_refused": 26,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6389
+    },
+    {
+      "threshold": 0.8957,
+      "answerable_refused": 27,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.625
+    },
+    {
+      "threshold": 0.896,
+      "answerable_refused": 28,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.6111
+    },
+    {
+      "threshold": 0.8971,
+      "answerable_refused": 29,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5972
+    },
+    {
+      "threshold": 0.8982,
+      "answerable_refused": 30,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5833
+    },
+    {
+      "threshold": 0.8996,
+      "answerable_refused": 30,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5833
+    },
+    {
+      "threshold": 0.9025,
+      "answerable_refused": 31,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5694
+    },
+    {
+      "threshold": 0.9046,
+      "answerable_refused": 32,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5556
+    },
+    {
+      "threshold": 0.9077,
+      "answerable_refused": 33,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5417
+    },
+    {
+      "threshold": 0.9133,
+      "answerable_refused": 33,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5417
+    },
+    {
+      "threshold": 0.9238,
+      "answerable_refused": 34,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5278
+    },
+    {
+      "threshold": 0.9352,
+      "answerable_refused": 35,
+      "unanswerable_refused": 12,
+      "balanced_accuracy": 0.5139
+    }
+  ],
+  "best_threshold_on_this_split": null,
+  "scores": {
+    "answerable": [
+      0.8597,
+      0.8641,
+      0.8684,
+      0.8685,
+      0.8711,
+      0.8728,
+      0.8743,
+      0.8747,
+      0.8764,
+      0.8768,
+      0.8771,
+      0.8772,
+      0.8779,
+      0.8799,
+      0.8818,
+      0.8825,
+      0.8841,
+      0.885,
+      0.8886,
+      0.8908,
+      0.8919,
+      0.8922,
+      0.8925,
+      0.8934,
+      0.8955,
+      0.8959,
+      0.8961,
+      0.8981,
+      0.8982,
+      0.9009,
+      0.9042,
+      0.9051,
+      0.9103,
+      0.9164,
+      0.9311,
+      0.9392
+    ],
+    "unanswerable": [
+      0.8523,
+      0.8528,
+      0.8532,
+      0.8533,
+      0.8564,
+      0.8611,
+      0.8621,
+      0.8654,
+      0.8662,
+      0.8755,
+      0.8796,
+      0.8867
+    ]
+  }
+}
