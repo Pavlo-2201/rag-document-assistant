@@ -1,0 +1,5145 @@
+{
+  "reranker": "cross-encoder:reranker",
+  "runs": [
+    {
+      "split": "dev",
+      "first_stage": "bm25",
+      "reranked": false,
+      "candidates": 50,
+      "metrics": {
+        "recall@1": 0.1111,
+        "recall@5": 0.3194,
+        "recall@10": 0.3843,
+        "mrr@10": 0.2376,
+        "ndcg@10": 0.2672
+      }
+    },
+    {
+      "split": "dev",
+      "first_stage": "bm25",
+      "reranked": true,
+      "candidates": 20,
+      "metrics": {
+        "recall@1": 0.2037,
+        "recall@5": 0.3981,
+        "recall@10": 0.3981,
+        "mrr@10": 0.3519,
+        "ndcg@10": 0.3549
+      },
+      "before_same_candidates": {
+        "recall@1": 0.1111,
+        "recall@5": 0.3194,
+        "recall@10": 0.3843,
+        "mrr@10": 0.2376,
+        "ndcg@10": 0.2672
+      },
+      "rerank_ms_p50": 1048.5,
+      "rerank_ms_max": 11861.7,
+      "per_query": [
+        {
+          "query_id": "dev-001",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-002",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-003",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-004",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          }
+        },
+        {
+          "query_id": "dev-005",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-006",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-007",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-008",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.3154648767857287
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-009",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-010",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-011",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-012",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-013",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-014",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-015",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-016",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.41311732856427996
+          }
+        },
+        {
+          "query_id": "dev-017",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-018",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-019",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.3333333333333333,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.17001443401768598
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.6666666666666666,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.21468600536424026
+          }
+        },
+        {
+          "query_id": "dev-020",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-021",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-022",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-023",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-024",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-025",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-026",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-027",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-028",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-029",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-030",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.1111111111111111,
+            "ndcg@10": 0.3010299956639812
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-031",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-032",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-033",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-034",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-035",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-036",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.6666666666666666,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.5792374606819809
+          },
+          "after": {
+            "recall@1": 0.3333333333333333,
+            "recall@5": 0.6666666666666666,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.819876640193745
+          }
+        }
+      ]
+    },
+    {
+      "split": "dev",
+      "first_stage": "bm25",
+      "reranked": true,
+      "candidates": 50,
+      "metrics": {
+        "recall@1": 0.1759,
+        "recall@5": 0.4259,
+        "recall@10": 0.4815,
+        "mrr@10": 0.3385,
+        "ndcg@10": 0.3742
+      },
+      "before_same_candidates": {
+        "recall@1": 0.1111,
+        "recall@5": 0.3194,
+        "recall@10": 0.3843,
+        "mrr@10": 0.2376,
+        "ndcg@10": 0.2672
+      },
+      "rerank_ms_p50": 2363.0,
+      "rerank_ms_max": 2901.9,
+      "per_query": [
+        {
+          "query_id": "dev-001",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          }
+        },
+        {
+          "query_id": "dev-002",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-003",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-004",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.41311732856427996
+          }
+        },
+        {
+          "query_id": "dev-005",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          }
+        },
+        {
+          "query_id": "dev-006",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-007",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-008",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.3154648767857287
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-009",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-010",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-011",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-012",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-013",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "dev-014",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-015",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-016",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          }
+        },
+        {
+          "query_id": "dev-017",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-018",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          }
+        },
+        {
+          "query_id": "dev-019",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.3333333333333333,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.17001443401768598
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.6666666666666666,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.21468600536424026
+          }
+        },
+        {
+          "query_id": "dev-020",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-021",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-022",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-023",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.26064801430716
+          }
+        },
+        {
+          "query_id": "dev-024",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-025",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-026",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-027",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-028",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.2943107231069255
+          }
+        },
+        {
+          "query_id": "dev-029",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-030",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.1111111111111111,
+            "ndcg@10": 0.3010299956639812
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "dev-031",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          }
+        },
+        {
+          "query_id": "dev-032",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-033",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-034",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-035",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-036",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.6666666666666666,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.5792374606819809
+          },
+          "after": {
+            "recall@1": 0.3333333333333333,
+            "recall@5": 0.6666666666666666,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.819876640193745
+          }
+        }
+      ]
+    },
+    {
+      "split": "dev",
+      "first_stage": "faiss:e5-small",
+      "reranked": false,
+      "candidates": 50,
+      "metrics": {
+        "recall@1": 0.2176,
+        "recall@5": 0.5093,
+        "recall@10": 0.7222,
+        "mrr@10": 0.4091,
+        "ndcg@10": 0.4884
+      }
+    },
+    {
+      "split": "dev",
+      "first_stage": "faiss:e5-small",
+      "reranked": true,
+      "candidates": 20,
+      "metrics": {
+        "recall@1": 0.287,
+        "recall@5": 0.6019,
+        "recall@10": 0.6574,
+        "mrr@10": 0.5063,
+        "ndcg@10": 0.5409
+      },
+      "before_same_candidates": {
+        "recall@1": 0.2176,
+        "recall@5": 0.5093,
+        "recall@10": 0.6852,
+        "mrr@10": 0.4063,
+        "ndcg@10": 0.4783
+      },
+      "rerank_ms_p50": 909.4,
+      "rerank_ms_max": 1195.3,
+      "per_query": [
+        {
+          "query_id": "dev-001",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.26064801430716
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          }
+        },
+        {
+          "query_id": "dev-002",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.3154648767857287
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.1,
+            "ndcg@10": 0.2890648263178878
+          }
+        },
+        {
+          "query_id": "dev-003",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "dev-004",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.3196311965446524
+          }
+        },
+        {
+          "query_id": "dev-005",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.639909328045346
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6590018048024133
+          }
+        },
+        {
+          "query_id": "dev-006",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-007",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-008",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-009",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-010",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-011",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-012",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-013",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "dev-014",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-015",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-016",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.1,
+            "ndcg@10": 0.2388353776606868
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          }
+        },
+        {
+          "query_id": "dev-017",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.3562071871080222
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-018",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.531730627995306
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4382444959756785
+          }
+        },
+        {
+          "query_id": "dev-019",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.3333333333333333,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.25868790443608336
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.3333333333333333,
+            "recall@10": 0.3333333333333333,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.2809436351950179
+          }
+        },
+        {
+          "query_id": "dev-020",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.41292402253795163
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.4935456744811716
+          }
+        },
+        {
+          "query_id": "dev-021",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.41311732856427996
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          }
+        },
+        {
+          "query_id": "dev-022",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "dev-023",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-024",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-025",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "dev-026",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-027",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-028",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.26064801430716
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-029",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-030",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-031",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-032",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-033",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-034",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-035",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-036",
+          "before": {
+            "recall@1": 0.3333333333333333,
+            "recall@5": 0.3333333333333333,
+            "recall@10": 0.3333333333333333,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.7262287617954056
+          },
+          "after": {
+            "recall@1": 0.3333333333333333,
+            "recall@5": 0.3333333333333333,
+            "recall@10": 0.3333333333333333,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.7262287617954056
+          }
+        }
+      ]
+    },
+    {
+      "split": "dev",
+      "first_stage": "faiss:e5-small",
+      "reranked": true,
+      "candidates": 50,
+      "metrics": {
+        "recall@1": 0.2731,
+        "recall@5": 0.5972,
+        "recall@10": 0.713,
+        "mrr@10": 0.4846,
+        "ndcg@10": 0.5387
+      },
+      "before_same_candidates": {
+        "recall@1": 0.2176,
+        "recall@5": 0.5093,
+        "recall@10": 0.7222,
+        "mrr@10": 0.4091,
+        "ndcg@10": 0.4884
+      },
+      "rerank_ms_p50": 2250.8,
+      "rerank_ms_max": 2847.5,
+      "per_query": [
+        {
+          "query_id": "dev-001",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.26064801430716
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          }
+        },
+        {
+          "query_id": "dev-002",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.3154648767857287
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-003",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-004",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.27541155237618664
+          }
+        },
+        {
+          "query_id": "dev-005",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.639909328045346
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6590018048024133
+          }
+        },
+        {
+          "query_id": "dev-006",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-007",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-008",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-009",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-010",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-011",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-012",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          }
+        },
+        {
+          "query_id": "dev-013",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "dev-014",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-015",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-016",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.1,
+            "ndcg@10": 0.2388353776606868
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.3196311965446524
+          }
+        },
+        {
+          "query_id": "dev-017",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.3562071871080222
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-018",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.531730627995306
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.35245186509922216
+          }
+        },
+        {
+          "query_id": "dev-019",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.3333333333333333,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.25868790443608336
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.6666666666666666,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.43998070016479035
+          }
+        },
+        {
+          "query_id": "dev-020",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.41292402253795163
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.34682498962181657
+          }
+        },
+        {
+          "query_id": "dev-021",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.41311732856427996
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.3196311965446524
+          }
+        },
+        {
+          "query_id": "dev-022",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          }
+        },
+        {
+          "query_id": "dev-023",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-024",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.1,
+            "ndcg@10": 0.2890648263178878
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          }
+        },
+        {
+          "query_id": "dev-025",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.1111111111111111,
+            "ndcg@10": 0.3010299956639812
+          }
+        },
+        {
+          "query_id": "dev-026",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-027",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-028",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.26064801430716
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          }
+        },
+        {
+          "query_id": "dev-029",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "dev-030",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-031",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "dev-032",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-033",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "dev-034",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-035",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "dev-036",
+          "before": {
+            "recall@1": 0.3333333333333333,
+            "recall@5": 0.3333333333333333,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.7991009754668488
+          },
+          "after": {
+            "recall@1": 0.3333333333333333,
+            "recall@5": 0.3333333333333333,
+            "recall@10": 0.6666666666666666,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.7962044920938869
+          }
+        }
+      ]
+    },
+    {
+      "split": "test",
+      "first_stage": "bm25",
+      "reranked": false,
+      "candidates": 50,
+      "metrics": {
+        "recall@1": 0.0278,
+        "recall@5": 0.2361,
+        "recall@10": 0.4028,
+        "mrr@10": 0.1411,
+        "ndcg@10": 0.1969
+      }
+    },
+    {
+      "split": "test",
+      "first_stage": "bm25",
+      "reranked": true,
+      "candidates": 20,
+      "metrics": {
+        "recall@1": 0.125,
+        "recall@5": 0.4028,
+        "recall@10": 0.4306,
+        "mrr@10": 0.2942,
+        "ndcg@10": 0.3026
+      },
+      "before_same_candidates": {
+        "recall@1": 0.0278,
+        "recall@5": 0.2361,
+        "recall@10": 0.4028,
+        "mrr@10": 0.1411,
+        "ndcg@10": 0.1969
+      },
+      "rerank_ms_p50": 848.4,
+      "rerank_ms_max": 1198.9,
+      "per_query": [
+        {
+          "query_id": "test-001",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.1111111111111111,
+            "ndcg@10": 0.3010299956639812
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-002",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-003",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-004",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-005",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.27541155237618664
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          }
+        },
+        {
+          "query_id": "test-006",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-007",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-008",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-009",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.10654373218155079
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.13770577618809332
+          }
+        },
+        {
+          "query_id": "test-010",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-011",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-012",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-013",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-014",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.37654115384878006
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.10654373218155079
+          }
+        },
+        {
+          "query_id": "test-015",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-016",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.3562071871080222
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-017",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-018",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.3196311965446524
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "test-019",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.41773477091362754
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6590018048024133
+          }
+        },
+        {
+          "query_id": "test-020",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-021",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          }
+        },
+        {
+          "query_id": "test-022",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.41311732856427996
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          }
+        },
+        {
+          "query_id": "test-023",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          }
+        },
+        {
+          "query_id": "test-024",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-025",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-026",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-027",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-028",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-029",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-030",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-031",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-032",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.09180385079206221
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.27541155237618664
+          }
+        },
+        {
+          "query_id": "test-033",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-034",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-035",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-036",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.3154648767857287
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          }
+        }
+      ]
+    },
+    {
+      "split": "test",
+      "first_stage": "bm25",
+      "reranked": true,
+      "candidates": 50,
+      "metrics": {
+        "recall@1": 0.1528,
+        "recall@5": 0.4167,
+        "recall@10": 0.4861,
+        "mrr@10": 0.3287,
+        "ndcg@10": 0.3353
+      },
+      "before_same_candidates": {
+        "recall@1": 0.0278,
+        "recall@5": 0.2361,
+        "recall@10": 0.4028,
+        "mrr@10": 0.1411,
+        "ndcg@10": 0.1969
+      },
+      "rerank_ms_p50": 1984.8,
+      "rerank_ms_max": 2921.6,
+      "per_query": [
+        {
+          "query_id": "test-001",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.1111111111111111,
+            "ndcg@10": 0.3010299956639812
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-002",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-003",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-004",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-005",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.27541155237618664
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.2943107231069255
+          }
+        },
+        {
+          "query_id": "test-006",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-007",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-008",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-009",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.10654373218155079
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.17376534287144002
+          }
+        },
+        {
+          "query_id": "test-010",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-011",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "test-012",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-013",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-014",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.37654115384878006
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.4025383349622662
+          }
+        },
+        {
+          "query_id": "test-015",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-016",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.3562071871080222
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-017",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-018",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.3196311965446524
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "test-019",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.41773477091362754
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6590018048024133
+          }
+        },
+        {
+          "query_id": "test-020",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-021",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.35583989829307827
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.26064801430716
+          }
+        },
+        {
+          "query_id": "test-022",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.41311732856427996
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          }
+        },
+        {
+          "query_id": "test-023",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          }
+        },
+        {
+          "query_id": "test-024",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-025",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-026",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-027",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-028",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-029",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.17376534287144002
+          }
+        },
+        {
+          "query_id": "test-030",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-031",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-032",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.09180385079206221
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.27541155237618664
+          }
+        },
+        {
+          "query_id": "test-033",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-034",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-035",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-036",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.3154648767857287
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "split": "test",
+      "first_stage": "faiss:e5-small",
+      "reranked": false,
+      "candidates": 50,
+      "metrics": {
+        "recall@1": 0.1389,
+        "recall@5": 0.4028,
+        "recall@10": 0.5417,
+        "mrr@10": 0.331,
+        "ndcg@10": 0.3363
+      }
+    },
+    {
+      "split": "test",
+      "first_stage": "faiss:e5-small",
+      "reranked": true,
+      "candidates": 20,
+      "metrics": {
+        "recall@1": 0.1806,
+        "recall@5": 0.4861,
+        "recall@10": 0.5278,
+        "mrr@10": 0.3525,
+        "ndcg@10": 0.3716
+      },
+      "before_same_candidates": {
+        "recall@1": 0.1389,
+        "recall@5": 0.4028,
+        "recall@10": 0.5278,
+        "mrr@10": 0.3279,
+        "ndcg@10": 0.3293
+      },
+      "rerank_ms_p50": 872.6,
+      "rerank_ms_max": 1467.2,
+      "per_query": [
+        {
+          "query_id": "test-001",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-002",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.17376534287144002
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.11861329943102608
+          }
+        },
+        {
+          "query_id": "test-003",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-004",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-005",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.60817870005004
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.26064801430716
+          }
+        },
+        {
+          "query_id": "test-006",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-007",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.9180385079206221
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-008",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-009",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.4935456744811716
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.58688267143572
+          }
+        },
+        {
+          "query_id": "test-010",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.27541155237618664
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.1,
+            "ndcg@10": 0.07961179255356228
+          }
+        },
+        {
+          "query_id": "test-011",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-012",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-013",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          }
+        },
+        {
+          "query_id": "test-014",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-015",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-016",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.3154648767857287
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-017",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-018",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "test-019",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.631251450669265
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.58688267143572
+          }
+        },
+        {
+          "query_id": "test-020",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-021",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.11861329943102608
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.09810357436897517
+          }
+        },
+        {
+          "query_id": "test-022",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.27541155237618664
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "test-023",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-024",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-025",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-026",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          }
+        },
+        {
+          "query_id": "test-027",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.10654373218155079
+          }
+        },
+        {
+          "query_id": "test-028",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.3196311965446524
+          }
+        },
+        {
+          "query_id": "test-029",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.09810357436897517
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.11861329943102608
+          }
+        },
+        {
+          "query_id": "test-030",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-031",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-032",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-033",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.27541155237618664
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.41311732856427996
+          }
+        },
+        {
+          "query_id": "test-034",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-035",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-036",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "split": "test",
+      "first_stage": "faiss:e5-small",
+      "reranked": true,
+      "candidates": 50,
+      "metrics": {
+        "recall@1": 0.2083,
+        "recall@5": 0.5278,
+        "recall@10": 0.5833,
+        "mrr@10": 0.3827,
+        "ndcg@10": 0.4182
+      },
+      "before_same_candidates": {
+        "recall@1": 0.1389,
+        "recall@5": 0.4028,
+        "recall@10": 0.5417,
+        "mrr@10": 0.331,
+        "ndcg@10": 0.3363
+      },
+      "rerank_ms_p50": 2148.6,
+      "rerank_ms_max": 2747.2,
+      "per_query": [
+        {
+          "query_id": "test-001",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-002",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.17376534287144002
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.11861329943102608
+          }
+        },
+        {
+          "query_id": "test-003",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-004",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-005",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.60817870005004
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.1,
+            "ndcg@10": 0.2388353776606868
+          }
+        },
+        {
+          "query_id": "test-006",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-007",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.9180385079206221
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-008",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-009",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.4935456744811716
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.58688267143572
+          }
+        },
+        {
+          "query_id": "test-010",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.27541155237618664
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-011",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.4306765580733931
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-012",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-013",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.3333333333333333
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-014",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-015",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          }
+        },
+        {
+          "query_id": "test-016",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.125,
+            "ndcg@10": 0.3154648767857287
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6309297535714574
+          }
+        },
+        {
+          "query_id": "test-017",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-018",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.9091417955461737
+          }
+        },
+        {
+          "query_id": "test-019",
+          "before": {
+            "recall@1": 0.5,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.631251450669265
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.6590018048024133
+          }
+        },
+        {
+          "query_id": "test-020",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-021",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.11861329943102608
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.1,
+            "ndcg@10": 0.2388353776606868
+          }
+        },
+        {
+          "query_id": "test-022",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.27541155237618664
+          },
+          "after": {
+            "recall@1": 0.5,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 1.0,
+            "ndcg@10": 0.8262346571285599
+          }
+        },
+        {
+          "query_id": "test-023",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-024",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-025",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          }
+        },
+        {
+          "query_id": "test-026",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.38685280723454163
+          }
+        },
+        {
+          "query_id": "test-027",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.09180385079206221
+          }
+        },
+        {
+          "query_id": "test-028",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.5,
+            "ndcg@10": 0.52129602861432
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-029",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.16666666666666666,
+            "ndcg@10": 0.09810357436897517
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.25,
+            "ndcg@10": 0.11861329943102608
+          }
+        },
+        {
+          "query_id": "test-030",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-031",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.5
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        },
+        {
+          "query_id": "test-032",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.1111111111111111,
+            "ndcg@10": 0.24872141525284142
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.2,
+            "ndcg@10": 0.3196311965446524
+          }
+        },
+        {
+          "query_id": "test-033",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.5,
+            "mrr@10": 0.14285714285714285,
+            "ndcg@10": 0.27541155237618664
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.5,
+            "recall@10": 0.5,
+            "mrr@10": 0.3333333333333333,
+            "ndcg@10": 0.41311732856427996
+          }
+        },
+        {
+          "query_id": "test-034",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-035",
+          "before": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          },
+          "after": {
+            "recall@1": 0.0,
+            "recall@5": 0.0,
+            "recall@10": 0.0,
+            "mrr@10": 0.0,
+            "ndcg@10": 0.0
+          }
+        },
+        {
+          "query_id": "test-036",
+          "before": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          },
+          "after": {
+            "recall@1": 1.0,
+            "recall@5": 1.0,
+            "recall@10": 1.0,
+            "mrr@10": 1.0,
+            "ndcg@10": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

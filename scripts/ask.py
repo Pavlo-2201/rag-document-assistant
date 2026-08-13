@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from rag.chunking import load_chunks  # noqa: E402
 from rag.generation import GenerationConfig, RAGPipeline, format_answer  # noqa: E402
 from rag.llm import make_backend  # noqa: E402
+from rag.reranker import CrossEncoderReranker, RerankingRetriever  # noqa: E402
 from rag.retrieval import build_bm25, load_dense  # noqa: E402
 
 DEFAULT_GGUF = "models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf"
@@ -27,6 +28,8 @@ def main() -> int:
     parser.add_argument("question")
     parser.add_argument("--chunks", default="data/processed/chunks-c1000-o150.jsonl")
     parser.add_argument("--retriever", default="faiss:e5-small", help="bm25 или faiss:<модель>")
+    parser.add_argument("--rerank", type=int, default=0, metavar="N",
+                        help="переранжировать top-N фрагментов cross-encoder'ом (models/reranker); 0 — без него")
     parser.add_argument("--backend", default="llama_cpp", choices=["llama_cpp", "mock"])
     parser.add_argument("--model-path", default=DEFAULT_GGUF)
     parser.add_argument("--top-k", type=int, default=5)
@@ -45,6 +48,8 @@ def main() -> int:
     else:
         model = args.retriever.split(":", 1)[1]
         retriever = load_dense(chunks, Path("data/indexes") / f"{Path(args.chunks).stem}__{model}")
+    if args.rerank:
+        retriever = RerankingRetriever(retriever, CrossEncoderReranker(), candidates=args.rerank)
     llm = make_backend({"backend": args.backend, "model_path": args.model_path})
     config = GenerationConfig(top_k=args.top_k, max_context_tokens=args.max_context_tokens,
                               min_retrieval_score=args.min_score, refusal=args.refusal,
