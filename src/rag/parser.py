@@ -26,6 +26,7 @@ MACRO_ARG_RE = re.compile(r'"([^"]*)"|\'([^\']*)\'')
 IMAGE_RE = re.compile(r"!\[([^\]]*)\]\([^)]*\)")
 LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]*\)")
 HTML_TAG_RE = re.compile(r"</?[a-zA-Z][^>\n]{0,200}>")
+INLINE_CODE_RE = re.compile(r"(`+)(.+?)\1")
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
 BOLD_RE = re.compile(r"\*\*(.+?)\*\*")
 DEFINITION_RE = re.compile(r"^(\s*)- : ")
@@ -61,15 +62,23 @@ def parse_frontmatter(markdown: str) -> tuple[dict, str]:
     return meta, markdown[match.end():]
 
 
+def _macro_args(raw: str | None) -> list[str]:
+    """Аргументы макроса: в кавычках или, как {{HTTPStatus(410)}}, без них."""
+    quoted = [a or b for a, b in MACRO_ARG_RE.findall(raw or "")]
+    if quoted:
+        return quoted
+    return [part.strip() for part in (raw or "").split(",") if part.strip()]
+
+
 def _macro_text(match: re.Match) -> str:
     name = match.group(1).lower()
     if name in INLINE_MARKERS:
         return f" {INLINE_MARKERS[name]}"
     if name == "htmlelement":
-        args = [a or b for a, b in MACRO_ARG_RE.findall(match.group(2) or "")]
+        args = _macro_args(match.group(2))
         return f"<{args[0]}>" if args else ""
     if name in XREF_MACROS:
-        args = [a or b for a, b in MACRO_ARG_RE.findall(match.group(2) or "")]
+        args = _macro_args(match.group(2))
         if not args:
             return ""
         if len(args) > 1 and args[1].strip():
@@ -82,11 +91,24 @@ def _macro_text(match: re.Match) -> str:
     return ""  # служебные макросы: сайдбары, таблицы совместимости, live-примеры
 
 
+def _strip_tags_outside_code(line: str) -> str:
+    """Убрать HTML-теги разметки, но не внутри `кода`: там `<canvas>` — содержание."""
+    parts, last = [], 0
+    for match in INLINE_CODE_RE.finditer(line):
+        parts.append(HTML_TAG_RE.sub("", line[last:match.start()]))
+        parts.append(match.group(0))
+        last = match.end()
+    parts.append(HTML_TAG_RE.sub("", line[last:]))
+    return "".join(parts)
+
+
 def clean_inline(line: str) -> str:
+    # теги убираются до раскрытия макросов: {{HTMLElement("canvas")}} даёт
+    # «<canvas>», и этот текст не должен удаляться как тег
+    line = _strip_tags_outside_code(line)
     line = MACRO_RE.sub(_macro_text, line)
     line = IMAGE_RE.sub(r"\1", line)
     line = LINK_RE.sub(r"\1", line)
-    line = HTML_TAG_RE.sub("", line)
     line = BOLD_RE.sub(r"\1", line)
     line = DEFINITION_RE.sub(r"\1— ", line)
     line = QUOTE_RE.sub("", line)

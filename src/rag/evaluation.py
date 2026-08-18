@@ -56,3 +56,50 @@ def evaluate_document_retrieval(retriever, queries: Sequence[LabeledQuery], dept
         "seconds_per_query": round(seconds / max(len(queries), 1), 4),
         "per_query": per_query,
     }
+
+
+# --- уровень доказательств -------------------------------------------------
+#
+# Для RAG важна не страница, а фрагмент, в котором есть ответ: страница может
+# быть найдена, а нужный абзац — нет. Фрагмент покрывает цитату-доказательство,
+# если он из того же документа и содержит не меньше половины её символов
+# (длинная цитата может попасть на границу двух фрагментов).
+
+EVIDENCE_K_VALUES = (1, 3, 5, 10)
+MIN_EVIDENCE_OVERLAP = 0.5
+
+
+def covers(chunk, evidence, min_fraction: float = MIN_EVIDENCE_OVERLAP) -> bool:
+    if chunk.doc_id != evidence.doc_id:
+        return False
+    overlap = min(chunk.end, evidence.end) - max(chunk.start, evidence.start)
+    return overlap >= min_fraction * (evidence.end - evidence.start)
+
+
+def evidence_rank(chunk_hits: Sequence[ChunkHit], item) -> int | None:
+    """Позиция первого фрагмента, покрывающего любую цитату вопроса (с 1)."""
+    for position, hit in enumerate(chunk_hits, start=1):
+        if any(covers(hit.chunk, ev) for ev in item.evidence):
+            return position
+    return None
+
+
+def evidence_metrics(chunk_hits: Sequence[ChunkHit], item) -> dict[str, float]:
+    rank = evidence_rank(chunk_hits, item)
+    metrics = {f"evidence@{k}": float(rank is not None and rank <= k) for k in EVIDENCE_K_VALUES}
+    metrics["evidence_mrr@10"] = 1.0 / rank if rank is not None and rank <= 10 else 0.0
+    return metrics
+
+
+def evaluate_evidence_retrieval(retriever, items, depth: int = 10) -> dict:
+    """Нашёл ли поиск фрагмент с ответом: только вопросы с цитатами-доказательствами."""
+    items = [i for i in items if i.answerable and i.evidence]
+    batches = retriever.search_batch([i.question for i in items], top_k=depth)
+    per_query = []
+    for item, hits in zip(items, batches):
+        per_query.append({
+            "id": item.id,
+            "metrics": evidence_metrics(hits, item),
+            "evidence_rank": evidence_rank(hits, item),
+        })
+    return {"queries": len(items), "metrics": average([r["metrics"] for r in per_query]), "per_query": per_query}

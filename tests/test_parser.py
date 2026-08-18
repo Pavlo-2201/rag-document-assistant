@@ -57,3 +57,19 @@ def test_plain_text_single_section():
     doc = parse_plain_text("a\n\n\n\nb", "t")
     assert doc.text == "a\n\nb"
     assert len(doc.sections) == 1 and doc.sections[0].end == len(doc.text)
+
+
+def test_html_element_macro_survives_tag_stripping():
+    # раньше «<canvas>» из макроса удалялся следующим шагом как HTML-тег
+    doc = parse_markdown('Элемент {{HTMLElement("canvas")}}, добавленный в HTML5, рисует <b>графику</b>.\n')
+    assert doc.text.strip() == "Элемент <canvas>, добавленный в HTML5, рисует графику."
+
+
+def test_tags_inside_inline_code_are_kept():
+    doc = parse_markdown("Примените к подзаголовку `<h2>` курсив, <span>а тег</span> уберите.\n")
+    assert doc.text.strip() == "Примените к подзаголовку `<h2>` курсив, а тег уберите."
+
+
+def test_macro_with_unquoted_argument():
+    doc = parse_markdown("Вместо 404 используйте {{HTTPStatus(410)}} (Gone).\n")
+    assert doc.text.strip() == "Вместо 404 используйте 410 (Gone)."
