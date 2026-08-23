@@ -5,8 +5,8 @@
     "recall@1": 0.0278,
     "recall@5": 0.2361,
     "recall@10": 0.4028,
-    "mrr@10": 0.1411,
-    "ndcg@10": 0.1969
+    "mrr@10": 0.1407,
+    "ndcg@10": 0.1964
   },
   "seconds_per_query": 0.0019,
   "per_query": [
@@ -45,6 +45,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-4af1e04c9938",
+          "title": "Структура документа и веб-сайта",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-42d7ca7a0a68",
           "title": "RegExp.lastIndex",
           "grade": 0
@@ -57,11 +62,6 @@
         {
           "doc_id": "mdnru-c290567eeb2c",
           "title": "String.prototype.substr()",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-4af1e04c9938",
-          "title": "Структура документа и веб-сайта",
           "grade": 0
         },
         {
@@ -154,7 +154,7 @@
         "mdnru-d0f630bb4b87:606-1314",
         "mdnru-d0f630bb4b87:0-604",
         "mdnru-185e913f0c79:2627-3112",
-        "mdnru-c954e5025528:3425-4274"
+        "mdnru-c954e5025528:3423-4272"
       ]
     },
     {
@@ -296,9 +296,9 @@
         }
       ],
       "top_chunks": [
-        "mdnru-c5fcd2fb9e06:3483-4477",
-        "mdnru-cf7d85e2f695:1563-2449",
-        "mdnru-cf7d85e2f695:2302-3121",
+        "mdnru-c5fcd2fb9e06:3493-4485",
+        "mdnru-cf7d85e2f695:1563-2457",
+        "mdnru-cf7d85e2f695:2308-3133",
         "mdnru-b59e3543fda5:3209-3967",
         "mdnru-0639dcfff56f:654-1580"
       ]
@@ -445,7 +445,7 @@
       "top_chunks": [
         "mdnru-ae6bb25d83ee:1931-2670",
         "mdnru-059d0a971e56:6404-7178",
-        "mdnru-67782170971d:6276-7210",
+        "mdnru-67782170971d:6274-7208",
         "mdnru-f0c378d83e3f:763-1353",
         "mdnru-09cb4f12a790:5654-6302"
       ]
@@ -591,7 +591,7 @@
       ],
       "top_chunks": [
         "mdnru-a33442134127:12243-12766",
-        "mdnru-72cc2b1b5a1f:14000-14963",
+        "mdnru-72cc2b1b5a1f:14006-14975",
         "mdnru-2556740cec61:0-948",
         "mdnru-456473dbd742:0-379",
         "mdnru-f2768fdc652f:10140-10936"
@@ -665,9 +665,9 @@
       ],
       "top_chunks": [
         "mdnru-547add826749:11166-12083",
-        "mdnru-c67aa2bb7119:8330-8961",
+        "mdnru-c67aa2bb7119:8348-8979",
         "mdnru-fbc833375889:1084-1480",
-        "mdnru-c67aa2bb7119:8814-9485",
+        "mdnru-c67aa2bb7119:8832-9503",
         "mdnru-479846d091ae:14473-15402"
       ]
     },
@@ -697,11 +697,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-e8c5ded33815",
-          "title": "Элемент",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-95aaea65e2a5",
           "title": "Специфичность",
           "grade": 0
@@ -709,6 +704,11 @@
         {
           "doc_id": "mdnru-29dfc7396228",
           "title": "<link>: Элемент - ссылка на внешний ресурс",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e8c5ded33815",
+          "title": "Элемент",
           "grade": 0
         },
         {
@@ -722,6 +722,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-2dcc7c6ac61e",
+          "title": "CSS: каскадные таблицы стилей",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-1b6b79d7a3fa",
           "title": "<meta> - элемент для описания метаданных",
           "grade": 0
@@ -730,19 +735,14 @@
           "doc_id": "mdnru-a03dd36b4f39",
           "title": "<style> - элемент для указания стилей",
           "grade": 0
-        },
-        {
-          "doc_id": "mdnru-2dcc7c6ac61e",
-          "title": "CSS: каскадные таблицы стилей",
-          "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-4f95eefb3e3c:1457-2110",
-        "mdnru-56e4daa14a08:12246-13235",
-        "mdnru-4f95eefb3e3c:9390-10264",
-        "mdnru-e8c5ded33815:1120-2105",
-        "mdnru-95aaea65e2a5:2981-3942"
+        "mdnru-56e4daa14a08:12260-13249",
+        "mdnru-4f95eefb3e3c:9396-10270",
+        "mdnru-95aaea65e2a5:2981-3942",
+        "mdnru-4f95eefb3e3c:0-884"
       ]
     },
     {
@@ -813,7 +813,7 @@
       "top_chunks": [
         "mdnru-e214c3352e42:2108-2302",
         "mdnru-5ed20beb2b6a:0-392",
-        "mdnru-573f8131145c:890-1340",
+        "mdnru-573f8131145c:896-1352",
         "mdnru-b23232ddbb1a:1758-2549",
         "mdnru-781047dbc93b:0-396"
       ]
@@ -887,8 +887,8 @@
         "mdnru-d2ec8496ceb7:1979-2849",
         "mdnru-d2ec8496ceb7:1752-1977",
         "mdnru-d2ec8496ceb7:3520-4224",
-        "mdnru-9e53781bc090:19916-20706",
-        "mdnru-d5b022587f5e:11632-12373"
+        "mdnru-9e53781bc090:19955-20745",
+        "mdnru-d5b022587f5e:11806-12547"
       ]
     },
     {
@@ -898,8 +898,8 @@
         "recall@1": 0.0,
         "recall@5": 0.0,
         "recall@10": 1.0,
-        "mrr@10": 0.1429,
-        "ndcg@10": 0.3333
+        "mrr@10": 0.125,
+        "ndcg@10": 0.3155
       },
       "relevant": {
         "Web/CSS/Reference/Properties/opacity": 2
@@ -936,14 +936,14 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-8459f28fbd81",
-          "title": "opacity",
-          "grade": 2
-        },
-        {
           "doc_id": "mdnru-70dab4f5fd47",
           "title": "Transformations",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-8459f28fbd81",
+          "title": "opacity",
+          "grade": 2
         },
         {
           "doc_id": "mdnru-b6b20e8e0917",
@@ -958,9 +958,9 @@
       ],
       "top_chunks": [
         "mdnru-e4392bb45b67:801-1057",
-        "mdnru-b42ed9f78d05:1345-2156",
-        "mdnru-961463dddddd:10122-11062",
-        "mdnru-8994de34c1d7:14792-15333",
+        "mdnru-b42ed9f78d05:1382-2234",
+        "mdnru-961463dddddd:10155-11095",
+        "mdnru-8994de34c1d7:14815-15360",
         "mdnru-ad831e99ebc5:0-437"
       ]
     },
@@ -1031,11 +1031,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-c561a4c9b66c:0-985",
+        "mdnru-c561a4c9b66c:0-993",
         "mdnru-4ce464d26c50:792-1348",
         "mdnru-45a6de55ff0b:0-709",
         "mdnru-09cb4f12a790:1193-1792",
-        "mdnru-f25236296d4c:18448-19304"
+        "mdnru-f25236296d4c:18474-19330"
       ]
     },
     {
@@ -1105,7 +1105,7 @@
       ],
       "top_chunks": [
         "mdnru-3983be9fab8b:10158-10887",
-        "mdnru-8994de34c1d7:9699-10382",
+        "mdnru-8994de34c1d7:9722-10405",
         "mdnru-280b58a2f795:5031-5666",
         "mdnru-39faa88a43cc:661-1605",
         "mdnru-66e1e563d234:976-1569"
@@ -1229,6 +1229,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-d5b022587f5e",
+          "title": "Основы CSS",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-60a568546145",
           "title": "CSS и JavaScript доступность - лучшие практики",
           "grade": 0
@@ -1239,22 +1244,17 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-d5b022587f5e",
-          "title": "Основы CSS",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-92c151dfc81f",
           "title": "<input type=\"color\">",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-f265ee794f4c:19001-19829",
+        "mdnru-f265ee794f4c:19036-19864",
         "mdnru-4ff99d366967:0-888",
         "mdnru-ff109240dd12:26978-27383",
-        "mdnru-09792aad1926:2981-3769",
-        "mdnru-f5e14f0ed690:8789-9268"
+        "mdnru-09792aad1926:2988-3776",
+        "mdnru-f5e14f0ed690:8819-9305"
       ]
     },
     {
@@ -1325,10 +1325,10 @@
       ],
       "top_chunks": [
         "mdnru-2a5ef849ac33:0-895",
-        "mdnru-4f95eefb3e3c:12287-12663",
-        "mdnru-5dedaab61665:0-956",
+        "mdnru-4f95eefb3e3c:12301-12677",
+        "mdnru-5dedaab61665:0-972",
         "mdnru-231e6abe73d2:15119-15832",
-        "mdnru-2be561259b27:3324-4207"
+        "mdnru-2be561259b27:3324-4219"
       ]
     },
     {
@@ -1398,11 +1398,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-686a93218475:13847-14730",
-        "mdnru-686a93218475:11187-11592",
-        "mdnru-686a93218475:15379-16374",
-        "mdnru-686a93218475:14592-15377",
-        "mdnru-686a93218475:11594-12453"
+        "mdnru-686a93218475:13897-14780",
+        "mdnru-686a93218475:11237-11642",
+        "mdnru-686a93218475:15429-16424",
+        "mdnru-686a93218475:14642-15427",
+        "mdnru-686a93218475:11644-12503"
       ]
     },
     {
@@ -1475,7 +1475,7 @@
         "mdnru-602858570a73:3791-4026",
         "mdnru-602858570a73:987-1769",
         "mdnru-f25487f74bb8:0-869",
-        "mdnru-d06e8736678d:2442-3415"
+        "mdnru-d06e8736678d:2464-3458"
       ]
     },
     {
@@ -1545,9 +1545,9 @@
         }
       ],
       "top_chunks": [
-        "mdnru-5849e2c521ab:7604-8407",
-        "mdnru-5849e2c521ab:8761-9263",
-        "mdnru-8994de34c1d7:13199-13891",
+        "mdnru-5849e2c521ab:7634-8437",
+        "mdnru-5849e2c521ab:8791-9293",
+        "mdnru-8994de34c1d7:13222-13914",
         "mdnru-689d96ebb368:6613-7471",
         "mdnru-72bdb7f115b6:0-564"
       ]
@@ -1619,10 +1619,10 @@
         }
       ],
       "top_chunks": [
-        "mdnru-eadb0d088fb9:26270-27132",
+        "mdnru-eadb0d088fb9:26278-27148",
         "mdnru-ead86ed1c713:1602-2255",
         "mdnru-ead86ed1c713:2110-2731",
-        "mdnru-eadb0d088fb9:26984-27655",
+        "mdnru-eadb0d088fb9:27000-27671",
         "mdnru-cc66fc9ba9d5:0-976"
       ]
     },
@@ -1694,7 +1694,7 @@
       "top_chunks": [
         "mdnru-ac2e6619947c:1847-2832",
         "mdnru-ac2e6619947c:2691-2988",
-        "mdnru-81a1d47e6433:10125-10466",
+        "mdnru-81a1d47e6433:10153-10494",
         "mdnru-81a1d47e6433:3259-4218",
         "mdnru-95aaea65e2a5:0-918"
       ]
@@ -1740,8 +1740,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-9e53781bc090",
-          "title": "Float",
+          "doc_id": "mdnru-630240c7a7c2",
+          "title": "Значения клавиш",
           "grade": 0
         },
         {
@@ -1750,8 +1750,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-630240c7a7c2",
-          "title": "Значения клавиш",
+          "doc_id": "mdnru-9e53781bc090",
+          "title": "Float",
           "grade": 0
         },
         {
@@ -1766,10 +1766,10 @@
         }
       ],
       "top_chunks": [
-        "mdnru-8994de34c1d7:2441-3246",
-        "mdnru-8994de34c1d7:7307-7997",
-        "mdnru-8994de34c1d7:3903-4878",
-        "mdnru-8994de34c1d7:4732-5403",
+        "mdnru-8994de34c1d7:2454-3259",
+        "mdnru-8994de34c1d7:7320-8020",
+        "mdnru-8994de34c1d7:3916-4891",
+        "mdnru-8994de34c1d7:4745-5416",
         "mdnru-4782d8bdc253:2036-2624"
       ]
     },
@@ -1912,11 +1912,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-ed8962f63d0f:3694-4438",
+        "mdnru-ed8962f63d0f:3750-4494",
         "mdnru-a6061baa7ded:1872-2843",
-        "mdnru-4e3faa8fab6d:3432-4253",
-        "mdnru-8667890ec2f2:1162-1882",
-        "mdnru-d2ec8496ceb7:7758-8601"
+        "mdnru-4e3faa8fab6d:3485-4301",
+        "mdnru-8667890ec2f2:1162-1898",
+        "mdnru-d2ec8496ceb7:7783-8626"
       ]
     },
     {
@@ -2134,8 +2134,8 @@
         }
       ],
       "top_chunks": [
-        "mdnru-a7ce195741d5:664-1003",
-        "mdnru-a8323a2a9b34:1727-2242",
+        "mdnru-a7ce195741d5:681-1036",
+        "mdnru-a8323a2a9b34:1727-2259",
         "mdnru-19fa2a319b43:633-1490",
         "mdnru-1aa0112f4fdb:0-730",
         "mdnru-bf2ddf80d68d:1209-2051"
@@ -2209,8 +2209,8 @@
       ],
       "top_chunks": [
         "mdnru-d3e7464eb5de:0-864",
-        "mdnru-d0c7550f677a:3845-4800",
-        "mdnru-b3f248417c3d:6837-7801",
+        "mdnru-d0c7550f677a:3870-4825",
+        "mdnru-b3f248417c3d:6853-7817",
         "mdnru-d8b1c8fbb986:0-226",
         "mdnru-7dda1079a6a3:2174-2766"
       ]
@@ -2285,7 +2285,7 @@
         "mdnru-b6b20e8e0917:1066-2022",
         "mdnru-b6b20e8e0917:712-1212",
         "mdnru-0894f4363612:7623-8487",
-        "mdnru-aeb39df003da:7004-7962"
+        "mdnru-aeb39df003da:7004-7975"
       ]
     },
     {
@@ -2355,11 +2355,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-da8e30c031d8:20220-21008",
-        "mdnru-da8e30c031d8:20866-21858",
-        "mdnru-da8e30c031d8:17882-18803",
-        "mdnru-da8e30c031d8:23277-23660",
-        "mdnru-da8e30c031d8:17056-18023"
+        "mdnru-da8e30c031d8:20247-21039",
+        "mdnru-da8e30c031d8:17909-18830",
+        "mdnru-da8e30c031d8:20897-21889",
+        "mdnru-da8e30c031d8:23308-23691",
+        "mdnru-da8e30c031d8:17083-18050"
       ]
     },
     {
@@ -2413,13 +2413,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-383cfb59e161",
-          "title": "Перенаправления в HTTP",
+          "doc_id": "mdnru-1956fd808a0d",
+          "title": "Модификация веб страницы",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-1956fd808a0d",
-          "title": "Модификация веб страницы",
+          "doc_id": "mdnru-383cfb59e161",
+          "title": "Перенаправления в HTTP",
           "grade": 0
         },
         {
@@ -2429,11 +2429,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-8405a9894453:7387-8227",
-        "mdnru-ecf7a135566b:6119-7101",
-        "mdnru-ecf7a135566b:4036-4767",
+        "mdnru-8405a9894453:7394-8234",
+        "mdnru-ecf7a135566b:4056-4787",
         "mdnru-8405a9894453:1605-2412",
-        "mdnru-e7dbdd05861b:7723-8554"
+        "mdnru-ecf7a135566b:6688-7145",
+        "mdnru-e7dbdd05861b:7750-8581"
       ]
     },
     {
@@ -2648,8 +2648,8 @@
         }
       ],
       "top_chunks": [
-        "mdnru-5a2ec09b8abd:3834-4292",
-        "mdnru-21174face5e9:7920-8793",
+        "mdnru-5a2ec09b8abd:3840-4304",
+        "mdnru-21174face5e9:7918-8791",
         "mdnru-54182ba27c69:0-545",
         "mdnru-5a2ec09b8abd:331-1178",
         "mdnru-f1cdd904a67d:1498-2168"
@@ -2657,5 +2657,413 @@
     }
   ],
   "split": "test",
-  "chunks": "chunks-c1000-o150"
+  "chunks": "chunks-c1000-o150",
+  "evidence": {
+    "queries": 36,
+    "metrics": {
+      "evidence@1": 0.0,
+      "evidence@3": 0.0,
+      "evidence@5": 0.0833,
+      "evidence@10": 0.1111,
+      "evidence_mrr@10": 0.0201
+    },
+    "per_query": [
+      {
+        "id": "test-001",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-002",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-003",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-004",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-005",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-006",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-007",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-008",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-009",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-010",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-011",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-012",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-013",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-014",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-015",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-016",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-017",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-018",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-019",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-020",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-021",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.2
+        },
+        "evidence_rank": 5
+      },
+      {
+        "id": "test-022",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.2
+        },
+        "evidence_rank": 5
+      },
+      {
+        "id": "test-023",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.2
+        },
+        "evidence_rank": 5
+      },
+      {
+        "id": "test-024",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-025",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-026",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-027",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-028",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-029",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-030",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-031",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.125
+        },
+        "evidence_rank": 8
+      },
+      {
+        "id": "test-032",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-033",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-034",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-035",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-036",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      }
+    ]
+  }
 }

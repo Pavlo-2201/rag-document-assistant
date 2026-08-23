@@ -2,13 +2,13 @@
   "retriever": "faiss:lsa-300",
   "queries": 36,
   "metrics": {
-    "recall@1": 0.0556,
-    "recall@5": 0.2778,
-    "recall@10": 0.3611,
-    "mrr@10": 0.1871,
-    "ndcg@10": 0.2104
+    "recall@1": 0.0694,
+    "recall@5": 0.2917,
+    "recall@10": 0.3472,
+    "mrr@10": 0.1995,
+    "ndcg@10": 0.2087
   },
-  "seconds_per_query": 0.0032,
+  "seconds_per_query": 0.0027,
   "per_query": [
     {
       "query_id": "test-001",
@@ -35,23 +35,18 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-21702cd82c06",
+          "title": "Повторное введение в JavaScript (JS учебник)",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-3bd099cdb3f5",
           "title": "String.prototype.padStart()",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-465f83230929",
-          "title": "SyntaxError: string literal contains an unescaped line break",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-baefada01551",
-          "title": "String.prototype.substring()",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-c9d6c57d0bc1",
-          "title": "Массивы",
+          "doc_id": "mdnru-a3cd789d500f",
+          "title": "CORS",
           "grade": 0
         },
         {
@@ -60,26 +55,31 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-21702cd82c06",
-          "title": "Повторное введение в JavaScript (JS учебник)",
+          "doc_id": "mdnru-c9d6c57d0bc1",
+          "title": "Массивы",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-79bca0ac3fa8",
-          "title": "Кодирование и декодирование в формате Base64",
+          "doc_id": "mdnru-baefada01551",
+          "title": "String.prototype.substring()",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-a3cd789d500f",
-          "title": "CORS",
+          "doc_id": "mdnru-4af1e04c9938",
+          "title": "Структура документа и веб-сайта",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9956b2695084",
+          "title": "Разбираемся с обёртыванием Flex элементов",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-91d024737242:1367-1879",
         "mdnru-91d024737242:4850-5407",
         "mdnru-b705ff878bd5:1644-1693",
-        "mdnru-91d024737242:5409-5839",
+        "mdnru-91d024737242:1367-1879",
+        "mdnru-21702cd82c06:5756-6578",
         "mdnru-3bd099cdb3f5:0-920"
       ]
     },
@@ -139,13 +139,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-67bcced2422d",
-          "title": "TypedArray.prototype.join()",
+          "doc_id": "mdnru-5a095529d4f6",
+          "title": "Array.prototype.pop()",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cc3cbe0f7037",
-          "title": "Array.prototype.reverse()",
+          "doc_id": "mdnru-67bcced2422d",
+          "title": "TypedArray.prototype.join()",
           "grade": 0
         }
       ],
@@ -163,9 +163,9 @@
       "metrics": {
         "recall@1": 0.0,
         "recall@5": 0.0,
-        "recall@10": 1.0,
-        "mrr@10": 0.1,
-        "ndcg@10": 0.2891
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
       },
       "relevant": {
         "Web/JavaScript/Reference/Global_Objects/Array/concat": 2
@@ -187,8 +187,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-363586770fd8",
-          "title": "TypedArray.prototype.set()",
+          "doc_id": "mdnru-c9d6c57d0bc1",
+          "title": "Массивы",
           "grade": 0
         },
         {
@@ -197,8 +197,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-c9d6c57d0bc1",
-          "title": "Массивы",
+          "doc_id": "mdnru-363586770fd8",
+          "title": "TypedArray.prototype.set()",
           "grade": 0
         },
         {
@@ -217,9 +217,9 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cf65779529bb",
-          "title": "Array.prototype.concat()",
-          "grade": 2
+          "doc_id": "mdnru-7d4b3a16e562",
+          "title": "Array",
+          "grade": 0
         }
       ],
       "top_chunks": [
@@ -227,7 +227,7 @@
         "mdnru-48ee73eb1190:4283-4974",
         "mdnru-725432515343:4347-4620",
         "mdnru-679fb07ea77e:2746-3346",
-        "mdnru-363586770fd8:189-1059"
+        "mdnru-c9d6c57d0bc1:4925-5153"
       ]
     },
     {
@@ -255,13 +255,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-67782170971d",
-          "title": "Лексический синтаксис",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-91d024737242",
-          "title": "Полезные методы для строк",
+          "doc_id": "mdnru-465f83230929",
+          "title": "SyntaxError: string literal contains an unescaped line break",
           "grade": 0
         },
         {
@@ -270,8 +265,23 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-101b7e7cc5dc",
-          "title": "Аттестация: Структурирование данных о планетах",
+          "doc_id": "mdnru-9956b2695084",
+          "title": "Разбираемся с обёртыванием Flex элементов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-67782170971d",
+          "title": "Лексический синтаксис",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9da02cc87cb8",
+          "title": "Шаблонные строки",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-91d024737242",
+          "title": "Полезные методы для строк",
           "grade": 0
         },
         {
@@ -280,27 +290,17 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-7a1a06d0526c",
-          "title": "Идентификатор",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-465f83230929",
-          "title": "SyntaxError: string literal contains an unescaped line break",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-9da02cc87cb8",
-          "title": "Шаблонные строки",
+          "doc_id": "mdnru-101b7e7cc5dc",
+          "title": "Аттестация: Структурирование данных о планетах",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-3abc850c152c:0-706",
-        "mdnru-cf7d85e2f695:1563-2449",
-        "mdnru-67782170971d:2831-3418",
-        "mdnru-cf7d85e2f695:2302-3121",
-        "mdnru-67782170971d:2266-2978"
+        "mdnru-cf7d85e2f695:1563-2457",
+        "mdnru-465f83230929:1876-2394",
+        "mdnru-cf7d85e2f695:2308-3133",
+        "mdnru-79bca0ac3fa8:781-1051"
       ]
     },
     {
@@ -309,9 +309,9 @@
       "metrics": {
         "recall@1": 0.0,
         "recall@5": 0.0,
-        "recall@10": 0.5,
-        "mrr@10": 0.1,
-        "ndcg@10": 0.2388
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
       },
       "relevant": {
         "Web/JavaScript/Reference/Global_Objects/parseInt": 2,
@@ -321,11 +321,6 @@
         {
           "doc_id": "mdnru-67782170971d",
           "title": "Лексический синтаксис",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-1d80b832cc40",
-          "title": "Числа и даты",
           "grade": 0
         },
         {
@@ -339,8 +334,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-09aad75dc412",
-          "title": "Типы и структуры данных JavaScript",
+          "doc_id": "mdnru-1d80b832cc40",
+          "title": "Числа и даты",
           "grade": 0
         },
         {
@@ -349,13 +344,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-2ba25645dbe2",
-          "title": "<integer>",
+          "doc_id": "mdnru-c0ca71451c38",
+          "title": "Работа с текстом — строки в JavaScript",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-c0ca71451c38",
-          "title": "Работа с текстом — строки в JavaScript",
+          "doc_id": "mdnru-09aad75dc412",
+          "title": "Типы и структуры данных JavaScript",
           "grade": 0
         },
         {
@@ -364,17 +359,22 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-6cf3ad8817a7",
-          "title": "parseInt()",
-          "grade": 2
+          "doc_id": "mdnru-2ba25645dbe2",
+          "title": "<integer>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4fd821f85bcb",
+          "title": "<mn>",
+          "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-67782170971d:8480-9043",
-        "mdnru-1d80b832cc40:0-729",
+        "mdnru-67782170971d:8478-9041",
         "mdnru-4797ff4feac5:681-1493",
         "mdnru-7d33bcdde72c:15334-16251",
-        "mdnru-09aad75dc412:3366-3913"
+        "mdnru-1d80b832cc40:0-729",
+        "mdnru-803013e77425:3068-4023"
       ]
     },
     {
@@ -402,8 +402,18 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-1a298be540a2",
+          "title": "Курсор",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-c5888ebef54d",
           "title": "<display-outside>",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-21702cd82c06",
+          "title": "Повторное введение в JavaScript (JS учебник)",
           "grade": 0
         },
         {
@@ -412,13 +422,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-1a298be540a2",
-          "title": "Курсор",
+          "doc_id": "mdnru-f9b4a48e843c",
+          "title": "all",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-21702cd82c06",
-          "title": "Повторное введение в JavaScript (JS учебник)",
+          "doc_id": "mdnru-21e49535181f",
+          "title": "font-variant-numeric",
           "grade": 0
         },
         {
@@ -430,24 +440,14 @@
           "doc_id": "mdnru-6aec4254360d",
           "title": "clear",
           "grade": 0
-        },
-        {
-          "doc_id": "mdnru-21e49535181f",
-          "title": "font-variant-numeric",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-f9b4a48e843c",
-          "title": "all",
-          "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-67782170971d:7212-7659",
-        "mdnru-67782170971d:6276-7210",
+        "mdnru-67782170971d:7210-7657",
+        "mdnru-67782170971d:6274-7208",
         "mdnru-22687f9669f7:0-621",
-        "mdnru-c5888ebef54d:0-462",
-        "mdnru-f265ee794f4c:1975-2962"
+        "mdnru-1a298be540a2:1350-2028",
+        "mdnru-c5888ebef54d:0-496"
       ]
     },
     {
@@ -457,8 +457,8 @@
         "recall@1": 0.0,
         "recall@5": 1.0,
         "recall@10": 1.0,
-        "mrr@10": 0.3333,
-        "ndcg@10": 0.5317
+        "mrr@10": 0.5,
+        "ndcg@10": 0.5296
       },
       "relevant": {
         "Web/JavaScript/Reference/Statements/let": 2,
@@ -471,6 +471,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-5e12556acfa7",
+          "title": "var",
+          "grade": 1
+        },
+        {
           "doc_id": "mdnru-21702cd82c06",
           "title": "Повторное введение в JavaScript (JS учебник)",
           "grade": 0
@@ -481,23 +486,13 @@
           "grade": 2
         },
         {
-          "doc_id": "mdnru-5e12556acfa7",
-          "title": "var",
-          "grade": 1
-        },
-        {
-          "doc_id": "mdnru-f3dae0e499e5",
-          "title": "const",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-e61e6e67e220",
           "title": "SyntaxError: missing = in const declaration",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cfca1464e4e2",
-          "title": "typeof",
+          "doc_id": "mdnru-f3dae0e499e5",
+          "title": "const",
           "grade": 0
         },
         {
@@ -506,22 +501,27 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-65447275a532",
-          "title": "for",
+          "doc_id": "mdnru-b1af67ee785e",
+          "title": "ReferenceError: assignment to undeclared variable \"x\"",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-470c9867b312",
-          "title": "Поднятие",
+          "doc_id": "mdnru-cfca1464e4e2",
+          "title": "typeof",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-65447275a532",
+          "title": "for",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-7d33bcdde72c:6467-7116",
-        "mdnru-7d33bcdde72c:1331-1949",
-        "mdnru-7d33bcdde72c:2703-3321",
+        "mdnru-5e12556acfa7:2588-3482",
+        "mdnru-21702cd82c06:8527-9375",
         "mdnru-21702cd82c06:7950-8666",
-        "mdnru-21702cd82c06:8527-9375"
+        "mdnru-7d33bcdde72c:1331-1949"
       ]
     },
     {
@@ -530,9 +530,9 @@
       "metrics": {
         "recall@1": 0.0,
         "recall@5": 0.0,
-        "recall@10": 0.0,
-        "mrr@10": 0.0,
-        "ndcg@10": 0.0
+        "recall@10": 1.0,
+        "mrr@10": 0.1,
+        "ndcg@10": 0.2891
       },
       "relevant": {
         "Web/JavaScript/Reference/Classes": 2
@@ -554,11 +554,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-7f290693cc96",
-          "title": "class",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-2556740cec61",
           "title": "Конструктор",
           "grade": 0
@@ -569,8 +564,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cb29e7c18e47",
-          "title": "Array.from()",
+          "doc_id": "mdnru-7f290693cc96",
+          "title": "class",
           "grade": 0
         },
         {
@@ -579,22 +574,27 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5b93f953d993",
-          "title": "Введение в JavaScript",
+          "doc_id": "mdnru-4f6efc59afb2",
+          "title": "Инкапсуляция",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-3a41e71cacfd",
-          "title": "Публичные поля классов",
+          "doc_id": "mdnru-cb29e7c18e47",
+          "title": "Array.from()",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-f2768fdc652f",
+          "title": "Классы",
+          "grade": 2
         }
       ],
       "top_chunks": [
         "mdnru-286c9f7aab19:0-247",
         "mdnru-87059dab77fc:0-629",
         "mdnru-83053492afd3:0-415",
-        "mdnru-7f290693cc96:0-566",
-        "mdnru-2556740cec61:0-948"
+        "mdnru-2556740cec61:0-948",
+        "mdnru-85512ccbc39c:22654-22854"
       ]
     },
     {
@@ -618,6 +618,11 @@
           "grade": 1
         },
         {
+          "doc_id": "mdnru-0989005731ba",
+          "title": "Promise.prototype.then()",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-547add826749",
           "title": "Использование промисов",
           "grade": 0
@@ -633,23 +638,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-0989005731ba",
-          "title": "Promise.prototype.then()",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-d56fda0bd341",
-          "title": "Promise.all()",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-7b70d01d3af3",
           "title": "Promise.prototype.finally()",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-a1652f498f81",
-          "title": "Promise.allSettled()",
           "grade": 0
         },
         {
@@ -661,14 +651,24 @@
           "doc_id": "mdnru-024ceaa7b0c2",
           "title": "Promise.race()",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-d56fda0bd341",
+          "title": "Promise.all()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a1652f498f81",
+          "title": "Promise.allSettled()",
+          "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-cd9c44344aea:2895-3854",
+        "mdnru-0989005731ba:0-638",
         "mdnru-547add826749:11166-12083",
         "mdnru-547add826749:7991-8757",
-        "mdnru-547add826749:6905-7790",
-        "mdnru-c67aa2bb7119:8330-8961"
+        "mdnru-c67aa2bb7119:8348-8979"
       ]
     },
     {
@@ -697,28 +697,18 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-e6abe9efc50e",
-          "title": "Использование пользовательских элементов",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-e8c5ded33815",
-          "title": "Элемент",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-7609b6fd12cd",
           "title": "Оптимизация ваших страниц для рискованного парсинга",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-81a1d47e6433",
-          "title": "Каскад и наследование",
+          "doc_id": "mdnru-15beb803fab2",
+          "title": "Постраничные носители",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-1be6e7461485",
-          "title": "window.getComputedStyle()",
+          "doc_id": "mdnru-e6abe9efc50e",
+          "title": "Использование пользовательских элементов",
           "grade": 0
         },
         {
@@ -727,22 +717,32 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-16b5aad6d66f",
-          "title": "<mstyle>",
+          "doc_id": "mdnru-e8c5ded33815",
+          "title": "Элемент",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-15beb803fab2",
-          "title": "Постраничные носители",
+          "doc_id": "mdnru-1be6e7461485",
+          "title": "window.getComputedStyle()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-81a1d47e6433",
+          "title": "Каскад и наследование",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-16b5aad6d66f",
+          "title": "<mstyle>",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-a03dd36b4f39:745-1128",
-        "mdnru-05362819738a:12412-12696",
-        "mdnru-e6abe9efc50e:9334-10273",
-        "mdnru-e8c5ded33815:1120-2105",
-        "mdnru-7609b6fd12cd:802-1147"
+        "mdnru-a03dd36b4f39:792-1188",
+        "mdnru-05362819738a:12412-12719",
+        "mdnru-7609b6fd12cd:811-1162",
+        "mdnru-15beb803fab2:0-483",
+        "mdnru-e6abe9efc50e:9697-10352"
       ]
     },
     {
@@ -760,11 +760,6 @@
       },
       "top_documents": [
         {
-          "doc_id": "mdnru-a5768bc0ff45",
-          "title": "Элементы изображений, медиа и форм",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-cb229a2fbcca",
           "title": "Разметка и содержащий блок",
           "grade": 0
@@ -775,13 +770,18 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-9bbe1b2c4dd1",
-          "title": "Переполнение содержимого",
+          "doc_id": "mdnru-a5768bc0ff45",
+          "title": "Элементы изображений, медиа и форм",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-19ccea5d497a",
-          "title": "Practical positioning examples",
+          "doc_id": "mdnru-29f51cf79e31",
+          "title": "Блок",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9bbe1b2c4dd1",
+          "title": "Переполнение содержимого",
           "grade": 0
         },
         {
@@ -795,27 +795,27 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-280b58a2f795",
+          "title": "try...catch",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-c67aa2bb7119",
           "title": "Введение в асинхронный JavaScript",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-29f51cf79e31",
-          "title": "Блок",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-280b58a2f795",
-          "title": "try...catch",
+          "doc_id": "mdnru-d5b022587f5e",
+          "title": "Основы CSS",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-a5768bc0ff45:1766-2670",
         "mdnru-cb229a2fbcca:958-1444",
         "mdnru-f3daf8a71cb4:0-339",
-        "mdnru-9bbe1b2c4dd1:6759-7487",
-        "mdnru-19ccea5d497a:656-1397"
+        "mdnru-a5768bc0ff45:1766-2685",
+        "mdnru-29f51cf79e31:0-493",
+        "mdnru-9bbe1b2c4dd1:6759-7487"
       ]
     },
     {
@@ -848,13 +848,13 @@
           "grade": 2
         },
         {
-          "doc_id": "mdnru-cb229a2fbcca",
-          "title": "Разметка и содержащий блок",
+          "doc_id": "mdnru-f3daf8a71cb4",
+          "title": "Блок (скриптинг)",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-f3daf8a71cb4",
-          "title": "Блок (скриптинг)",
+          "doc_id": "mdnru-cb229a2fbcca",
+          "title": "Разметка и содержащий блок",
           "grade": 0
         },
         {
@@ -868,13 +868,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cf04897a29c9",
-          "title": "text-shadow",
+          "doc_id": "mdnru-29f51cf79e31",
+          "title": "Блок",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-29f51cf79e31",
-          "title": "Блок",
+          "doc_id": "mdnru-9bbe1b2c4dd1",
+          "title": "Переполнение содержимого",
           "grade": 0
         },
         {
@@ -885,10 +885,10 @@
       ],
       "top_chunks": [
         "mdnru-d2ec8496ceb7:4914-5290",
+        "mdnru-d5b022587f5e:11806-12547",
         "mdnru-d2ec8496ceb7:1752-1977",
-        "mdnru-d5b022587f5e:11632-12373",
-        "mdnru-4ce464d26c50:2451-3317",
-        "mdnru-4ce464d26c50:5689-6663"
+        "mdnru-4ce464d26c50:5855-6829",
+        "mdnru-4ce464d26c50:2514-3461"
       ]
     },
     {
@@ -906,38 +906,13 @@
       },
       "top_documents": [
         {
+          "doc_id": "mdnru-68049f9732b6",
+          "title": "<section> - элемент секции",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-d1954217ab8f",
           "title": "patternContentUnits",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-5c6b97a335c1",
-          "title": "Node.replaceChild",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-7bb0e91dd2b7",
-          "title": "attributeType",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-debb30eb4358",
-          "title": "<ul> - элемент «Неупорядоченный список»",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-ebc8a5fa64c8",
-          "title": "Управление документами",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-c561a4c9b66c",
-          "title": "::backdrop",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-6d55a64536d0",
-          "title": "Навигация с клавиатуры в JavaScript",
           "grade": 0
         },
         {
@@ -951,17 +926,42 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-5c6b97a335c1",
+          "title": "Node.replaceChild",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7bb0e91dd2b7",
+          "title": "attributeType",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c561a4c9b66c",
+          "title": "::backdrop",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a5768bc0ff45",
+          "title": "Элементы изображений, медиа и форм",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-2a328f9781a4",
+          "title": "mouseleave",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-d2a1d5e169fa",
           "title": "Основы HTML",
           "grade": 0
         }
       ],
       "top_chunks": [
+        "mdnru-68049f9732b6:1586-2546",
         "mdnru-d1954217ab8f:1559-1654",
-        "mdnru-5c6b97a335c1:0-392",
-        "mdnru-7bb0e91dd2b7:1046-1177",
-        "mdnru-debb30eb4358:400-1400",
-        "mdnru-ebc8a5fa64c8:10408-11400"
+        "mdnru-e11989f8cca3:3115-3150",
+        "mdnru-7148b9c04fac:969-1078",
+        "mdnru-5c6b97a335c1:0-392"
       ]
     },
     {
@@ -980,6 +980,11 @@
       },
       "top_documents": [
         {
+          "doc_id": "mdnru-68049f9732b6",
+          "title": "<section> - элемент секции",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-d1954217ab8f",
           "title": "patternContentUnits",
           "grade": 0
@@ -987,11 +992,6 @@
         {
           "doc_id": "mdnru-2a328f9781a4",
           "title": "mouseleave",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-debb30eb4358",
-          "title": "<ul> - элемент «Неупорядоченный список»",
           "grade": 0
         },
         {
@@ -1010,8 +1010,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-0a626119bfb6",
-          "title": "<strong> - элемент выделения важного текста",
+          "doc_id": "mdnru-7bb0e91dd2b7",
+          "title": "attributeType",
           "grade": 0
         },
         {
@@ -1020,8 +1020,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-7bb0e91dd2b7",
-          "title": "attributeType",
+          "doc_id": "mdnru-7148b9c04fac",
+          "title": "stroke-width",
           "grade": 0
         },
         {
@@ -1031,11 +1031,11 @@
         }
       ],
       "top_chunks": [
+        "mdnru-68049f9732b6:1586-2546",
         "mdnru-d1954217ab8f:1559-1654",
         "mdnru-2a328f9781a4:358-1043",
-        "mdnru-debb30eb4358:400-1400",
-        "mdnru-e11989f8cca3:2854-2889",
-        "mdnru-8e31bc607bf0:0-69"
+        "mdnru-e11989f8cca3:3115-3150",
+        "mdnru-8e31bc607bf0:0-74"
       ]
     },
     {
@@ -1045,8 +1045,8 @@
         "recall@1": 0.0,
         "recall@5": 1.0,
         "recall@10": 1.0,
-        "mrr@10": 0.3333,
-        "ndcg@10": 0.5
+        "mrr@10": 0.25,
+        "ndcg@10": 0.4307
       },
       "relevant": {
         "Web/CSS/Reference/Properties/position": 2
@@ -1063,14 +1063,14 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-3983be9fab8b",
-          "title": "position",
-          "grade": 2
-        },
-        {
           "doc_id": "mdnru-6662833a021f",
           "title": "overscroll-behavior",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3983be9fab8b",
+          "title": "position",
+          "grade": 2
         },
         {
           "doc_id": "mdnru-d5b022587f5e",
@@ -1093,22 +1093,22 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-f0c378d83e3f",
-          "title": "Базовые концепции CSS Scroll Snap",
+          "doc_id": "mdnru-45a6de55ff0b",
+          "title": "Понимание CSS z-index",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-45a6de55ff0b",
-          "title": "Понимание CSS z-index",
+          "doc_id": "mdnru-f0c378d83e3f",
+          "title": "Базовые концепции CSS Scroll Snap",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-9bbe1b2c4dd1:6759-7487",
         "mdnru-280b58a2f795:5527-6284",
-        "mdnru-3983be9fab8b:10158-10887",
+        "mdnru-9bbe1b2c4dd1:6278-6757",
         "mdnru-6662833a021f:787-1228",
-        "mdnru-9bbe1b2c4dd1:6278-6757"
+        "mdnru-3983be9fab8b:10158-10887"
       ]
     },
     {
@@ -1118,8 +1118,8 @@
         "recall@1": 0.0,
         "recall@5": 1.0,
         "recall@10": 1.0,
-        "mrr@10": 0.5,
-        "ndcg@10": 0.6309
+        "mrr@10": 0.3333,
+        "ndcg@10": 0.5
       },
       "relevant": {
         "Web/CSS/Reference/Properties/overflow": 2
@@ -1131,13 +1131,18 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-39faa88a43cc",
+          "title": "overflow-block",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-66e1e563d234",
           "title": "overflow",
           "grade": 2
         },
         {
-          "doc_id": "mdnru-39faa88a43cc",
-          "title": "overflow-block",
+          "doc_id": "mdnru-9d68bbc24b40",
+          "title": "<length>",
           "grade": 0
         },
         {
@@ -1146,18 +1151,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-c90209a01ddc",
-          "title": "Синтаксис",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-f3daf8a71cb4",
           "title": "Блок (скриптинг)",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-9d68bbc24b40",
-          "title": "<length>",
           "grade": 0
         },
         {
@@ -1166,13 +1161,18 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-290e87195a4c",
-          "title": "Модель визуального форматирования",
+          "doc_id": "mdnru-c90209a01ddc",
+          "title": "Синтаксис",
           "grade": 0
         },
         {
           "doc_id": "mdnru-cb229a2fbcca",
           "title": "Разметка и содержащий блок",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-290e87195a4c",
+          "title": "Модель визуального форматирования",
           "grade": 0
         }
       ],
@@ -1181,7 +1181,7 @@
         "mdnru-9bbe1b2c4dd1:6278-6757",
         "mdnru-9bbe1b2c4dd1:1632-2358",
         "mdnru-9bbe1b2c4dd1:3606-4190",
-        "mdnru-66e1e563d234:976-1569"
+        "mdnru-39faa88a43cc:661-1605"
       ]
     },
     {
@@ -1214,18 +1214,23 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-e18bc77e1471",
-          "title": "Инструмент выбора цвета",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-ab4763265441",
           "title": "Применение цвета к HTML-элементам с помощью CSS",
           "grade": 0
         },
         {
+          "doc_id": "mdnru-e18bc77e1471",
+          "title": "Инструмент выбора цвета",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-92c151dfc81f",
           "title": "<input type=\"color\">",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-eadb0d088fb9",
+          "title": "Применение стилей и цветов",
           "grade": 0
         },
         {
@@ -1239,22 +1244,17 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-da7b646df472",
-          "title": "String.prototype.fontcolor()",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-d11ee043e81d",
-          "title": "Отладка CSS",
+          "doc_id": "mdnru-60a568546145",
+          "title": "CSS и JavaScript доступность - лучшие практики",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-e37697fca69d:13078-13333",
-        "mdnru-f265ee794f4c:19001-19829",
-        "mdnru-d5b022587f5e:9234-9449",
-        "mdnru-e37697fca69d:12266-13211",
-        "mdnru-e18bc77e1471:0-683"
+        "mdnru-e37697fca69d:13084-13339",
+        "mdnru-f265ee794f4c:19036-19864",
+        "mdnru-e37697fca69d:12272-13217",
+        "mdnru-d5b022587f5e:9389-9604",
+        "mdnru-ab4763265441:8211-8550"
       ]
     },
     {
@@ -1288,28 +1288,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-0894f4363612",
-          "title": "Справочник по событиям",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-da94d82988ed",
           "title": "CSS Animations",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-b7b5c891580c",
-          "title": "Using the Web Animations API",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-c554a6aaae7b",
-          "title": "Расширенные анимации",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-8f154b33b50f",
-          "title": "Основы производительности",
           "grade": 0
         },
         {
@@ -1318,17 +1298,37 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-db85c2cd18f0",
+          "title": "animation-play-state",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-444e0cd865aa",
           "title": "Animation",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c554a6aaae7b",
+          "title": "Расширенные анимации",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b7b5c891580c",
+          "title": "Using the Web Animations API",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0894f4363612",
+          "title": "Справочник по событиям",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-2be561259b27:943-1462",
-        "mdnru-c3c9e635b835:4235-5172",
-        "mdnru-ba6e001c65ee:5669-5994",
-        "mdnru-c3c9e635b835:0-846",
-        "mdnru-c3c9e635b835:1929-2179"
+        "mdnru-c3c9e635b835:4241-5178",
+        "mdnru-c3c9e635b835:1935-2185",
+        "mdnru-ba6e001c65ee:5675-6000",
+        "mdnru-ba6e001c65ee:779-1534"
       ]
     },
     {
@@ -1338,8 +1338,8 @@
         "recall@1": 0.0,
         "recall@5": 0.5,
         "recall@10": 0.5,
-        "mrr@10": 0.5,
-        "ndcg@10": 0.5213
+        "mrr@10": 0.3333,
+        "ndcg@10": 0.4131
       },
       "relevant": {
         "Web/CSS/Reference/Properties/box-sizing": 2,
@@ -1349,6 +1349,11 @@
         {
           "doc_id": "mdnru-686a93218475",
           "title": "Блочная модель",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-05b145afad68",
+          "title": "Схлопывание внешних отступов",
           "grade": 0
         },
         {
@@ -1362,23 +1367,18 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-05b145afad68",
-          "title": "Схлопывание внешних отступов",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-290e87195a4c",
-          "title": "Модель визуального форматирования",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-999f6706f2d9",
           "title": "WEBGL_compressed_texture_pvrtc",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-68b32c23876b",
-          "title": "Pixel",
+          "doc_id": "mdnru-0b26804336db",
+          "title": "margin",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ab4763265441",
+          "title": "Применение цвета к HTML-элементам с помощью CSS",
           "grade": 0
         },
         {
@@ -1387,22 +1387,22 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-9ad6f5961bb5",
-          "title": "width",
+          "doc_id": "mdnru-d5b022587f5e",
+          "title": "Основы CSS",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-803013e77425",
-          "title": "Значения свойств CSS",
+          "doc_id": "mdnru-290e87195a4c",
+          "title": "Модель визуального форматирования",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-686a93218475:11187-11592",
+        "mdnru-686a93218475:11237-11642",
+        "mdnru-686a93218475:11644-12503",
+        "mdnru-05b145afad68:1072-2028",
         "mdnru-12d5ae4e890d:3342-3792",
-        "mdnru-686a93218475:11594-12453",
-        "mdnru-686a93218475:12455-13134",
-        "mdnru-686a93218475:16376-17075"
+        "mdnru-686a93218475:15429-16424"
       ]
     },
     {
@@ -1425,13 +1425,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-739bfbe69a6c",
-          "title": "Realizing common layouts using CSS Grid Layout",
+          "doc_id": "mdnru-5d4dd659a0af",
+          "title": "Subgrid",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5d4dd659a0af",
-          "title": "Subgrid",
+          "doc_id": "mdnru-739bfbe69a6c",
+          "title": "Realizing common layouts using CSS Grid Layout",
           "grade": 0
         },
         {
@@ -1450,6 +1450,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-46baf1a2ff20",
+          "title": "CSS grids, logical values and writing modes",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-7a9b67680a63",
           "title": "Sticky footers",
           "grade": 0
@@ -1460,33 +1465,28 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-46baf1a2ff20",
-          "title": "CSS grids, logical values and writing modes",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-964c7aac52cb",
           "title": "Шаблоны грид-областей",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-72cc2b1b5a1f:26948-27567",
-        "mdnru-72cc2b1b5a1f:28969-29811",
+        "mdnru-72cc2b1b5a1f:977-1913",
+        "mdnru-72cc2b1b5a1f:26986-27610",
+        "mdnru-5d4dd659a0af:1359-2052",
         "mdnru-739bfbe69a6c:8238-9205",
-        "mdnru-72cc2b1b5a1f:3517-3881",
-        "mdnru-72cc2b1b5a1f:977-1913"
+        "mdnru-739bfbe69a6c:12903-13595"
       ]
     },
     {
       "query_id": "test-021",
       "query": "разные стили под разную ширину экрана",
       "metrics": {
-        "recall@1": 0.0,
+        "recall@1": 0.5,
         "recall@5": 0.5,
         "recall@10": 0.5,
-        "mrr@10": 0.5,
-        "ndcg@10": 0.5213
+        "mrr@10": 1.0,
+        "ndcg@10": 0.8262
       },
       "relevant": {
         "Web/CSS/Guides/Media_queries/Using": 2,
@@ -1494,14 +1494,14 @@
       },
       "top_documents": [
         {
-          "doc_id": "mdnru-689d96ebb368",
-          "title": "Отзывчивый дизайн",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-72bdb7f115b6",
           "title": "Использование медиавыражений",
           "grade": 2
+        },
+        {
+          "doc_id": "mdnru-689d96ebb368",
+          "title": "Отзывчивый дизайн",
+          "grade": 0
         },
         {
           "doc_id": "mdnru-5849e2c521ab",
@@ -1514,13 +1514,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-a03dd36b4f39",
-          "title": "<style> - элемент для указания стилей",
+          "doc_id": "mdnru-b7161ee86847",
+          "title": "Media queries",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-b7161ee86847",
-          "title": "Media queries",
+          "doc_id": "mdnru-a03dd36b4f39",
+          "title": "<style> - элемент для указания стилей",
           "grade": 0
         },
         {
@@ -1529,13 +1529,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-68b32c23876b",
-          "title": "Pixel",
+          "doc_id": "mdnru-d01b6cfacad3",
+          "title": "Screen",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-d01b6cfacad3",
-          "title": "Screen",
+          "doc_id": "mdnru-68b32c23876b",
+          "title": "Pixel",
           "grade": 0
         },
         {
@@ -1545,11 +1545,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-689d96ebb368:6613-7471",
         "mdnru-72bdb7f115b6:0-564",
-        "mdnru-5849e2c521ab:7604-8407",
-        "mdnru-689d96ebb368:5945-6761",
-        "mdnru-55a2cdfc4497:0-750"
+        "mdnru-689d96ebb368:6613-7471",
+        "mdnru-5849e2c521ab:7634-8437",
+        "mdnru-55a2cdfc4497:0-750",
+        "mdnru-689d96ebb368:5945-6761"
       ]
     },
     {
@@ -1583,13 +1583,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-df18f3481d47",
-          "title": "Constant",
+          "doc_id": "mdnru-5e12556acfa7",
+          "title": "var",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5e12556acfa7",
-          "title": "var",
+          "doc_id": "mdnru-df18f3481d47",
+          "title": "Constant",
           "grade": 0
         },
         {
@@ -1603,11 +1603,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-81a1d47e6433",
-          "title": "Каскад и наследование",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-b1af67ee785e",
           "title": "ReferenceError: assignment to undeclared variable \"x\"",
           "grade": 0
@@ -1616,14 +1611,19 @@
           "doc_id": "mdnru-f3dae0e499e5",
           "title": "const",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-082d21141552",
+          "title": "font-family",
+          "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-76dbd72e9257:0-222",
+        "mdnru-76dbd72e9257:0-220",
         "mdnru-817573f1b24a:1371-1654",
         "mdnru-b72e4f5c8b4c:8426-8649",
-        "mdnru-df18f3481d47:0-348",
-        "mdnru-b72e4f5c8b4c:6948-7221"
+        "mdnru-b72e4f5c8b4c:6948-7221",
+        "mdnru-b72e4f5c8b4c:7223-8000"
       ]
     },
     {
@@ -1656,13 +1656,13 @@
           "grade": 2
         },
         {
-          "doc_id": "mdnru-7da7530fb03e",
-          "title": "CSS-селекторы",
+          "doc_id": "mdnru-d5b022587f5e",
+          "title": "Основы CSS",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-d5b022587f5e",
-          "title": "Основы CSS",
+          "doc_id": "mdnru-7da7530fb03e",
+          "title": "CSS-селекторы",
           "grade": 0
         },
         {
@@ -1695,8 +1695,8 @@
         "mdnru-81a1d47e6433:3259-4218",
         "mdnru-ac2e6619947c:1847-2832",
         "mdnru-ac2e6619947c:2691-2988",
-        "mdnru-81a1d47e6433:15387-15969",
-        "mdnru-81a1d47e6433:12942-13937"
+        "mdnru-81a1d47e6433:15415-15997",
+        "mdnru-81a1d47e6433:12970-13965"
       ]
     },
     {
@@ -1715,13 +1715,13 @@
       },
       "top_documents": [
         {
-          "doc_id": "mdnru-8994de34c1d7",
-          "title": "Фон и границы",
+          "doc_id": "mdnru-d5b022587f5e",
+          "title": "Основы CSS",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-d5b022587f5e",
-          "title": "Основы CSS",
+          "doc_id": "mdnru-8994de34c1d7",
+          "title": "Фон и границы",
           "grade": 0
         },
         {
@@ -1766,11 +1766,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-8994de34c1d7:2441-3246",
-        "mdnru-d5b022587f5e:9234-9449",
-        "mdnru-ab4763265441:2641-3236",
-        "mdnru-290e87195a4c:4793-5558",
-        "mdnru-8994de34c1d7:3903-4878"
+        "mdnru-d5b022587f5e:9389-9604",
+        "mdnru-8994de34c1d7:2454-3259",
+        "mdnru-ab4763265441:2660-3255",
+        "mdnru-290e87195a4c:4820-5584",
+        "mdnru-8994de34c1d7:4745-5416"
       ]
     },
     {
@@ -1778,10 +1778,10 @@
       "query": "подключить собственный шрифт на сайт",
       "metrics": {
         "recall@1": 0.0,
-        "recall@5": 0.0,
+        "recall@5": 1.0,
         "recall@10": 1.0,
-        "mrr@10": 0.1429,
-        "ndcg@10": 0.3333
+        "mrr@10": 0.3333,
+        "ndcg@10": 0.5
       },
       "relevant": {
         "Web/CSS/Reference/At-rules/@font-face": 2
@@ -1798,14 +1798,9 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-9209664a5451",
-          "title": "Как создать дизайн, подходящий для всех пользователей?",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-d357247d36a1",
-          "title": "Задание: Стилизирование школьного сайта",
-          "grade": 0
+          "doc_id": "mdnru-cb3df10746d9",
+          "title": "@font-face",
+          "grade": 2
         },
         {
           "doc_id": "mdnru-49fcafd81041",
@@ -1818,9 +1813,19 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cb3df10746d9",
-          "title": "@font-face",
-          "grade": 2
+          "doc_id": "mdnru-d357247d36a1",
+          "title": "Задание: Стилизирование школьного сайта",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9209664a5451",
+          "title": "Как создать дизайн, подходящий для всех пользователей?",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-579323615833",
+          "title": "Стилизация текста",
+          "grade": 0
         },
         {
           "doc_id": "mdnru-082d21141552",
@@ -1828,13 +1833,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-209a0c0d81e6",
-          "title": "SVG шрифты",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-579323615833",
-          "title": "Стилизация текста",
+          "doc_id": "mdnru-ffd40758b3e2",
+          "title": "CSS Fonts",
           "grade": 0
         }
       ],
@@ -1861,8 +1861,13 @@
       },
       "top_documents": [
         {
-          "doc_id": "mdnru-e8c5ded33815",
-          "title": "Элемент",
+          "doc_id": "mdnru-44cf2a86c031",
+          "title": "Основы стилизирования текста и шрифта",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-579323615833",
+          "title": "Стилизация текста",
           "grade": 0
         },
         {
@@ -1871,18 +1876,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-44cf2a86c031",
-          "title": "Основы стилизирования текста и шрифта",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-4366b24a8f89",
-          "title": "<mark>",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-579323615833",
-          "title": "Стилизация текста",
+          "doc_id": "mdnru-e8c5ded33815",
+          "title": "Элемент",
           "grade": 0
         },
         {
@@ -1896,27 +1891,32 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-f13301036ea8",
+          "title": "Гипертекст",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4366b24a8f89",
+          "title": "<mark>",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-a4304a493100",
           "title": "Контрольный список по мобильной доступности",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-60a568546145",
-          "title": "CSS и JavaScript доступность - лучшие практики",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-0c7b6cc39b72",
-          "title": "<del>: The Deleted Text element",
+          "doc_id": "mdnru-d2a1d5e169fa",
+          "title": "Основы HTML",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-e8c5ded33815:10764-11717",
-        "mdnru-2743e7a3fd3d:0-787",
-        "mdnru-44cf2a86c031:2079-2666",
-        "mdnru-4366b24a8f89:906-1863",
-        "mdnru-579323615833:2126-2437"
+        "mdnru-44cf2a86c031:2083-2685",
+        "mdnru-579323615833:2126-2437",
+        "mdnru-2743e7a3fd3d:0-804",
+        "mdnru-e8c5ded33815:11174-12154",
+        "mdnru-dd9204a7575b:820-1670"
       ]
     },
     {
@@ -1926,8 +1926,8 @@
         "recall@1": 0.0,
         "recall@5": 0.0,
         "recall@10": 0.5,
-        "mrr@10": 0.1111,
-        "ndcg@10": 0.0829
+        "mrr@10": 0.1667,
+        "ndcg@10": 0.0981
       },
       "relevant": {
         "Web/API/WebSocket": 2,
@@ -1940,23 +1940,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-8af8a13dbd2e",
-          "title": "Как настроить локальный сервер для тестирования?",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-f5ba97a7d815",
-          "title": "Что такое веб-сервер",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-74837da10eca",
           "title": "Как работает Веб",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-f1834a479cf0",
-          "title": "Обзор протокола HTTP",
           "grade": 0
         },
         {
@@ -1965,8 +1950,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-6e919f6d8f5d",
-          "title": "CDN",
+          "doc_id": "mdnru-f5ba97a7d815",
+          "title": "Что такое веб-сервер",
           "grade": 0
         },
         {
@@ -1980,17 +1965,32 @@
           "grade": 1
         },
         {
+          "doc_id": "mdnru-f1834a479cf0",
+          "title": "Обзор протокола HTTP",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-255fa548fd25",
+          "title": "Отказ в обслуживании (DoS-атака)",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-84a537cd6664",
           "title": "EventSource",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-6e919f6d8f5d",
+          "title": "CDN",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-04d35b9e1e4d:0-477",
-        "mdnru-8af8a13dbd2e:0-556",
+        "mdnru-74837da10eca:3017-3992",
+        "mdnru-c640a49a3104:938-1711",
         "mdnru-f5ba97a7d815:1321-2129",
-        "mdnru-f5ba97a7d815:5081-5661",
-        "mdnru-74837da10eca:3017-3992"
+        "mdnru-7e761a906f87:969-1082"
       ]
     },
     {
@@ -2034,18 +2034,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-58abf4e0eec0",
-          "title": "Публикация вашего веб-сайта",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-74837da10eca",
-          "title": "Как работает Веб",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-894ce467e2ab",
           "title": "Django Руководство часть 11: Разворачивание сайта на сервере",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-58abf4e0eec0",
+          "title": "Публикация вашего веб-сайта",
           "grade": 0
         },
         {
@@ -2056,6 +2051,11 @@
         {
           "doc_id": "mdnru-25d39a056d2a",
           "title": "Интернет-провайдер",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-74837da10eca",
+          "title": "Как работает Веб",
           "grade": 0
         }
       ],
@@ -2103,13 +2103,18 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-770244b6c9f8",
+          "title": "SVGTextContentElement",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-c52d6fdd5b6d",
           "title": "visibility",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-770244b6c9f8",
-          "title": "SVGTextContentElement",
+          "doc_id": "mdnru-67098977b4b0",
+          "title": "DOMTokenList.replace()",
           "grade": 0
         },
         {
@@ -2118,27 +2123,22 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-9efdfdf1e045",
-          "title": "503 Service Unavailable",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-4eab9070b430",
           "title": "History.replaceState()",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-ce8cc0e21f82",
-          "title": "DOMTokenList",
+          "doc_id": "mdnru-9efdfdf1e045",
+          "title": "503 Service Unavailable",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-d2b0385a5ab6:994-1020",
-        "mdnru-e6b8468c5d9b:977-1003",
+        "mdnru-e6b8468c5d9b:993-1019",
         "mdnru-3c3bb3f7ac5b:1743-1769",
-        "mdnru-45692e81c7c9:4512-4538",
-        "mdnru-c52d6fdd5b6d:4149-4175"
+        "mdnru-45692e81c7c9:4516-4542",
+        "mdnru-770244b6c9f8:2985-3027"
       ]
     },
     {
@@ -2162,18 +2162,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-231e6abe73d2",
-          "title": "Введение в серверную часть",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-a3cd789d500f",
           "title": "CORS",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-3b49683ca5a0",
-          "title": "Руководство Django Часть 8: Аутентификация и авторизация пользователя",
+          "doc_id": "mdnru-dfd8cc36ee3d",
+          "title": "Браузер",
           "grade": 0
         },
         {
@@ -2182,18 +2177,18 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-2f03a6277227",
+          "title": "Проект MDN",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-7dda1079a6a3",
           "title": "Мониторинг производительности: реальные пользователи и их эмуляция",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-b39ed37dd635",
-          "title": "Использование геолокации",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-4c92d826b2f4",
-          "title": "Видимость страницы API",
+          "doc_id": "mdnru-d8b1c8fbb986",
+          "title": "Использование псевдокласса :target в селекторах",
           "grade": 0
         },
         {
@@ -2202,17 +2197,22 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-3fa67f30cada",
-          "title": "Агент пользователя",
+          "doc_id": "mdnru-231e6abe73d2",
+          "title": "Введение в серверную часть",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0ecb141aef34",
+          "title": "Руководство часть 7: Сессии",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-b705ff878bd5:1644-1693",
-        "mdnru-231e6abe73d2:1481-1943",
         "mdnru-a3cd789d500f:1984-2031",
-        "mdnru-3b49683ca5a0:6447-7059",
-        "mdnru-40b1aa95faaa:1708-1772"
+        "mdnru-dfd8cc36ee3d:0-281",
+        "mdnru-40b1aa95faaa:1708-1772",
+        "mdnru-2f03a6277227:781-1184"
       ]
     },
     {
@@ -2250,13 +2250,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-2a328f9781a4",
-          "title": "mouseleave",
+          "doc_id": "mdnru-7916f38dbba4",
+          "title": "mousedown",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-7916f38dbba4",
-          "title": "mousedown",
+          "doc_id": "mdnru-2a328f9781a4",
+          "title": "mouseleave",
           "grade": 0
         },
         {
@@ -2265,25 +2265,25 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-427797a492d5",
-          "title": "Глобальные атрибуты",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-3c1416905390",
           "title": "pointer-events",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-1c7072d0d242",
-          "title": ":hover",
+          "doc_id": "mdnru-427797a492d5",
+          "title": "Глобальные атрибуты",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-eebbcb598364",
+          "title": "События указателя",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-b6b20e8e0917:1066-2022",
-        "mdnru-b6b20e8e0917:1874-2558",
         "mdnru-0894f4363612:7623-8487",
+        "mdnru-b6b20e8e0917:1874-2558",
         "mdnru-b6b20e8e0917:712-1212",
         "mdnru-b6b20e8e0917:0-710"
       ]
@@ -2293,10 +2293,10 @@
       "query": "хранить много данных в браузере в виде базы",
       "metrics": {
         "recall@1": 0.0,
-        "recall@5": 1.0,
+        "recall@5": 0.5,
         "recall@10": 1.0,
         "mrr@10": 0.25,
-        "ndcg@10": 0.4382
+        "ndcg@10": 0.394
       },
       "relevant": {
         "Web/API/IndexedDB_API": 2,
@@ -2304,13 +2304,13 @@
       },
       "top_documents": [
         {
-          "doc_id": "mdnru-40912e6adfa1",
-          "title": "Использование IndexedDB",
+          "doc_id": "mdnru-da8e30c031d8",
+          "title": "Client-side storage",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-da8e30c031d8",
-          "title": "Client-side storage",
+          "doc_id": "mdnru-40912e6adfa1",
+          "title": "Использование IndexedDB",
           "grade": 0
         },
         {
@@ -2324,11 +2324,6 @@
           "grade": 1
         },
         {
-          "doc_id": "mdnru-c4535437e559",
-          "title": "IndexedDB",
-          "grade": 2
-        },
-        {
           "doc_id": "mdnru-37deb8f839b9",
           "title": "Учебник Express часть 2: Создание скелета сайта",
           "grade": 0
@@ -2339,9 +2334,9 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-73561588b482",
-          "title": "Express/Node introduction",
-          "grade": 0
+          "doc_id": "mdnru-c4535437e559",
+          "title": "IndexedDB",
+          "grade": 2
         },
         {
           "doc_id": "mdnru-fc06256adb92",
@@ -2349,17 +2344,22 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-65c86fc92891",
-          "title": "Руководство по Django часть 2: создание скелета",
+          "doc_id": "mdnru-47dc365c2af7",
+          "title": "Клиент-сервер",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-73561588b482",
+          "title": "Express/Node introduction",
           "grade": 0
         }
       ],
       "top_chunks": [
+        "mdnru-da8e30c031d8:20897-21889",
+        "mdnru-da8e30c031d8:17909-18830",
+        "mdnru-da8e30c031d8:20247-21039",
         "mdnru-40912e6adfa1:4268-5060",
-        "mdnru-da8e30c031d8:20866-21858",
-        "mdnru-da8e30c031d8:17882-18803",
-        "mdnru-da8e30c031d8:23277-23660",
-        "mdnru-da8e30c031d8:20220-21008"
+        "mdnru-da8e30c031d8:23308-23691"
       ]
     },
     {
@@ -2378,18 +2378,13 @@
       },
       "top_documents": [
         {
-          "doc_id": "mdnru-ecf7a135566b",
-          "title": "Руководство часть 5: Создание домашней страницы",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-4012d53e6dff",
           "title": "Создание гиперссылок",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-b3e7b450183c",
-          "title": "Как создавать и редактировать страницы",
+          "doc_id": "mdnru-ecf7a135566b",
+          "title": "Руководство часть 5: Создание домашней страницы",
           "grade": 0
         },
         {
@@ -2398,18 +2393,28 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-3b49683ca5a0",
-          "title": "Руководство Django Часть 8: Аутентификация и авторизация пользователя",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-89e165b0f0c8",
           "title": "Что такое URL-адрес?",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-383cfb59e161",
-          "title": "Перенаправления в HTTP",
+          "doc_id": "mdnru-3b49683ca5a0",
+          "title": "Руководство Django Часть 8: Аутентификация и авторизация пользователя",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-e8c5ded33815",
+          "title": "Элемент",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b3e7b450183c",
+          "title": "Как создавать и редактировать страницы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-60413f078673",
+          "title": "Изображения в HTML",
           "grade": 0
         },
         {
@@ -2418,22 +2423,17 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-657110fa5bb9",
-          "title": "Руководство часть 6: Отображение списков и детальной информации",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-60413f078673",
-          "title": "Изображения в HTML",
+          "doc_id": "mdnru-383cfb59e161",
+          "title": "Перенаправления в HTTP",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-ecf7a135566b:4036-4767",
-        "mdnru-4012d53e6dff:8714-9542",
-        "mdnru-ecf7a135566b:6119-7101",
-        "mdnru-b3e7b450183c:674-1271",
-        "mdnru-f921288034b0:1285-1636"
+        "mdnru-4012d53e6dff:8720-9548",
+        "mdnru-ecf7a135566b:4056-4787",
+        "mdnru-ecf7a135566b:6688-7145",
+        "mdnru-ecf7a135566b:6139-6829",
+        "mdnru-f921288034b0:1295-1646"
       ]
     },
     {
@@ -2456,18 +2456,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-8af8a13dbd2e",
-          "title": "Как настроить локальный сервер для тестирования?",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-ddaf443f0943",
           "title": "Как загрузить файлы на веб-сервер",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-6e919f6d8f5d",
-          "title": "CDN",
+          "doc_id": "mdnru-8af8a13dbd2e",
+          "title": "Как настроить локальный сервер для тестирования?",
           "grade": 0
         },
         {
@@ -2476,13 +2471,18 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-e2df58a05071",
-          "title": "Руководство часть 9: Работа с формами",
+          "doc_id": "mdnru-6e919f6d8f5d",
+          "title": "CDN",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-bb6c9b0bb680",
-          "title": "Отправка форм при помощи JavaScript",
+          "doc_id": "mdnru-cc140f46d61e",
+          "title": "Использование файлов в веб приложениях",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-d10cbbaac56f",
+          "title": "Работа с файлами",
           "grade": 0
         },
         {
@@ -2491,8 +2491,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cc140f46d61e",
-          "title": "Использование файлов в веб приложениях",
+          "doc_id": "mdnru-e2df58a05071",
+          "title": "Руководство часть 9: Работа с формами",
           "grade": 0
         },
         {
@@ -2502,11 +2502,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-c640a49a3104:12739-13037",
-        "mdnru-c640a49a3104:9133-10127",
-        "mdnru-8af8a13dbd2e:558-1271",
-        "mdnru-c640a49a3104:13039-14021",
-        "mdnru-ddaf443f0943:4603-5397"
+        "mdnru-c640a49a3104:12753-13051",
+        "mdnru-c640a49a3104:9147-10141",
+        "mdnru-c640a49a3104:13053-14035",
+        "mdnru-ddaf443f0943:4603-5397",
+        "mdnru-8af8a13dbd2e:558-1271"
       ]
     },
     {
@@ -2534,8 +2534,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-a33442134127",
-          "title": "XMLHttpRequest",
+          "doc_id": "mdnru-4b44ad43fec4",
+          "title": "HTTP сессия",
           "grade": 0
         },
         {
@@ -2544,8 +2544,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-4b44ad43fec4",
-          "title": "HTTP сессия",
+          "doc_id": "mdnru-a33442134127",
+          "title": "XMLHttpRequest",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ca66d2972515",
+          "title": "Методы HTTP запроса",
           "grade": 0
         },
         {
@@ -2554,8 +2559,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-6e919f6d8f5d",
-          "title": "CDN",
+          "doc_id": "mdnru-f5ba97a7d815",
+          "title": "Что такое веб-сервер",
           "grade": 0
         },
         {
@@ -2564,22 +2569,17 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-f5ba97a7d815",
-          "title": "Что такое веб-сервер",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-ca66d2972515",
-          "title": "Методы HTTP запроса",
+          "doc_id": "mdnru-6e919f6d8f5d",
+          "title": "CDN",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-7e761a906f87:969-1082",
         "mdnru-47dc365c2af7:1172-2014",
-        "mdnru-a33442134127:15929-16255",
-        "mdnru-e2df58a05071:5157-5733",
-        "mdnru-4b44ad43fec4:3006-3503"
+        "mdnru-4b44ad43fec4:3006-3503",
+        "mdnru-e2df58a05071:5170-5746",
+        "mdnru-a33442134127:15894-16220"
       ]
     },
     {
@@ -2589,21 +2589,21 @@
         "recall@1": 0.0,
         "recall@5": 1.0,
         "recall@10": 1.0,
-        "mrr@10": 0.2,
-        "ndcg@10": 0.3869
+        "mrr@10": 0.25,
+        "ndcg@10": 0.4307
       },
       "relevant": {
         "Web/HTTP/Reference/Headers/Authorization": 2
       },
       "top_documents": [
         {
-          "doc_id": "mdnru-f884f7424120",
-          "title": "Общий заголовок",
+          "doc_id": "mdnru-5a2ec09b8abd",
+          "title": "HTTP аутентификация",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-f1cdd904a67d",
-          "title": "Заголовки HTTP",
+          "doc_id": "mdnru-f884f7424120",
+          "title": "Общий заголовок",
           "grade": 0
         },
         {
@@ -2612,18 +2612,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5a2ec09b8abd",
-          "title": "HTTP аутентификация",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-f25ae2bab866",
           "title": "Authorization",
           "grade": 2
         },
         {
-          "doc_id": "mdnru-d2c3f80b8899",
-          "title": "<h1>–<h6>: заголовки разделов",
+          "doc_id": "mdnru-f1cdd904a67d",
+          "title": "Заголовки HTTP",
           "grade": 0
         },
         {
@@ -2637,25 +2632,438 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-2f43894351c9",
+          "title": "Vary",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-40b1aa95faaa",
           "title": "Заголовок запроса",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-353e3c283a96",
-          "title": "<title>: элемент заголовка документа",
+          "doc_id": "mdnru-93e91bee5798",
+          "title": "Content-Disposition",
           "grade": 0
         }
       ],
       "top_chunks": [
+        "mdnru-5a2ec09b8abd:3840-4304",
         "mdnru-f884f7424120:0-310",
-        "mdnru-f1cdd904a67d:1498-2168",
         "mdnru-3dfc786a8aa5:421-1114",
-        "mdnru-5a2ec09b8abd:3834-4292",
-        "mdnru-f25ae2bab866:0-386"
+        "mdnru-f25ae2bab866:0-386",
+        "mdnru-f1cdd904a67d:1498-2168"
       ]
     }
   ],
   "split": "test",
-  "chunks": "chunks-c1000-o150"
+  "chunks": "chunks-c1000-o150",
+  "evidence": {
+    "queries": 36,
+    "metrics": {
+      "evidence@1": 0.0278,
+      "evidence@3": 0.0278,
+      "evidence@5": 0.0833,
+      "evidence@10": 0.1667,
+      "evidence_mrr@10": 0.0515
+    },
+    "per_query": [
+      {
+        "id": "test-001",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-002",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-003",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-004",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-005",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-006",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-007",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-008",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-009",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-010",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-011",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-012",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-013",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-014",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-015",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-016",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-017",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-018",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.1111111111111111
+        },
+        "evidence_rank": 9
+      },
+      {
+        "id": "test-019",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.125
+        },
+        "evidence_rank": 8
+      },
+      {
+        "id": "test-020",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-021",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "test-022",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-023",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.16666666666666666
+        },
+        "evidence_rank": 6
+      },
+      {
+        "id": "test-024",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-025",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-026",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-027",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-028",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-029",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-030",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-031",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.2
+        },
+        "evidence_rank": 5
+      },
+      {
+        "id": "test-032",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-033",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-034",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-035",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-036",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.25
+        },
+        "evidence_rank": 4
+      }
+    ]
+  }
 }

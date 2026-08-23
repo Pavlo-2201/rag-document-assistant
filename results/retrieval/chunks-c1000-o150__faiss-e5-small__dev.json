@@ -4,11 +4,11 @@
   "metrics": {
     "recall@1": 0.2176,
     "recall@5": 0.5093,
-    "recall@10": 0.7222,
-    "mrr@10": 0.4091,
-    "ndcg@10": 0.4884
+    "recall@10": 0.6944,
+    "mrr@10": 0.4057,
+    "ndcg@10": 0.4799
   },
-  "seconds_per_query": 0.0085,
+  "seconds_per_query": 0.0064,
   "per_query": [
     {
       "query_id": "dev-001",
@@ -91,8 +91,8 @@
         "recall@1": 0.0,
         "recall@5": 0.0,
         "recall@10": 1.0,
-        "mrr@10": 0.125,
-        "ndcg@10": 0.3155
+        "mrr@10": 0.1111,
+        "ndcg@10": 0.301
       },
       "relevant": {
         "Web/JavaScript/Reference/Global_Objects/Array/filter": 2
@@ -124,6 +124,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-91ef040c9242",
+          "title": "<option>",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-725432515343",
           "title": "Array.prototype.splice()",
           "grade": 0
@@ -141,11 +146,6 @@
         {
           "doc_id": "mdnru-7d4b3a16e562",
           "title": "Array",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-9956b2695084",
-          "title": "Разбираемся с обёртыванием Flex элементов",
           "grade": 0
         }
       ],
@@ -423,23 +423,23 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-4af1e04c9938",
-          "title": "Структура документа и веб-сайта",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-0b3f358abfb4",
           "title": "Зацикливание кода",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-ebc8a5fa64c8",
-          "title": "Управление документами",
+          "doc_id": "mdnru-4af1e04c9938",
+          "title": "Структура документа и веб-сайта",
           "grade": 0
         },
         {
           "doc_id": "mdnru-df324df5dccf",
           "title": "String.prototype.replace()",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-baefada01551",
+          "title": "String.prototype.substring()",
           "grade": 0
         }
       ],
@@ -517,9 +517,9 @@
         }
       ],
       "top_chunks": [
-        "mdnru-e7dbdd05861b:14885-15747",
+        "mdnru-e7dbdd05861b:15004-15866",
         "mdnru-3947f99b741a:2986-3667",
-        "mdnru-e7dbdd05861b:16353-16996",
+        "mdnru-e7dbdd05861b:16472-17115",
         "mdnru-3947f99b741a:4486-4964",
         "mdnru-94d60c5f144c:0-955"
       ]
@@ -591,9 +591,9 @@
       ],
       "top_chunks": [
         "mdnru-08da13fcf7c6:0-909",
-        "mdnru-e7dbdd05861b:14885-15747",
-        "mdnru-e7dbdd05861b:15602-16491",
-        "mdnru-e7dbdd05861b:16353-16996",
+        "mdnru-e7dbdd05861b:15004-15866",
+        "mdnru-e7dbdd05861b:15721-16610",
+        "mdnru-e7dbdd05861b:16472-17115",
         "mdnru-14de05d49bee:3432-3780"
       ]
     },
@@ -666,7 +666,7 @@
       "top_chunks": [
         "mdnru-ba7e3a0af24d:774-1294",
         "mdnru-bf268a7f6f08:5223-5943",
-        "mdnru-c67aa2bb7119:9487-9806",
+        "mdnru-c67aa2bb7119:9505-9824",
         "mdnru-73561588b482:16685-17566",
         "mdnru-8f04895c0871:4628-5092"
       ]
@@ -885,7 +885,7 @@
       ],
       "top_chunks": [
         "mdnru-b223711cf32d:280-1201",
-        "mdnru-8bfc78447414:13530-14385",
+        "mdnru-8bfc78447414:13536-14391",
         "mdnru-c111c0695450:0-913",
         "mdnru-e2f134af493c:9792-10312",
         "mdnru-8b788340bf0f:997-1937"
@@ -926,13 +926,13 @@
           "grade": 2
         },
         {
-          "doc_id": "mdnru-0b3f358abfb4",
-          "title": "Зацикливание кода",
+          "doc_id": "mdnru-67782170971d",
+          "title": "Лексический синтаксис",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-67782170971d",
-          "title": "Лексический синтаксис",
+          "doc_id": "mdnru-0b3f358abfb4",
+          "title": "Зацикливание кода",
           "grade": 0
         },
         {
@@ -961,7 +961,7 @@
         "mdnru-b3935a322108:5580-6122",
         "mdnru-f93af15182e5:0-614",
         "mdnru-1b755c403d03:0-802",
-        "mdnru-0b3f358abfb4:21573-22520"
+        "mdnru-67782170971d:9622-10580"
       ]
     },
     {
@@ -1009,8 +1009,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-e96f778db694",
-          "title": "Функции — Переиспользуемые блоки кода",
+          "doc_id": "mdnru-f5e14f0ed690",
+          "title": "Введение в события",
           "grade": 0
         },
         {
@@ -1024,15 +1024,15 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-0b3f358abfb4",
-          "title": "Зацикливание кода",
+          "doc_id": "mdnru-e96f778db694",
+          "title": "Функции — Переиспользуемые блоки кода",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-8bfc78447414:9956-10859",
+        "mdnru-8bfc78447414:9962-10865",
         "mdnru-427090020d2b:1948-2575",
-        "mdnru-f293c3ec1f0d:2696-3574",
+        "mdnru-f293c3ec1f0d:2704-3582",
         "mdnru-427090020d2b:2577-3161",
         "mdnru-427090020d2b:966-1946"
       ]
@@ -1179,7 +1179,7 @@
       "top_chunks": [
         "mdnru-48ee73eb1190:3219-3566",
         "mdnru-cf65779529bb:0-625",
-        "mdnru-229020eaf80b:6189-6487",
+        "mdnru-229020eaf80b:6185-6483",
         "mdnru-b732177f5a3f:740-1330",
         "mdnru-c9d6c57d0bc1:5973-6931"
       ]
@@ -1251,10 +1251,10 @@
       ],
       "top_chunks": [
         "mdnru-f0ed7668fd24:0-381",
-        "mdnru-b7e4b8dd1f2c:8029-8776",
-        "mdnru-be8c973bce11:6110-6767",
-        "mdnru-be8c973bce11:3825-4591",
-        "mdnru-ad0abe36d037:5480-6465"
+        "mdnru-b7e4b8dd1f2c:8099-8846",
+        "mdnru-be8c973bce11:6261-6927",
+        "mdnru-be8c973bce11:3955-4721",
+        "mdnru-ad0abe36d037:5578-6563"
       ]
     },
     {
@@ -1293,11 +1293,6 @@
           "grade": 1
         },
         {
-          "doc_id": "mdnru-d5b022587f5e",
-          "title": "Основы CSS",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-b7b0a685ef24",
           "title": "Селекторы атрибута",
           "grade": 0
@@ -1321,11 +1316,16 @@
           "doc_id": "mdnru-9e57443d5b76",
           "title": "Element.matches()",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-7dca00ee09e5",
+          "title": "Псевдоклассы, псевдоэлементы",
+          "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-e513e7a1e647:1122-1952",
-        "mdnru-ac2e6619947c:4660-5602",
+        "mdnru-ac2e6619947c:4682-5624",
         "mdnru-52eaaa3d18ef:1219-1897",
         "mdnru-e513e7a1e647:0-287",
         "mdnru-52eaaa3d18ef:2888-3571"
@@ -1473,11 +1473,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-7e761a906f87:7086-7917",
-        "mdnru-7e761a906f87:6275-7234",
-        "mdnru-e7dbdd05861b:8409-9335",
-        "mdnru-7e761a906f87:13994-14517",
-        "mdnru-7e761a906f87:4717-5632"
+        "mdnru-7e761a906f87:7128-7959",
+        "mdnru-7e761a906f87:6317-7276",
+        "mdnru-e7dbdd05861b:8436-9362",
+        "mdnru-7e761a906f87:14065-14588",
+        "mdnru-7e761a906f87:4717-5656"
       ]
     },
     {
@@ -1547,11 +1547,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-f5e14f0ed690:30253-31116",
+        "mdnru-f5e14f0ed690:30405-31272",
         "mdnru-17a797c02d73:0-627",
         "mdnru-a164344f2ec5:0-541",
-        "mdnru-f5e14f0ed690:29300-30251",
-        "mdnru-3c1416905390:4928-5487"
+        "mdnru-f5e14f0ed690:29452-30403",
+        "mdnru-f5e14f0ed690:27292-27970"
       ]
     },
     {
@@ -1561,8 +1561,8 @@
         "recall@1": 0.0,
         "recall@5": 1.0,
         "recall@10": 1.0,
-        "mrr@10": 0.2,
-        "ndcg@10": 0.3869
+        "mrr@10": 0.25,
+        "ndcg@10": 0.4307
       },
       "relevant": {
         "Web/API/Element/classList": 2
@@ -1576,11 +1576,6 @@
         {
           "doc_id": "mdnru-631a07de7a91",
           "title": "class",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-b7e4b8dd1f2c",
-          "title": "Создаём свою функцию",
           "grade": 0
         },
         {
@@ -1599,8 +1594,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cfc67a0c94d2",
-          "title": "<code>: элемент отображения кода",
+          "doc_id": "mdnru-e6abe9efc50e",
+          "title": "Использование пользовательских элементов",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b7e4b8dd1f2c",
+          "title": "Создаём свою функцию",
           "grade": 0
         },
         {
@@ -1614,17 +1614,17 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5e8a351c7375",
-          "title": "Начало работы с HTML",
+          "doc_id": "mdnru-90541c680811",
+          "title": "Document.getElementsByClassName()",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-6913ff6d628c:5895-6838",
-        "mdnru-6913ff6d628c:7372-7950",
+        "mdnru-6913ff6d628c:5912-6855",
+        "mdnru-6913ff6d628c:7395-7973",
         "mdnru-631a07de7a91:1454-2110",
-        "mdnru-b7e4b8dd1f2c:3722-4603",
-        "mdnru-4c206776c3ca:0-712"
+        "mdnru-4c206776c3ca:0-712",
+        "mdnru-78d3c6638d63:799-1780"
       ]
     },
     {
@@ -1678,8 +1678,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cf026e47b2ef",
-          "title": "<kbd>: Элемент ввода с клавиатуры",
+          "doc_id": "mdnru-5e8a351c7375",
+          "title": "Начало работы с HTML",
           "grade": 0
         },
         {
@@ -1688,16 +1688,16 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5e8a351c7375",
-          "title": "Начало работы с HTML",
+          "doc_id": "mdnru-b7e4b8dd1f2c",
+          "title": "Создаём свою функцию",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-ebc8a5fa64c8:8910-9711",
+        "mdnru-ebc8a5fa64c8:8972-9783",
         "mdnru-f950f8793f66:0-801",
-        "mdnru-37c0e9a1f6c9:1107-2097",
-        "mdnru-ba49f877dd21:753-1382",
+        "mdnru-37c0e9a1f6c9:1116-2010",
+        "mdnru-ba49f877dd21:753-1387",
         "mdnru-f4237c9e82e9:0-706"
       ]
     },
@@ -1707,9 +1707,9 @@
       "metrics": {
         "recall@1": 0.0,
         "recall@5": 0.0,
-        "recall@10": 1.0,
-        "mrr@10": 0.1,
-        "ndcg@10": 0.2891
+        "recall@10": 0.0,
+        "mrr@10": 0.0,
+        "ndcg@10": 0.0
       },
       "relevant": {
         "Web/API/Window/setTimeout": 2
@@ -1741,6 +1741,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-fc844d0e77ef",
+          "title": "Cache-Control",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-9c29f5cc1bee",
           "title": "Retry-After",
           "grade": 0
@@ -1759,19 +1764,14 @@
           "doc_id": "mdnru-b7b5c891580c",
           "title": "Using the Web Animations API",
           "grade": 0
-        },
-        {
-          "doc_id": "mdnru-5f58760173b2",
-          "title": "Глобальная функция setTimeout()",
-          "grade": 2
         }
       ],
       "top_chunks": [
-        "mdnru-0b3f358abfb4:20923-21716",
-        "mdnru-0b3f358abfb4:13504-14387",
-        "mdnru-0b3f358abfb4:12944-13650",
-        "mdnru-0b3f358abfb4:14242-15108",
-        "mdnru-0b3f358abfb4:29688-30492"
+        "mdnru-0b3f358abfb4:13533-14416",
+        "mdnru-0b3f358abfb4:12973-13679",
+        "mdnru-0b3f358abfb4:20950-21753",
+        "mdnru-0b3f358abfb4:14271-15135",
+        "mdnru-0b3f358abfb4:29725-30529"
       ]
     },
     {
@@ -1781,8 +1781,8 @@
         "recall@1": 0.0,
         "recall@5": 1.0,
         "recall@10": 1.0,
-        "mrr@10": 0.3333,
-        "ndcg@10": 0.5
+        "mrr@10": 0.25,
+        "ndcg@10": 0.4307
       },
       "relevant": {
         "Web/API/Window/requestAnimationFrame": 2
@@ -1799,14 +1799,14 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-ff32b988abc6",
-          "title": "window.requestAnimationFrame()",
-          "grade": 2
-        },
-        {
           "doc_id": "mdnru-1ce1987700dd",
           "title": "Простые анимации",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ff32b988abc6",
+          "title": "window.requestAnimationFrame()",
+          "grade": 2
         },
         {
           "doc_id": "mdnru-fee6b72a9bb9",
@@ -1840,11 +1840,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-5dedaab61665:2609-3460",
-        "mdnru-2be561259b27:4066-4985",
-        "mdnru-ff32b988abc6:0-749",
-        "mdnru-5dedaab61665:1352-2209",
-        "mdnru-1ce1987700dd:2274-2859"
+        "mdnru-5dedaab61665:2625-3476",
+        "mdnru-2be561259b27:4074-5005",
+        "mdnru-5dedaab61665:1368-2225",
+        "mdnru-1ce1987700dd:2283-2868",
+        "mdnru-ff32b988abc6:0-757"
       ]
     },
     {
@@ -1897,6 +1897,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-4b44ad43fec4",
+          "title": "HTTP сессия",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-f0a1862fbda4",
           "title": "406 Not Acceptable",
           "grade": 0
@@ -1905,19 +1910,14 @@
           "doc_id": "mdnru-f1cdd904a67d",
           "title": "Заголовки HTTP",
           "grade": 0
-        },
-        {
-          "doc_id": "mdnru-33ca563bba6b",
-          "title": "417 Expectation Failed",
-          "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-991d33633cf2:6202-7194",
-        "mdnru-47dc365c2af7:10907-11609",
-        "mdnru-f873cba8fb1f:0-440",
+        "mdnru-991d33633cf2:6216-7208",
+        "mdnru-47dc365c2af7:10916-11618",
+        "mdnru-f873cba8fb1f:0-444",
         "mdnru-f9c5dcf10ddb:0-252",
-        "mdnru-991d33633cf2:5389-6346"
+        "mdnru-991d33633cf2:5403-6360"
       ]
     },
     {
@@ -1970,26 +1970,26 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-696375139e96",
-          "title": "InternalError",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-0894f4363612",
           "title": "Справочник по событиям",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-e2f134af493c",
-          "title": "Порядок выполнения и обработка ошибок",
+          "doc_id": "mdnru-696375139e96",
+          "title": "InternalError",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c64b2016b1ec",
+          "title": "Причина: CORS заголовок 'Access-Control-Allow-Origin' не соответствует 'xyz",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-f5dd9ffc79e2:0-950",
-        "mdnru-0ca356f41e99:0-705",
+        "mdnru-0ca356f41e99:0-709",
         "mdnru-40912e6adfa1:7925-8755",
-        "mdnru-991d33633cf2:11390-12328",
+        "mdnru-991d33633cf2:11404-12342",
         "mdnru-36f893735bb7:0-785"
       ]
     },
@@ -2009,13 +2009,13 @@
       },
       "top_documents": [
         {
-          "doc_id": "mdnru-9cf53cefa588",
-          "title": "410 Gone",
+          "doc_id": "mdnru-36c1e7bac930",
+          "title": "412 Precondition Failed",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-36c1e7bac930",
-          "title": "412 Precondition Failed",
+          "doc_id": "mdnru-9cf53cefa588",
+          "title": "410 Gone",
           "grade": 0
         },
         {
@@ -2024,13 +2024,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-f6dd7bdd0ac4",
-          "title": "Error: Permission denied to access property \"x\"",
+          "doc_id": "mdnru-4b44ad43fec4",
+          "title": "HTTP сессия",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-4b44ad43fec4",
-          "title": "HTTP сессия",
+          "doc_id": "mdnru-f6dd7bdd0ac4",
+          "title": "Error: Permission denied to access property \"x\"",
           "grade": 0
         },
         {
@@ -2054,17 +2054,17 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-991d33633cf2",
-          "title": "Коды состояния ответа HTTP",
+          "doc_id": "mdnru-c64b2016b1ec",
+          "title": "Причина: CORS заголовок 'Access-Control-Allow-Origin' не соответствует 'xyz",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-9cf53cefa588:0-606",
         "mdnru-36c1e7bac930:0-809",
+        "mdnru-9cf53cefa588:0-614",
         "mdnru-9efdfdf1e045:0-982",
-        "mdnru-f6dd7bdd0ac4:0-652",
-        "mdnru-4b44ad43fec4:5058-5943"
+        "mdnru-4b44ad43fec4:5058-5943",
+        "mdnru-f6dd7bdd0ac4:0-669"
       ]
     },
     {
@@ -2134,7 +2134,7 @@
       ],
       "top_chunks": [
         "mdnru-4eab9070b430:0-365",
-        "mdnru-c3a9eaa4555e:9769-10415",
+        "mdnru-c3a9eaa4555e:9778-10424",
         "mdnru-f4c19e387ad8:0-148",
         "mdnru-2534939f8e40:0-960",
         "mdnru-a7c3cd6cfc40:4720-5170"
@@ -2207,9 +2207,9 @@
       ],
       "top_chunks": [
         "mdnru-17fde67f692f:0-860",
-        "mdnru-8b788340bf0f:5710-6702",
+        "mdnru-8b788340bf0f:5754-6746",
         "mdnru-c2ce01c62a55:6346-7281",
-        "mdnru-f6dd7bdd0ac4:0-652",
+        "mdnru-f6dd7bdd0ac4:0-669",
         "mdnru-e267166da183:3141-4093"
       ]
     },
@@ -2259,6 +2259,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-c954e5025528",
+          "title": "Цикл событий",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-da8e30c031d8",
           "title": "Client-side storage",
           "grade": 0
@@ -2269,21 +2274,16 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-c954e5025528",
-          "title": "Цикл событий",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-47dc365c2af7",
           "title": "Клиент-сервер",
           "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-21174face5e9:14819-15814",
-        "mdnru-21174face5e9:9880-10483",
+        "mdnru-21174face5e9:14792-15787",
+        "mdnru-21174face5e9:9878-10481",
         "mdnru-21174face5e9:1373-1822",
-        "mdnru-21174face5e9:12796-13653",
+        "mdnru-21174face5e9:12769-13626",
         "mdnru-21174face5e9:502-1371"
       ]
     },
@@ -2294,8 +2294,8 @@
         "recall@1": 0.0,
         "recall@5": 0.0,
         "recall@10": 1.0,
-        "mrr@10": 0.1429,
-        "ndcg@10": 0.3333
+        "mrr@10": 0.1667,
+        "ndcg@10": 0.3562
       },
       "relevant": {
         "Web/HTTP/Reference/Headers/Content-Type": 2
@@ -2322,11 +2322,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5e8a351c7375",
-          "title": "Начало работы с HTML",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-479846d091ae",
           "title": "Использование Service Worker",
           "grade": 0
@@ -2337,27 +2332,32 @@
           "grade": 2
         },
         {
-          "doc_id": "mdnru-d2c3f80b8899",
-          "title": "<h1>–<h6>: заголовки разделов",
+          "doc_id": "mdnru-a266c036c6cd",
+          "title": "Согласование контента",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-a266c036c6cd",
-          "title": "Согласование контента",
+          "doc_id": "mdnru-d2c3f80b8899",
+          "title": "<h1>–<h6>: заголовки разделов",
           "grade": 0
         },
         {
           "doc_id": "mdnru-3e933da1ab3e",
           "title": "XMLHttpRequest.response",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-bda9d63dc754",
+          "title": "Веб-безопасность",
+          "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-9d13fa1b1e31:0-728",
-        "mdnru-a8faabcd1360:13043-13925",
+        "mdnru-a8faabcd1360:13094-13976",
         "mdnru-47dc365c2af7:7481-8327",
         "mdnru-558300f8def7:0-680",
-        "mdnru-5e8a351c7375:22013-22896"
+        "mdnru-479846d091ae:13216-14200"
       ]
     },
     {
@@ -2428,7 +2428,7 @@
       "top_chunks": [
         "mdnru-fc844d0e77ef:1681-2198",
         "mdnru-9d24bd5e48a7:0-885",
-        "mdnru-c37dfbf4c4ec:3700-4377",
+        "mdnru-c37dfbf4c4ec:3716-4393",
         "mdnru-9d24bd5e48a7:740-1669",
         "mdnru-fc844d0e77ef:921-1679"
       ]
@@ -2501,9 +2501,9 @@
       ],
       "top_chunks": [
         "mdnru-c640a49a3104:938-1711",
-        "mdnru-c640a49a3104:8609-9281",
-        "mdnru-b4cb96320df1:3167-4130",
-        "mdnru-c640a49a3104:5574-6427",
+        "mdnru-c640a49a3104:8623-9295",
+        "mdnru-b4cb96320df1:3180-4143",
+        "mdnru-c640a49a3104:5588-6441",
         "mdnru-c640a49a3104:0-936"
       ]
     },
@@ -2538,18 +2538,18 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-739bfbe69a6c",
-          "title": "Realizing common layouts using CSS Grid Layout",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-387dd9b1942a",
           "title": "Фундаментальное понимание раскладки",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-686a93218475",
-          "title": "Блочная модель",
+          "doc_id": "mdnru-739bfbe69a6c",
+          "title": "Realizing common layouts using CSS Grid Layout",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-3d7a0e1c44fb",
+          "title": "Flexbox",
           "grade": 0
         },
         {
@@ -2574,11 +2574,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-42de5d431e21:6090-7026",
-        "mdnru-72cc2b1b5a1f:28969-29811",
-        "mdnru-72cc2b1b5a1f:14965-15862",
-        "mdnru-72cc2b1b5a1f:5311-6126",
-        "mdnru-42de5d431e21:8945-9821"
+        "mdnru-42de5d431e21:6105-7041",
+        "mdnru-72cc2b1b5a1f:29024-29866",
+        "mdnru-72cc2b1b5a1f:14977-15874",
+        "mdnru-72cc2b1b5a1f:5319-6134",
+        "mdnru-42de5d431e21:8960-9836"
       ]
     },
     {
@@ -2658,5 +2658,413 @@
     }
   ],
   "split": "dev",
-  "chunks": "chunks-c1000-o150"
+  "chunks": "chunks-c1000-o150",
+  "evidence": {
+    "queries": 36,
+    "metrics": {
+      "evidence@1": 0.1389,
+      "evidence@3": 0.25,
+      "evidence@5": 0.3056,
+      "evidence@10": 0.5833,
+      "evidence_mrr@10": 0.2354
+    },
+    "per_query": [
+      {
+        "id": "dev-001",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-002",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-003",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "dev-004",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-005",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.16666666666666666
+        },
+        "evidence_rank": 6
+      },
+      {
+        "id": "dev-006",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.5
+        },
+        "evidence_rank": 2
+      },
+      {
+        "id": "dev-007",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.1
+        },
+        "evidence_rank": 10
+      },
+      {
+        "id": "dev-008",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "dev-009",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-010",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.5
+        },
+        "evidence_rank": 2
+      },
+      {
+        "id": "dev-011",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "dev-012",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-013",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.25
+        },
+        "evidence_rank": 4
+      },
+      {
+        "id": "dev-014",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.14285714285714285
+        },
+        "evidence_rank": 7
+      },
+      {
+        "id": "dev-015",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.1111111111111111
+        },
+        "evidence_rank": 9
+      },
+      {
+        "id": "dev-016",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-017",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-018",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.14285714285714285
+        },
+        "evidence_rank": 7
+      },
+      {
+        "id": "dev-019",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-020",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-021",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.3333333333333333
+        },
+        "evidence_rank": 3
+      },
+      {
+        "id": "dev-022",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.1111111111111111
+        },
+        "evidence_rank": 9
+      },
+      {
+        "id": "dev-023",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-024",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-025",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.2
+        },
+        "evidence_rank": 5
+      },
+      {
+        "id": "dev-026",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.3333333333333333
+        },
+        "evidence_rank": 3
+      },
+      {
+        "id": "dev-027",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "dev-028",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.125
+        },
+        "evidence_rank": 8
+      },
+      {
+        "id": "dev-029",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.125
+        },
+        "evidence_rank": 8
+      },
+      {
+        "id": "dev-030",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-031",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.16666666666666666
+        },
+        "evidence_rank": 6
+      },
+      {
+        "id": "dev-032",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.16666666666666666
+        },
+        "evidence_rank": 6
+      },
+      {
+        "id": "dev-033",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-034",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-035",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "dev-036",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      }
+    ]
+  }
 }

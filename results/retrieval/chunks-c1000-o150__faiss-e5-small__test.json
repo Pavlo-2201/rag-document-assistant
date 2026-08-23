@@ -3,12 +3,12 @@
   "queries": 36,
   "metrics": {
     "recall@1": 0.1389,
-    "recall@5": 0.4028,
+    "recall@5": 0.4167,
     "recall@10": 0.5417,
-    "mrr@10": 0.331,
-    "ndcg@10": 0.3362
+    "mrr@10": 0.3344,
+    "ndcg@10": 0.3378
   },
-  "seconds_per_query": 0.0055,
+  "seconds_per_query": 0.0064,
   "per_query": [
     {
       "query_id": "test-001",
@@ -153,7 +153,7 @@
         "mdnru-48ee73eb1190:6173-7120",
         "mdnru-a8bd548032db:2409-3042",
         "mdnru-7d4b3a16e562:7357-8316",
-        "mdnru-d66f21298b2b:2657-3469",
+        "mdnru-d66f21298b2b:2684-3502",
         "mdnru-7d4b3a16e562:8929-9875"
       ]
     },
@@ -280,8 +280,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-72cc2b1b5a1f",
-          "title": "Grids",
+          "doc_id": "mdnru-cf7d85e2f695",
+          "title": "white-space",
           "grade": 0
         },
         {
@@ -290,14 +290,14 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-cf7d85e2f695",
-          "title": "white-space",
+          "doc_id": "mdnru-465f83230929",
+          "title": "SyntaxError: string literal contains an unescaped line break",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-d990063c4952:0-731",
-        "mdnru-5e8a351c7375:26090-26937",
+        "mdnru-5e8a351c7375:26334-27181",
         "mdnru-0108c838c5f8:377-1280",
         "mdnru-d10cbbaac56f:1295-2207",
         "mdnru-d9e010be6484:998-1142"
@@ -364,8 +364,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-0b3f358abfb4",
-          "title": "Зацикливание кода",
+          "doc_id": "mdnru-52ca258935cc",
+          "title": "String.prototype.repeat()",
           "grade": 0
         }
       ],
@@ -432,13 +432,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-c5888ebef54d",
-          "title": "<display-outside>",
+          "doc_id": "mdnru-4eeb17c74e24",
+          "title": "Применение Web Speech API",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-4eeb17c74e24",
-          "title": "Применение Web Speech API",
+          "doc_id": "mdnru-22687f9669f7",
+          "title": "super",
           "grade": 0
         }
       ],
@@ -692,11 +692,6 @@
           "grade": 1
         },
         {
-          "doc_id": "mdnru-2e54e80298c2",
-          "title": "<abbr>: Элемент Аббревиатура",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-f291fdee4d55",
           "title": "Обзор инструментов разработки в браузерах",
           "grade": 0
@@ -707,23 +702,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-29dfc7396228",
-          "title": "<link>: Элемент - ссылка на внешний ресурс",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-e6abe9efc50e",
           "title": "Использование пользовательских элементов",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-0c7b6cc39b72",
-          "title": "<del>: The Deleted Text element",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-a03dd36b4f39",
-          "title": "<style> - элемент для указания стилей",
           "grade": 0
         },
         {
@@ -735,14 +715,34 @@
           "doc_id": "mdnru-bbbfe16a4e0a",
           "title": "Element: метод removeAttribute()",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-a03dd36b4f39",
+          "title": "<style> - элемент для указания стилей",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-0c7b6cc39b72",
+          "title": "<del>: The Deleted Text element",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ebc8a5fa64c8",
+          "title": "Управление документами",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-29dfc7396228",
+          "title": "<link>: Элемент - ссылка на внешний ресурс",
+          "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-c52d6fdd5b6d:790-1060",
-        "mdnru-2e54e80298c2:2551-3468",
+        "mdnru-c52d6fdd5b6d:797-1067",
         "mdnru-f291fdee4d55:2558-3489",
         "mdnru-589a7e41f589:3896-4750",
-        "mdnru-29dfc7396228:12879-13621"
+        "mdnru-e6abe9efc50e:9697-10352",
+        "mdnru-589a7e41f589:8449-9386"
       ]
     },
     {
@@ -765,13 +765,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-573f8131145c",
-          "title": "<rect>",
+          "doc_id": "mdnru-e214c3352e42",
+          "title": "CanvasRenderingContext2D.arcTo()",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-e214c3352e42",
-          "title": "CanvasRenderingContext2D.arcTo()",
+          "doc_id": "mdnru-573f8131145c",
+          "title": "<rect>",
           "grade": 0
         },
         {
@@ -811,11 +811,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-8994de34c1d7:13893-14790",
-        "mdnru-573f8131145c:890-1340",
+        "mdnru-8994de34c1d7:13916-14813",
         "mdnru-e214c3352e42:2108-2302",
+        "mdnru-573f8131145c:896-1352",
         "mdnru-e214c3352e42:2304-3144",
-        "mdnru-6647e17d9fa3:3109-3961"
+        "mdnru-6647e17d9fa3:3129-3981"
       ]
     },
     {
@@ -853,11 +853,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-4824e418c274",
-          "title": "Галерея изображений",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-5ed20beb2b6a",
           "title": "Генератор скруглений границ (border-radius)",
           "grade": 0
@@ -873,6 +868,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-4824e418c274",
+          "title": "Галерея изображений",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-110e92863800",
           "title": "Element.attachShadow()",
           "grade": 0
@@ -885,10 +885,10 @@
       ],
       "top_chunks": [
         "mdnru-d2ec8496ceb7:3520-4224",
-        "mdnru-4ce464d26c50:5689-6663",
+        "mdnru-4ce464d26c50:5855-6829",
         "mdnru-cc9a609fe875:0-398",
         "mdnru-d2ec8496ceb7:1979-2849",
-        "mdnru-4ce464d26c50:2451-3317"
+        "mdnru-d5b022587f5e:11046-11952"
       ]
     },
     {
@@ -960,7 +960,7 @@
         "mdnru-eadb0d088fb9:3378-4355",
         "mdnru-eadb0d088fb9:5491-5969",
         "mdnru-ad831e99ebc5:2804-3767",
-        "mdnru-c52d6fdd5b6d:790-1060",
+        "mdnru-c52d6fdd5b6d:797-1067",
         "mdnru-e4392bb45b67:801-1057"
       ]
     },
@@ -1005,11 +1005,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-68049f9732b6",
-          "title": "<section> - элемент секции",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-88fc1966644f",
           "title": "Element.outerHTML",
           "grade": 0
@@ -1028,11 +1023,16 @@
           "doc_id": "mdnru-51036d6b6710",
           "title": "Element.getBoundingClientRect()",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-ea5c452c5412",
+          "title": "background-attachment",
+          "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-7a62ed2045b6:11722-12436",
-        "mdnru-c5888ebef54d:1953-2478",
+        "mdnru-7a62ed2045b6:11752-12466",
+        "mdnru-c5888ebef54d:1987-2512",
         "mdnru-cea47c5109ff:803-1078",
         "mdnru-e6ad93edb50b:0-849",
         "mdnru-521489ab2c38:0-773"
@@ -1105,9 +1105,9 @@
       ],
       "top_chunks": [
         "mdnru-73d7b7de4356:1099-1575",
-        "mdnru-8994de34c1d7:9699-10382",
+        "mdnru-8994de34c1d7:9722-10405",
         "mdnru-8ecace0dae95:0-625",
-        "mdnru-8994de34c1d7:10234-11024",
+        "mdnru-8994de34c1d7:10257-11047",
         "mdnru-ca24504a7466:1729-2638"
       ]
     },
@@ -1118,8 +1118,8 @@
         "recall@1": 0.0,
         "recall@5": 0.0,
         "recall@10": 1.0,
-        "mrr@10": 0.125,
-        "ndcg@10": 0.3155
+        "mrr@10": 0.1429,
+        "ndcg@10": 0.3333
       },
       "relevant": {
         "Web/CSS/Reference/Properties/overflow": 2
@@ -1146,18 +1146,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-686a93218475",
-          "title": "Блочная модель",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-f5e14f0ed690",
           "title": "Введение в события",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-82fa62ec0a1f",
-          "title": "<menu>",
+          "doc_id": "mdnru-686a93218475",
+          "title": "Блочная модель",
           "grade": 0
         },
         {
@@ -1166,8 +1161,13 @@
           "grade": 2
         },
         {
-          "doc_id": "mdnru-6a6977f013f3",
-          "title": "popstate",
+          "doc_id": "mdnru-6634e912d3b5",
+          "title": "Navigator: свойство cookieEnabled",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-be335637ef4f",
+          "title": "Политика защиты содержимого",
           "grade": 0
         },
         {
@@ -1180,7 +1180,7 @@
         "mdnru-9bbe1b2c4dd1:7345-7891",
         "mdnru-9bbe1b2c4dd1:6759-7487",
         "mdnru-39faa88a43cc:661-1605",
-        "mdnru-430841e5c3d9:17225-18107",
+        "mdnru-430841e5c3d9:17218-18100",
         "mdnru-9bbe1b2c4dd1:7893-8509"
       ]
     },
@@ -1229,11 +1229,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-54d9e0fde7f4",
-          "title": "Страница о Mozilla",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-f265ee794f4c",
           "title": "<color>",
           "grade": 0
@@ -1247,14 +1242,19 @@
           "doc_id": "mdnru-ff109240dd12",
           "title": "Использование CSS переходов",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-c554a6aaae7b",
+          "title": "Расширенные анимации",
+          "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-b7b5c891580c:1571-2538",
-        "mdnru-f5e14f0ed690:8065-8931",
-        "mdnru-f5e14f0ed690:8789-9268",
-        "mdnru-ab4763265441:27077-28053",
-        "mdnru-92c151dfc81f:7922-8868"
+        "mdnru-f5e14f0ed690:8095-8961",
+        "mdnru-f5e14f0ed690:8819-9305",
+        "mdnru-ab4763265441:27177-28153",
+        "mdnru-92c151dfc81f:7974-8920"
       ]
     },
     {
@@ -1400,9 +1400,9 @@
       "top_chunks": [
         "mdnru-9ba5295f9fa1:1982-2665",
         "mdnru-9ba5295f9fa1:1236-2123",
-        "mdnru-686a93218475:11594-12453",
-        "mdnru-686a93218475:13847-14730",
-        "mdnru-686a93218475:8139-8532"
+        "mdnru-686a93218475:11644-12503",
+        "mdnru-686a93218475:13897-14780",
+        "mdnru-686a93218475:8183-8576"
       ]
     },
     {
@@ -1465,16 +1465,16 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-f25236296d4c",
-          "title": "Введение в CSS вёрстку",
+          "doc_id": "mdnru-4ea64cbea787",
+          "title": "Основы редактирования текста в HTML",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-4346ca8c3a19:2704-3561",
-        "mdnru-72cc2b1b5a1f:5311-6126",
+        "mdnru-72cc2b1b5a1f:5319-6134",
         "mdnru-4346ca8c3a19:1516-2325",
-        "mdnru-72cc2b1b5a1f:28342-29116",
+        "mdnru-72cc2b1b5a1f:28400-29171",
         "mdnru-5d4dd659a0af:1359-2052"
       ]
     },
@@ -1524,31 +1524,31 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-291818c093c3",
-          "title": "Стили HTML форм",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-19ccea5d497a",
           "title": "Practical positioning examples",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-f72eafa56d43",
-          "title": "Стилизация таблиц",
+          "doc_id": "mdnru-291818c093c3",
+          "title": "Стили HTML форм",
           "grade": 0
         },
         {
           "doc_id": "mdnru-9b48dbecbaf0",
           "title": "Учебники",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-aa9262ec8605",
+          "title": "Ширина",
+          "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-689d96ebb368:6613-7471",
-        "mdnru-5849e2c521ab:7604-8407",
-        "mdnru-689d96ebb368:14598-15517",
-        "mdnru-5849e2c521ab:8761-9263",
+        "mdnru-5849e2c521ab:7634-8437",
+        "mdnru-689d96ebb368:14614-15533",
+        "mdnru-5849e2c521ab:8791-9293",
         "mdnru-689d96ebb368:1295-2269"
       ]
     },
@@ -1559,8 +1559,8 @@
         "recall@1": 0.0,
         "recall@5": 0.0,
         "recall@10": 0.5,
-        "mrr@10": 0.1429,
-        "ndcg@10": 0.2754
+        "mrr@10": 0.1667,
+        "ndcg@10": 0.2943
       },
       "relevant": {
         "Web/CSS/Guides/Cascading_variables/Using_custom_properties": 2,
@@ -1580,11 +1580,6 @@
         {
           "doc_id": "mdnru-b72e4f5c8b4c",
           "title": "Переменные - место хранения необходимой информации",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-2e54e80298c2",
-          "title": "<abbr>: Элемент Аббревиатура",
           "grade": 0
         },
         {
@@ -1616,14 +1611,19 @@
           "doc_id": "mdnru-bffafca87334",
           "title": "StyleSheet",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-031c425820f5",
+          "title": "At-rules",
+          "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-04593b5b00db:650-1606",
         "mdnru-04593b5b00db:3610-4464",
-        "mdnru-a03dd36b4f39:2250-2813",
+        "mdnru-a03dd36b4f39:2310-2873",
         "mdnru-b72e4f5c8b4c:8651-9637",
-        "mdnru-2e54e80298c2:2551-3468"
+        "mdnru-04593b5b00db:4318-4860"
       ]
     },
     {
@@ -1681,22 +1681,22 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-6ac12df7f2fa",
-          "title": "Смежные селекторы",
+          "doc_id": "mdnru-52eaaa3d18ef",
+          "title": "Document.querySelector()",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-52eaaa3d18ef",
-          "title": "Document.querySelector()",
+          "doc_id": "mdnru-dd726b1b9b90",
+          "title": ":where()",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-397b96f76bcc:1535-2365",
         "mdnru-ac2e6619947c:1847-2832",
-        "mdnru-81a1d47e6433:14604-15528",
+        "mdnru-81a1d47e6433:14632-15556",
         "mdnru-397b96f76bcc:886-1533",
-        "mdnru-ac2e6619947c:4660-5602"
+        "mdnru-ac2e6619947c:4682-5624"
       ]
     },
     {
@@ -1720,13 +1720,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-d5b022587f5e",
-          "title": "Основы CSS",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-4824e418c274",
-          "title": "Галерея изображений",
+          "doc_id": "mdnru-60413f078673",
+          "title": "Изображения в HTML",
           "grade": 0
         },
         {
@@ -1735,8 +1730,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-60413f078673",
-          "title": "Изображения в HTML",
+          "doc_id": "mdnru-4824e418c274",
+          "title": "Галерея изображений",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-d5b022587f5e",
+          "title": "Основы CSS",
           "grade": 0
         },
         {
@@ -1745,8 +1745,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-ebc8a5fa64c8",
-          "title": "Управление документами",
+          "doc_id": "mdnru-2611c23bd0c8",
+          "title": "Элемент <picture>",
           "grade": 0
         },
         {
@@ -1766,11 +1766,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-8994de34c1d7:2441-3246",
-        "mdnru-8994de34c1d7:5405-6365",
-        "mdnru-8994de34c1d7:6225-7119",
-        "mdnru-8994de34c1d7:4732-5403",
-        "mdnru-8994de34c1d7:6974-7305"
+        "mdnru-8994de34c1d7:2454-3259",
+        "mdnru-8994de34c1d7:5418-6378",
+        "mdnru-8994de34c1d7:6238-7132",
+        "mdnru-8994de34c1d7:4745-5416",
+        "mdnru-8994de34c1d7:6987-7318"
       ]
     },
     {
@@ -1798,6 +1798,11 @@
           "grade": 0
         },
         {
+          "doc_id": "mdnru-d5b022587f5e",
+          "title": "Основы CSS",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-4af1e04c9938",
           "title": "Структура документа и веб-сайта",
           "grade": 0
@@ -1805,11 +1810,6 @@
         {
           "doc_id": "mdnru-d357247d36a1",
           "title": "Задание: Стилизирование школьного сайта",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-d5b022587f5e",
-          "title": "Основы CSS",
           "grade": 0
         },
         {
@@ -1842,8 +1842,8 @@
         "mdnru-722a257a23c2:9268-10011",
         "mdnru-722a257a23c2:2022-2995",
         "mdnru-722a257a23c2:0-986",
-        "mdnru-722a257a23c2:9863-10742",
-        "mdnru-ebf85710fda1:3596-4175"
+        "mdnru-ebf85710fda1:3596-4175",
+        "mdnru-722a257a23c2:9863-10749"
       ]
     },
     {
@@ -1881,16 +1881,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-4e3faa8fab6d",
-          "title": "<td>: элемент ячейки таблицы данных",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-f72eafa56d43",
-          "title": "Стилизация таблиц",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-b3f248417c3d",
           "title": "CanvasRenderingContext2D",
           "grade": 0
@@ -1898,6 +1888,11 @@
         {
           "doc_id": "mdnru-ed8962f63d0f",
           "title": "<col>: элемент столбца таблицы",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-4e3faa8fab6d",
+          "title": "<td>: элемент ячейки таблицы данных",
           "grade": 0
         },
         {
@@ -1909,14 +1904,19 @@
           "doc_id": "mdnru-770244b6c9f8",
           "title": "SVGTextContentElement",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-09cb4f12a790",
+          "title": "align-content",
+          "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-a39dfc951b86:0-956",
         "mdnru-6422b450fe04:805-1753",
-        "mdnru-262490d74943:519-1458",
-        "mdnru-44cf2a86c031:20306-21237",
-        "mdnru-4e3faa8fab6d:3432-4253"
+        "mdnru-262490d74943:519-1466",
+        "mdnru-44cf2a86c031:20367-21303",
+        "mdnru-b3f248417c3d:2766-3421"
       ]
     },
     {
@@ -1987,10 +1987,10 @@
       ],
       "top_chunks": [
         "mdnru-ac9616a328b1:664-1359",
-        "mdnru-e6d3ffd43153:11897-12495",
-        "mdnru-e6d3ffd43153:17232-18023",
-        "mdnru-47dc365c2af7:10907-11609",
-        "mdnru-e6d3ffd43153:17880-18297"
+        "mdnru-e6d3ffd43153:11902-12500",
+        "mdnru-e6d3ffd43153:17237-18028",
+        "mdnru-47dc365c2af7:10916-11618",
+        "mdnru-e6d3ffd43153:17885-18302"
       ]
     },
     {
@@ -2060,7 +2060,7 @@
         }
       ],
       "top_chunks": [
-        "mdnru-894ce467e2ab:35676-35911",
+        "mdnru-894ce467e2ab:35712-35947",
         "mdnru-479846d091ae:1572-2041",
         "mdnru-ba8d011eab40:0-944",
         "mdnru-66730e25bfe9:2458-2600",
@@ -2072,10 +2072,10 @@
       "query": "рисовать графику прямо в браузере",
       "metrics": {
         "recall@1": 0.0,
-        "recall@5": 0.0,
+        "recall@5": 0.5,
         "recall@10": 0.5,
-        "mrr@10": 0.1667,
-        "ndcg@10": 0.0981
+        "mrr@10": 0.25,
+        "ndcg@10": 0.1186
       },
       "relevant": {
         "Web/API/Canvas_API": 2,
@@ -2093,18 +2093,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-a8323a2a9b34",
-          "title": "Веб-технологии для разработчиков",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-8e0df2de0775",
           "title": "Использование изображений",
-          "grade": 0
-        },
-        {
-          "doc_id": "mdnru-b42ed9f78d05",
-          "title": "<canvas>",
           "grade": 0
         },
         {
@@ -2113,8 +2103,18 @@
           "grade": 1
         },
         {
+          "doc_id": "mdnru-a8323a2a9b34",
+          "title": "Веб-технологии для разработчиков",
+          "grade": 0
+        },
+        {
           "doc_id": "mdnru-f293c3ec1f0d",
           "title": "Проверь свои навыки: Функции",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-b42ed9f78d05",
+          "title": "<canvas>",
           "grade": 0
         },
         {
@@ -2134,11 +2134,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-a7ce195741d5:664-1003",
-        "mdnru-0af3535e22e1:15375-15957",
-        "mdnru-0af3535e22e1:7285-8226",
-        "mdnru-a8323a2a9b34:1727-2242",
-        "mdnru-8e0df2de0775:6368-6894"
+        "mdnru-a7ce195741d5:681-1036",
+        "mdnru-0af3535e22e1:15384-15966",
+        "mdnru-0af3535e22e1:7294-8235",
+        "mdnru-8e0df2de0775:6421-6947",
+        "mdnru-fc13dae9cfe4:0-924"
       ]
     },
     {
@@ -2358,8 +2358,8 @@
         "mdnru-da8e30c031d8:4845-5596",
         "mdnru-da8e30c031d8:6382-7266",
         "mdnru-40912e6adfa1:6530-7249",
-        "mdnru-da8e30c031d8:17882-18803",
-        "mdnru-da8e30c031d8:17056-18023"
+        "mdnru-da8e30c031d8:17909-18830",
+        "mdnru-da8e30c031d8:17083-18050"
       ]
     },
     {
@@ -2423,8 +2423,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-17fde67f692f",
-          "title": "Location.assign()",
+          "doc_id": "mdnru-ecf7a135566b",
+          "title": "Руководство часть 5: Создание домашней страницы",
           "grade": 0
         }
       ],
@@ -2432,7 +2432,7 @@
         "mdnru-29127b4880fb:628-1112",
         "mdnru-54f67a3309b3:0-640",
         "mdnru-29127b4880fb:1114-1880",
-        "mdnru-894ce467e2ab:38958-39349",
+        "mdnru-894ce467e2ab:38994-39385",
         "mdnru-f4c19e387ad8:861-1834"
       ]
     },
@@ -2502,10 +2502,10 @@
         }
       ],
       "top_chunks": [
-        "mdnru-a8faabcd1360:4832-5412",
+        "mdnru-a8faabcd1360:4832-5433",
         "mdnru-ddaf443f0943:4603-5397",
-        "mdnru-c640a49a3104:13878-14851",
-        "mdnru-0ef63ef49d5e:10062-10772",
+        "mdnru-c640a49a3104:13892-14880",
+        "mdnru-0ef63ef49d5e:10069-10785",
         "mdnru-ddaf443f0943:3416-3864"
       ]
     },
@@ -2577,8 +2577,8 @@
       "top_chunks": [
         "mdnru-7e761a906f87:4155-4715",
         "mdnru-231e6abe73d2:5060-5533",
-        "mdnru-c640a49a3104:8109-8607",
-        "mdnru-7e761a906f87:7086-7917",
+        "mdnru-c640a49a3104:8123-8621",
+        "mdnru-7e761a906f87:7128-7959",
         "mdnru-47dc365c2af7:6724-7479"
       ]
     },
@@ -2657,5 +2657,413 @@
     }
   ],
   "split": "test",
-  "chunks": "chunks-c1000-o150"
+  "chunks": "chunks-c1000-o150",
+  "evidence": {
+    "queries": 36,
+    "metrics": {
+      "evidence@1": 0.1389,
+      "evidence@3": 0.25,
+      "evidence@5": 0.3056,
+      "evidence@10": 0.3333,
+      "evidence_mrr@10": 0.1975
+    },
+    "per_query": [
+      {
+        "id": "test-001",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.3333333333333333
+        },
+        "evidence_rank": 3
+      },
+      {
+        "id": "test-002",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-003",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-004",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "test-005",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-006",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "test-007",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "test-008",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.25
+        },
+        "evidence_rank": 4
+      },
+      {
+        "id": "test-009",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.25
+        },
+        "evidence_rank": 4
+      },
+      {
+        "id": "test-010",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      },
+      {
+        "id": "test-011",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.1111111111111111
+        },
+        "evidence_rank": 9
+      },
+      {
+        "id": "test-012",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-013",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-014",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-015",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-016",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-017",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-018",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.5
+        },
+        "evidence_rank": 2
+      },
+      {
+        "id": "test-019",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-020",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-021",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-022",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-023",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-024",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-025",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-026",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.3333333333333333
+        },
+        "evidence_rank": 3
+      },
+      {
+        "id": "test-027",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-028",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-029",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-030",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-031",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 0.3333333333333333
+        },
+        "evidence_rank": 3
+      },
+      {
+        "id": "test-032",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-033",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-034",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-035",
+        "metrics": {
+          "evidence@1": 0.0,
+          "evidence@3": 0.0,
+          "evidence@5": 0.0,
+          "evidence@10": 0.0,
+          "evidence_mrr@10": 0.0
+        },
+        "evidence_rank": null
+      },
+      {
+        "id": "test-036",
+        "metrics": {
+          "evidence@1": 1.0,
+          "evidence@3": 1.0,
+          "evidence@5": 1.0,
+          "evidence@10": 1.0,
+          "evidence_mrr@10": 1.0
+        },
+        "evidence_rank": 1
+      }
+    ]
+  }
 }

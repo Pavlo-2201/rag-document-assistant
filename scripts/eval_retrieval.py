@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""Качество поиска по фрагментам на запросах semantic-search-engine (уровень документов).
+"""Качество поиска по фрагментам на запросах semantic-search-engine.
+
+Уровень документов — те же метрики, что в semantic-search-engine; с --qa ещё
+уровень доказательств: есть ли в top-k фрагмент с цитатой-ответом.
 
     python scripts/eval_retrieval.py --chunks data/processed/chunks-c1000-o150.jsonl \
-        --retriever bm25 --retriever faiss:lsa-300 --retriever faiss:e5-small --split dev --split test
+        --retriever bm25 --retriever faiss:lsa-300 --retriever faiss:e5-small --split dev --split test \
+        --qa data/eval/qa.jsonl
 """
 
 from __future__ import annotations
@@ -17,8 +21,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from semsearch.evaluation import load_queries  # noqa: E402
 
 from rag.chunking import load_chunks  # noqa: E402
-from rag.evaluation import evaluate_document_retrieval  # noqa: E402
+from rag.evaluation import evaluate_document_retrieval, evaluate_evidence_retrieval  # noqa: E402
 from rag.ingest import load_documents  # noqa: E402
+from rag.qa import load_qa  # noqa: E402
 from rag.retrieval import build_bm25, load_dense  # noqa: E402
 
 
@@ -38,6 +43,7 @@ def main() -> int:
     parser.add_argument("--retriever", action="append", required=True)
     parser.add_argument("--split", action="append", default=None)
     parser.add_argument("--queries-dir", default="data/eval/sse")
+    parser.add_argument("--qa", help="набор с цитатами-доказательствами (data/eval/qa.jsonl)")
     parser.add_argument("--output", default="results/retrieval")
     args = parser.parse_args()
 
@@ -51,9 +57,14 @@ def main() -> int:
             queries = load_queries(Path(args.queries_dir) / f"{split}.jsonl", documents)
             result = evaluate_document_retrieval(retriever, queries)
             result.update({"split": split, "chunks": Path(args.chunks).stem})
+            if args.qa:
+                items = load_qa(args.qa, documents, split=split)
+                result["evidence"] = evaluate_evidence_retrieval(retriever, items)
             name = f"{Path(args.chunks).stem}__{spec.replace(':', '-')}__{split}.json"
             (output / name).write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             print(f"{spec:22s} {split:5s} " + " ".join(f"{k}={v:.3f}" for k, v in result["metrics"].items()))
+            if args.qa:
+                print(f"{'':22s} {'':5s} " + " ".join(f"{k}={v:.3f}" for k, v in result["evidence"]["metrics"].items()))
     return 0
 
 
