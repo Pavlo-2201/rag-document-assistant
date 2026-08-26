@@ -27,6 +27,9 @@ IMAGE_RE = re.compile(r"!\[([^\]]*)\]\([^)]*\)")
 LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]*\)")
 HTML_TAG_RE = re.compile(r"</?[a-zA-Z][^>\n]{0,200}>")
 INLINE_CODE_RE = re.compile(r"(`+)(.+?)\1")
+# экранирование Markdown: «\<details>» — это текст «<details>», а не тег
+ESCAPE_RE = re.compile(r"\\([\\<>|*_\[\]`#])")
+_ESCAPED_ANGLE = {"<": "\x00", ">": "\x01"}
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
 BOLD_RE = re.compile(r"\*\*(.+?)\*\*")
 DEFINITION_RE = re.compile(r"^(\s*)- : ")
@@ -91,14 +94,20 @@ def _macro_text(match: re.Match) -> str:
     return ""  # служебные макросы: сайдбары, таблицы совместимости, live-примеры
 
 
+def _strip_tags(text: str) -> str:
+    # экранированные угловые скобки прячутся от удаления тегов и возвращаются после
+    text = ESCAPE_RE.sub(lambda m: _ESCAPED_ANGLE.get(m.group(1), m.group(1)), text)
+    return HTML_TAG_RE.sub("", text).replace("\x00", "<").replace("\x01", ">")
+
+
 def _strip_tags_outside_code(line: str) -> str:
     """Убрать HTML-теги разметки, но не внутри `кода`: там `<canvas>` — содержание."""
     parts, last = [], 0
     for match in INLINE_CODE_RE.finditer(line):
-        parts.append(HTML_TAG_RE.sub("", line[last:match.start()]))
+        parts.append(_strip_tags(line[last:match.start()]))
         parts.append(match.group(0))
         last = match.end()
-    parts.append(HTML_TAG_RE.sub("", line[last:]))
+    parts.append(_strip_tags(line[last:]))
     return "".join(parts)
 
 

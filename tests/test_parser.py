@@ -73,3 +73,9 @@ def test_tags_inside_inline_code_are_kept():
 def test_macro_with_unquoted_argument():
     doc = parse_markdown("Вместо 404 используйте {{HTTPStatus(410)}} (Gone).\n")
     assert doc.text.strip() == "Вместо 404 используйте 410 (Gone)."
+
+
+def test_escaped_angle_brackets_are_text_not_tags():
+    # «\<details>» в Markdown — текст; раньше тег удалялся и оставался «\»
+    doc = parse_markdown("Элемент \\<details> или [\\<script>](/ru/docs/x), значения a \\| b, а `\\<x>` — код.\n")
+    assert doc.text.strip() == "Элемент <details> или <script>, значения a | b, а `\\<x>` — код."
