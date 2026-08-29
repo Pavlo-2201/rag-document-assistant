@@ -3,12 +3,12 @@
   "queries": 36,
   "metrics": {
     "recall@1": 0.1389,
-    "recall@5": 0.4167,
+    "recall@5": 0.4028,
     "recall@10": 0.5417,
-    "mrr@10": 0.3344,
-    "ndcg@10": 0.3378
+    "mrr@10": 0.3321,
+    "ndcg@10": 0.3373
   },
-  "seconds_per_query": 0.0064,
+  "seconds_per_query": 0.0135,
   "per_query": [
     {
       "query_id": "test-001",
@@ -150,11 +150,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-48ee73eb1190:6173-7120",
+        "mdnru-48ee73eb1190:6169-7116",
         "mdnru-a8bd548032db:2409-3042",
-        "mdnru-7d4b3a16e562:7357-8316",
+        "mdnru-7d4b3a16e562:7355-8314",
         "mdnru-d66f21298b2b:2684-3502",
-        "mdnru-7d4b3a16e562:8929-9875"
+        "mdnru-7d4b3a16e562:8927-9873"
       ]
     },
     {
@@ -192,13 +192,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5cd02b50f599",
-          "title": "TypeError: can't delete non-configurable array element(Тип ошибки:не удаётся удалить настраиваемый элемент массива)",
+          "doc_id": "mdnru-229020eaf80b",
+          "title": "Типизированные массивы JavaScript",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-229020eaf80b",
-          "title": "Типизированные массивы JavaScript",
+          "doc_id": "mdnru-5cd02b50f599",
+          "title": "TypeError: can't delete non-configurable array element(Тип ошибки:не удаётся удалить настраиваемый элемент массива)",
           "grade": 0
         },
         {
@@ -212,22 +212,22 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-679fb07ea77e",
-          "title": "Spread syntax",
+          "doc_id": "mdnru-48ee73eb1190",
+          "title": "Упорядоченные наборы данных",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-48ee73eb1190",
-          "title": "Упорядоченные наборы данных",
+          "doc_id": "mdnru-8da5ae45a76b",
+          "title": "Array.prototype.push()",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-c9d6c57d0bc1:3214-3914",
-        "mdnru-7d4b3a16e562:14130-14777",
+        "mdnru-7d4b3a16e562:14128-14775",
         "mdnru-1b2e9489f75c:4927-5742",
         "mdnru-725432515343:3466-4345",
-        "mdnru-5cd02b50f599:1392-2139"
+        "mdnru-229020eaf80b:4989-5416"
       ]
     },
     {
@@ -255,13 +255,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-0108c838c5f8",
-          "title": "Node.firstChild",
+          "doc_id": "mdnru-d10cbbaac56f",
+          "title": "Работа с файлами",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-d10cbbaac56f",
-          "title": "Работа с файлами",
+          "doc_id": "mdnru-0108c838c5f8",
+          "title": "Node.firstChild",
           "grade": 0
         },
         {
@@ -290,17 +290,17 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-465f83230929",
-          "title": "SyntaxError: string literal contains an unescaped line break",
+          "doc_id": "mdnru-ce6dfd2bc924",
+          "title": "String.prototype.trimRight()",
           "grade": 0
         }
       ],
       "top_chunks": [
         "mdnru-d990063c4952:0-731",
         "mdnru-5e8a351c7375:26334-27181",
-        "mdnru-0108c838c5f8:377-1280",
         "mdnru-d10cbbaac56f:1295-2207",
-        "mdnru-d9e010be6484:998-1142"
+        "mdnru-0108c838c5f8:377-1296",
+        "mdnru-d9e010be6484:997-1141"
       ]
     },
     {
@@ -364,8 +364,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-52ca258935cc",
-          "title": "String.prototype.repeat()",
+          "doc_id": "mdnru-64dee47e7df3",
+          "title": "Продвинутое форматирование текста",
           "grade": 0
         }
       ],
@@ -518,7 +518,7 @@
       ],
       "top_chunks": [
         "mdnru-42f06d818e81:0-722",
-        "mdnru-7d33bcdde72c:2703-3321",
+        "mdnru-7d33bcdde72c:2702-3320",
         "mdnru-42f06d818e81:7419-8383",
         "mdnru-42f06d818e81:5603-6486",
         "mdnru-42f06d818e81:6488-7417"
@@ -594,7 +594,7 @@
         "mdnru-55ab154dbce1:1799-2731",
         "mdnru-c8f5346a0de8:2010-2920",
         "mdnru-f2768fdc652f:0-891",
-        "mdnru-21702cd82c06:23035-23914"
+        "mdnru-21702cd82c06:23034-23913"
       ]
     },
     {
@@ -739,7 +739,7 @@
       ],
       "top_chunks": [
         "mdnru-c52d6fdd5b6d:797-1067",
-        "mdnru-f291fdee4d55:2558-3489",
+        "mdnru-f291fdee4d55:2557-3488",
         "mdnru-589a7e41f589:3896-4750",
         "mdnru-e6abe9efc50e:9697-10352",
         "mdnru-589a7e41f589:8449-9386"
@@ -811,7 +811,7 @@
         }
       ],
       "top_chunks": [
-        "mdnru-8994de34c1d7:13916-14813",
+        "mdnru-8994de34c1d7:13922-14819",
         "mdnru-e214c3352e42:2108-2302",
         "mdnru-573f8131145c:896-1352",
         "mdnru-e214c3352e42:2304-3144",
@@ -1105,9 +1105,9 @@
       ],
       "top_chunks": [
         "mdnru-73d7b7de4356:1099-1575",
-        "mdnru-8994de34c1d7:9722-10405",
+        "mdnru-8994de34c1d7:9728-10411",
         "mdnru-8ecace0dae95:0-625",
-        "mdnru-8994de34c1d7:10257-11047",
+        "mdnru-8994de34c1d7:10263-11053",
         "mdnru-ca24504a7466:1729-2638"
       ]
     },
@@ -1472,9 +1472,9 @@
       ],
       "top_chunks": [
         "mdnru-4346ca8c3a19:2704-3561",
-        "mdnru-72cc2b1b5a1f:5319-6134",
+        "mdnru-72cc2b1b5a1f:5318-6133",
         "mdnru-4346ca8c3a19:1516-2325",
-        "mdnru-72cc2b1b5a1f:28400-29171",
+        "mdnru-72cc2b1b5a1f:28399-29170",
         "mdnru-5d4dd659a0af:1359-2052"
       ]
     },
@@ -1539,8 +1539,8 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-aa9262ec8605",
-          "title": "Ширина",
+          "doc_id": "mdnru-29dfc7396228",
+          "title": "<link>: Элемент - ссылка на внешний ресурс",
           "grade": 0
         }
       ],
@@ -1620,10 +1620,10 @@
       ],
       "top_chunks": [
         "mdnru-04593b5b00db:650-1606",
-        "mdnru-04593b5b00db:3610-4464",
+        "mdnru-04593b5b00db:3630-4484",
         "mdnru-a03dd36b4f39:2310-2873",
         "mdnru-b72e4f5c8b4c:8651-9637",
-        "mdnru-04593b5b00db:4318-4860"
+        "mdnru-04593b5b00db:4338-4880"
       ]
     },
     {
@@ -1694,7 +1694,7 @@
       "top_chunks": [
         "mdnru-397b96f76bcc:1535-2365",
         "mdnru-ac2e6619947c:1847-2832",
-        "mdnru-81a1d47e6433:14632-15556",
+        "mdnru-81a1d47e6433:14631-15555",
         "mdnru-397b96f76bcc:886-1533",
         "mdnru-ac2e6619947c:4682-5624"
       ]
@@ -1766,11 +1766,11 @@
         }
       ],
       "top_chunks": [
-        "mdnru-8994de34c1d7:2454-3259",
-        "mdnru-8994de34c1d7:5418-6378",
-        "mdnru-8994de34c1d7:6238-7132",
-        "mdnru-8994de34c1d7:4745-5416",
-        "mdnru-8994de34c1d7:6987-7318"
+        "mdnru-8994de34c1d7:2460-3265",
+        "mdnru-8994de34c1d7:5424-6384",
+        "mdnru-8994de34c1d7:6244-7138",
+        "mdnru-8994de34c1d7:4751-5422",
+        "mdnru-8994de34c1d7:6993-7324"
       ]
     },
     {
@@ -1813,13 +1813,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-589a7e41f589",
-          "title": "Стилизация ссылок",
+          "doc_id": "mdnru-ddaf443f0943",
+          "title": "Как загрузить файлы на веб-сервер",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-ddaf443f0943",
-          "title": "Как загрузить файлы на веб-сервер",
+          "doc_id": "mdnru-589a7e41f589",
+          "title": "Стилизация ссылок",
           "grade": 0
         },
         {
@@ -1842,8 +1842,8 @@
         "mdnru-722a257a23c2:9268-10011",
         "mdnru-722a257a23c2:2022-2995",
         "mdnru-722a257a23c2:0-986",
-        "mdnru-ebf85710fda1:3596-4175",
-        "mdnru-722a257a23c2:9863-10749"
+        "mdnru-722a257a23c2:4471-5470",
+        "mdnru-722a257a23c2:9863-10748"
       ]
     },
     {
@@ -1913,7 +1913,7 @@
       ],
       "top_chunks": [
         "mdnru-a39dfc951b86:0-956",
-        "mdnru-6422b450fe04:805-1753",
+        "mdnru-6422b450fe04:805-1750",
         "mdnru-262490d74943:519-1466",
         "mdnru-44cf2a86c031:20367-21303",
         "mdnru-b3f248417c3d:2766-3421"
@@ -2072,10 +2072,10 @@
       "query": "рисовать графику прямо в браузере",
       "metrics": {
         "recall@1": 0.0,
-        "recall@5": 0.5,
+        "recall@5": 0.0,
         "recall@10": 0.5,
-        "mrr@10": 0.25,
-        "ndcg@10": 0.1186
+        "mrr@10": 0.1667,
+        "ndcg@10": 0.0981
       },
       "relevant": {
         "Web/API/Canvas_API": 2,
@@ -2098,11 +2098,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-fc13dae9cfe4",
-          "title": "Руководство по Canvas",
-          "grade": 1
-        },
-        {
           "doc_id": "mdnru-a8323a2a9b34",
           "title": "Веб-технологии для разработчиков",
           "grade": 0
@@ -2111,6 +2106,11 @@
           "doc_id": "mdnru-f293c3ec1f0d",
           "title": "Проверь свои навыки: Функции",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-fc13dae9cfe4",
+          "title": "Руководство по Canvas",
+          "grade": 1
         },
         {
           "doc_id": "mdnru-b42ed9f78d05",
@@ -2137,8 +2137,8 @@
         "mdnru-a7ce195741d5:681-1036",
         "mdnru-0af3535e22e1:15384-15966",
         "mdnru-0af3535e22e1:7294-8235",
-        "mdnru-8e0df2de0775:6421-6947",
-        "mdnru-fc13dae9cfe4:0-924"
+        "mdnru-8e0df2de0775:6425-6951",
+        "mdnru-a8323a2a9b34:1727-2259"
       ]
     },
     {
@@ -2162,13 +2162,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-1df58cfeecd3",
-          "title": "Руководство часть 10: Тестирование приложений Django",
+          "doc_id": "mdnru-3b49683ca5a0",
+          "title": "Руководство Django Часть 8: Аутентификация и авторизация пользователя",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-3b49683ca5a0",
-          "title": "Руководство Django Часть 8: Аутентификация и авторизация пользователя",
+          "doc_id": "mdnru-1df58cfeecd3",
+          "title": "Руководство часть 10: Тестирование приложений Django",
           "grade": 0
         },
         {
@@ -2209,10 +2209,10 @@
       ],
       "top_chunks": [
         "mdnru-3fa67f30cada:745-1143",
-        "mdnru-1df58cfeecd3:33656-34604",
-        "mdnru-3b49683ca5a0:20831-21596",
-        "mdnru-3b49683ca5a0:22049-22915",
-        "mdnru-3b49683ca5a0:22917-23790"
+        "mdnru-3b49683ca5a0:20827-21590",
+        "mdnru-1df58cfeecd3:33650-34598",
+        "mdnru-3b49683ca5a0:22042-22907",
+        "mdnru-3b49683ca5a0:22909-23782"
       ]
     },
     {
@@ -2250,13 +2250,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-aeb39df003da",
-          "title": "Drag Operations",
+          "doc_id": "mdnru-bc551c855795",
+          "title": "Document.cookie",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-bc551c855795",
-          "title": "Document.cookie",
+          "doc_id": "mdnru-aeb39df003da",
+          "title": "Drag Operations",
           "grade": 0
         },
         {
@@ -2503,10 +2503,10 @@
       ],
       "top_chunks": [
         "mdnru-a8faabcd1360:4832-5433",
-        "mdnru-ddaf443f0943:4603-5397",
+        "mdnru-ddaf443f0943:4602-5396",
         "mdnru-c640a49a3104:13892-14880",
         "mdnru-0ef63ef49d5e:10069-10785",
-        "mdnru-ddaf443f0943:3416-3864"
+        "mdnru-ddaf443f0943:3415-3863"
       ]
     },
     {
@@ -2617,13 +2617,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5a2ec09b8abd",
-          "title": "HTTP аутентификация",
+          "doc_id": "mdnru-e6d3ffd43153",
+          "title": "Cross-Origin Resource Sharing (CORS)",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-e6d3ffd43153",
-          "title": "Cross-Origin Resource Sharing (CORS)",
+          "doc_id": "mdnru-5a2ec09b8abd",
+          "title": "HTTP аутентификация",
           "grade": 0
         },
         {
@@ -2637,13 +2637,13 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-f1100ed2e1af",
-          "title": "Используемые по умолчанию значения заголовка Accept",
+          "doc_id": "mdnru-5ce637a20145",
+          "title": "Accept-Language",
           "grade": 0
         },
         {
-          "doc_id": "mdnru-5ce637a20145",
-          "title": "Accept-Language",
+          "doc_id": "mdnru-e2df58a05071",
+          "title": "Руководство часть 9: Работа с формами",
           "grade": 0
         }
       ],

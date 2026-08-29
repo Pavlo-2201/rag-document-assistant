@@ -8,7 +8,7 @@
     "mrr@10": 0.4057,
     "ndcg@10": 0.4799
   },
-  "seconds_per_query": 0.0064,
+  "seconds_per_query": 0.0926,
   "per_query": [
     {
       "query_id": "dev-001",
@@ -46,11 +46,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-48ee73eb1190",
-          "title": "Упорядоченные наборы данных",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-b72e4f5c8b4c",
           "title": "Переменные - место хранения необходимой информации",
           "grade": 0
@@ -58,6 +53,11 @@
         {
           "doc_id": "mdnru-229020eaf80b",
           "title": "Типизированные массивы JavaScript",
+          "grade": 0
+        },
+        {
+          "doc_id": "mdnru-48ee73eb1190",
+          "title": "Упорядоченные наборы данных",
           "grade": 0
         },
         {
@@ -227,7 +227,7 @@
         "mdnru-c96c23a6bbd6:5355-5886",
         "mdnru-c9d6c57d0bc1:4387-4923",
         "mdnru-48ee73eb1190:3219-3566",
-        "mdnru-48ee73eb1190:9993-10885"
+        "mdnru-48ee73eb1190:9989-10881"
       ]
     },
     {
@@ -371,7 +371,7 @@
         }
       ],
       "top_chunks": [
-        "mdnru-91d024737242:5841-6647",
+        "mdnru-91d024737242:5840-6646",
         "mdnru-df324df5dccf:2204-2905",
         "mdnru-baefada01551:3333-3660",
         "mdnru-4207d051bcc0:2103-2967",
@@ -446,9 +446,9 @@
       "top_chunks": [
         "mdnru-b59e3543fda5:826-1581",
         "mdnru-b59e3543fda5:0-824",
-        "mdnru-465f83230929:1067-2021",
+        "mdnru-465f83230929:1067-2020",
         "mdnru-c9d6c57d0bc1:5155-6082",
-        "mdnru-91d024737242:5841-6647"
+        "mdnru-91d024737242:5840-6646"
       ]
     },
     {
@@ -961,7 +961,7 @@
         "mdnru-b3935a322108:5580-6122",
         "mdnru-f93af15182e5:0-614",
         "mdnru-1b755c403d03:0-802",
-        "mdnru-67782170971d:9622-10580"
+        "mdnru-67782170971d:9668-10626"
       ]
     },
     {
@@ -1105,7 +1105,7 @@
       "top_chunks": [
         "mdnru-ccecd14bbd60:2277-2802",
         "mdnru-ccecd14bbd60:1425-2415",
-        "mdnru-9855617f9ce9:22425-23235",
+        "mdnru-9855617f9ce9:22422-23232",
         "mdnru-ccecd14bbd60:7366-8341",
         "mdnru-ccecd14bbd60:814-1423"
       ]
@@ -1326,9 +1326,9 @@
       "top_chunks": [
         "mdnru-e513e7a1e647:1122-1952",
         "mdnru-ac2e6619947c:4682-5624",
+        "mdnru-52eaaa3d18ef:2888-3619",
         "mdnru-52eaaa3d18ef:1219-1897",
-        "mdnru-e513e7a1e647:0-287",
-        "mdnru-52eaaa3d18ef:2888-3571"
+        "mdnru-e513e7a1e647:0-287"
       ]
     },
     {
@@ -1621,10 +1621,10 @@
       ],
       "top_chunks": [
         "mdnru-6913ff6d628c:5912-6855",
-        "mdnru-6913ff6d628c:7395-7973",
-        "mdnru-631a07de7a91:1454-2110",
-        "mdnru-4c206776c3ca:0-712",
-        "mdnru-78d3c6638d63:799-1780"
+        "mdnru-6913ff6d628c:7400-7978",
+        "mdnru-631a07de7a91:1474-2130",
+        "mdnru-631a07de7a91:0-838",
+        "mdnru-4c206776c3ca:0-712"
       ]
     },
     {
@@ -1746,11 +1746,6 @@
           "grade": 0
         },
         {
-          "doc_id": "mdnru-9c29f5cc1bee",
-          "title": "Retry-After",
-          "grade": 0
-        },
-        {
           "doc_id": "mdnru-c9d6c57d0bc1",
           "title": "Массивы",
           "grade": 0
@@ -1764,14 +1759,19 @@
           "doc_id": "mdnru-b7b5c891580c",
           "title": "Using the Web Animations API",
           "grade": 0
+        },
+        {
+          "doc_id": "mdnru-9c29f5cc1bee",
+          "title": "Retry-After",
+          "grade": 0
         }
       ],
       "top_chunks": [
-        "mdnru-0b3f358abfb4:13533-14416",
-        "mdnru-0b3f358abfb4:12973-13679",
-        "mdnru-0b3f358abfb4:20950-21753",
-        "mdnru-0b3f358abfb4:14271-15135",
-        "mdnru-0b3f358abfb4:29725-30529"
+        "mdnru-0b3f358abfb4:13532-14415",
+        "mdnru-0b3f358abfb4:12972-13678",
+        "mdnru-0b3f358abfb4:20949-21752",
+        "mdnru-0b3f358abfb4:14270-15134",
+        "mdnru-0b3f358abfb4:29724-30528"
       ]
     },
     {
@@ -1840,9 +1840,9 @@
         }
       ],
       "top_chunks": [
-        "mdnru-5dedaab61665:2625-3476",
+        "mdnru-5dedaab61665:2632-3483",
         "mdnru-2be561259b27:4074-5005",
-        "mdnru-5dedaab61665:1368-2225",
+        "mdnru-5dedaab61665:1375-2232",
         "mdnru-1ce1987700dd:2283-2868",
         "mdnru-ff32b988abc6:0-757"
       ]
@@ -2575,9 +2575,9 @@
       ],
       "top_chunks": [
         "mdnru-42de5d431e21:6105-7041",
-        "mdnru-72cc2b1b5a1f:29024-29866",
-        "mdnru-72cc2b1b5a1f:14977-15874",
-        "mdnru-72cc2b1b5a1f:5319-6134",
+        "mdnru-72cc2b1b5a1f:29023-29865",
+        "mdnru-72cc2b1b5a1f:14976-15873",
+        "mdnru-72cc2b1b5a1f:5318-6133",
         "mdnru-42de5d431e21:8960-9836"
       ]
     },
