@@ -51,22 +51,25 @@ class LlamaCppBackend:
     """
 
     is_mock = False
+    decoding = {"temperature": 0.0, "top_p": 1.0, "repeat_penalty": 1.1, "seed": 0}
 
     def __init__(self, model_path: str | Path, n_ctx: int = 4096, n_threads: int | None = None, seed: int = 42):
+        import llama_cpp
         from llama_cpp import Llama
 
         model_path = Path(model_path)
         if not model_path.exists():
             raise FileNotFoundError(f"GGUF-модель не найдена: {model_path}. См. README, раздел «Модели».")
         self.name = f"llama.cpp:{model_path.name}"
+        # всё, от чего зависит ответ при тех же сообщениях: ключ кеша (rag/cache.py)
+        self.fingerprint = f"{self.name}|llama-cpp-python {llama_cpp.__version__}|{sorted(self.decoding.items())}"
         self.llm = Llama(
             model_path=str(model_path), n_ctx=n_ctx, n_threads=n_threads, seed=seed, verbose=False
         )
 
     def chat(self, messages: list[dict], max_tokens: int) -> str:
         out = self.llm.create_chat_completion(
-            messages=messages, max_tokens=max_tokens, temperature=0.0, top_p=1.0,
-            repeat_penalty=1.1, seed=0,
+            messages=messages, max_tokens=max_tokens, **self.decoding,
         )
         return out["choices"][0]["message"]["content"].strip()
 
