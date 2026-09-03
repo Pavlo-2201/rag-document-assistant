@@ -208,5 +208,40 @@
       "chunks_dropped_for_limit": 0,
       "llm_calls": 50
     }
+  },
+  "rerank20__test": {
+    "variant": {
+      "chunk_size": 1000,
+      "overlap": 150,
+      "retriever": "e5-small",
+      "rerank": 20,
+      "top_k": 5
+    },
+    "split": "test",
+    "answerable": {
+      "questions": 36,
+      "answered": 22,
+      "answered_with_sources": 17,
+      "term_hit": 15,
+      "evidence_in_context": 13,
+      "cited_evidence": 6,
+      "refused_with_evidence_in_context": 2,
+      "answered_without_evidence_in_context": 11,
+      "term_hit_rate": 0.4167,
+      "cited_evidence_rate": 0.1667
+    },
+    "unanswerable": {
+      "questions": 12,
+      "refused": 11,
+      "answered_with_sources": 1,
+      "answered_without_sources": 0
+    },
+    "cost": {
+      "generation_s_median": 11.67,
+      "retrieval_s_median": 0.94,
+      "context_tokens_mean": 1306.0,
+      "chunks_dropped_for_limit": 0,
+      "llm_calls": 52
+    }
   }
 }
