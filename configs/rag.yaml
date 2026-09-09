@@ -1,0 +1,49 @@
+# Конфигурация ассистента для `python -m rag`. Параметры выбраны на dev
+# (README, раздел «Эксперименты»); эксперименты задают их явно в
+# configs/experiments.yaml.
+
+data_dir: data
+
+chunking:
+  chunk_size: 1000
+  overlap: 150
+
+retriever:
+  model: e5-small                  # e5-small | lsa-300 (configs/retrieval.yaml) | bm25
+  models_config: configs/retrieval.yaml
+
+reranker:
+  model_path: models/reranker
+  candidates: 20                   # 0 или null — без переранжирования
+
+generation:
+  top_k: 5
+  max_context_tokens: 3000         # как в экспериментах; top-5 на dev занимает до 1517
+  refusal: strict
+  retry_empty: true
+  min_retrieval_score: null        # порог по e5 на dev не помог
+
+llm:
+  backend: llama_cpp               # llama_cpp | mock (проверка связности, не для оценки)
+  model_path: models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf
+  n_ctx: 4096
+  seed: 42
+
+cache:
+  llm: true                        # ответы LLM кешируются по sha256 (модель, сообщения, max_tokens)
+  dir: data/cache
+
+# Веса: путь и sha256 файла (проверяет `python -m rag check`)
+models:
+  e5-small:
+    path: models/e5-small/model.safetensors
+    revision: 614241f622f53c4eeff9890bdc4f31cfecc418b3
+    sha256: 1a55775f53449dac10a2bcbc312469fac40b96d53198c407081a831f81c98477
+  qwen2.5-1.5b-instruct-q4_k_m:
+    path: models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf
+    revision: 91cad51170dc346986eccefdc2dd33a9da36ead9
+    sha256: 6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e
+  reranker:
+    path: models/reranker/model.safetensors
+    revision: 1427fd652930e4ba29e8149678df786c240d8825
+    sha256: 5daeca2481a76b5976a2bdc32f0a78532b6716da4f8cd3ff59460ef8d2f359b4

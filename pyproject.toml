@@ -5,6 +5,15 @@ description = "Помощник, отвечающий по документац�
 requires-python = ">=3.11"
 readme = "README.md"
 
+# pip install -e . — пакеты rag и semsearch из src/, команда `python -m rag`;
+# зависимости ставятся из requirements.txt (там точные версии)
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
