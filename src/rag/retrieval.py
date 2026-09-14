@@ -29,6 +29,8 @@ from semsearch.retriever import SearchHit
 
 from .chunking import Chunk
 
+RRF_K = 60
+
 
 @dataclass(frozen=True)
 class ChunkHit:
@@ -73,6 +75,49 @@ class ChunkRetriever:
 
     def search_batch(self, queries: Sequence[str], top_k: int = 10) -> list[list[ChunkHit]]:
         return [self._convert(hits) for hits in self.backend.search_batch(list(queries), top_k=top_k)]
+
+
+def rrf_merge(rankings: Sequence[Sequence[ChunkHit]], top_k: int, k: int = RRF_K) -> list[ChunkHit]:
+    """Reciprocal rank fusion; один голос фрагмента от каждой выдачи."""
+    if k < 1 or top_k < 0:
+        raise ValueError("RRF: k >= 1, top_k >= 0")
+    scores: dict[str, float] = {}
+    hits: dict[str, ChunkHit] = {}
+    for ranking in rankings:
+        seen = set()
+        for position, hit in enumerate(ranking, start=1):
+            cid = hit.chunk.chunk_id
+            if cid in seen:
+                continue
+            seen.add(cid)
+            scores[cid] = scores.get(cid, 0.0) + 1.0 / (k + position)
+            hits.setdefault(cid, hit)
+    order = sorted(hits, key=lambda cid: -scores[cid])[:top_k]
+    return [ChunkHit(hits[cid].chunk, scores[cid], rank) for rank, cid in enumerate(order, 1)]
+
+
+class HybridRetriever:
+    """BM25 + dense: RRF до общего cross-encoder, без сложения разных шкал."""
+
+    def __init__(self, dense, lexical, depth: int = 100, k: int = RRF_K):
+        if depth < 1 or k < 1:
+            raise ValueError("depth и k должны быть положительными")
+        self.dense, self.lexical, self.depth, self.k = dense, lexical, depth, k
+        self.name = f"{dense.name}+bm25-rrf{depth}-k{k}"
+
+    def search(self, query: str, top_k: int = 10) -> list[ChunkHit]:
+        depth = max(self.depth, top_k)
+        return rrf_merge([self.dense.search(query, top_k=depth),
+                          self.lexical.search(query, top_k=depth)], top_k, self.k)
+
+    def search_batch(self, queries: Sequence[str], top_k: int = 10) -> list[list[ChunkHit]]:
+        queries = list(queries)
+        depth = max(self.depth, top_k)
+        dense = self.dense.search_batch(queries, top_k=depth)
+        lexical = self.lexical.search_batch(queries, top_k=depth)
+        if len(dense) != len(queries) or len(lexical) != len(queries):
+            raise ValueError("retriever вернул неверное число выдач")
+        return [rrf_merge([d, b], top_k, self.k) for d, b in zip(dense, lexical)]
 
 
 def resolve_model(name: str, models_config: str | Path = "configs/retrieval.yaml") -> EncoderConfig:

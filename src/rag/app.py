@@ -18,7 +18,7 @@ from .chunking import ChunkingConfig, chunk_documents, load_chunks, write_chunks
 from .generation import GenerationConfig, RAGPipeline
 from .ingest import load_documents
 from .llm import make_backend
-from .retrieval import build_bm25, build_dense_index, load_dense, resolve_model
+from .retrieval import HybridRetriever, build_bm25, build_dense_index, load_dense, resolve_model
 
 
 @dataclass
@@ -65,6 +65,12 @@ def build_retriever(config: dict, paths: Paths | None = None, llm=None):
     paths = paths or paths_for(config)
     chunks = load_chunks(paths.chunks)
     retriever = build_bm25(chunks) if paths.index is None else load_dense(chunks, paths.index)
+    hybrid = config["retriever"].get("hybrid") or {}
+    if hybrid.get("enabled"):
+        if paths.index is None:
+            raise ValueError("hybrid требует dense-модель")
+        retriever = HybridRetriever(retriever, build_bm25(chunks),
+                                    depth=hybrid.get("depth", 100), k=hybrid.get("rrf_k", 60))
     hyde = (config.get("query_rewrite") or {}).get("hyde")
     if hyde:
         from .query_rewrite import HydeRetriever

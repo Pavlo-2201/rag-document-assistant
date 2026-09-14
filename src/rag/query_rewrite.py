@@ -22,10 +22,9 @@ from __future__ import annotations
 import time
 from typing import Sequence
 
-from .retrieval import ChunkHit
+from .retrieval import ChunkHit, RRF_K, rrf_merge
 
 MODES = ("concat", "rrf")
-RRF_K = 60  # константа RRF из статьи Cormack et al. (2009); на dev не подбиралась
 
 # Первая версия перечисляла «HTML-элементы, CSS-свойства, методы JavaScript»,
 # и модель называла что-то из каждого пункта («<span> … text-break … split()»);
@@ -41,19 +40,6 @@ HYDE_SYSTEM = (
 
 def hyde_messages(question: str) -> list[dict]:
     return [{"role": "system", "content": HYDE_SYSTEM}, {"role": "user", "content": question.strip()}]
-
-
-def rrf_merge(rankings: Sequence[Sequence[ChunkHit]], top_k: int, k: int = RRF_K) -> list[ChunkHit]:
-    """Слить выдачи: сумма 1 / (k + позиция). При равенстве — порядок первой выдачи."""
-    scores: dict[str, float] = {}
-    hits: dict[str, ChunkHit] = {}
-    for ranking in rankings:
-        for position, hit in enumerate(ranking, start=1):
-            chunk_id = hit.chunk.chunk_id
-            scores[chunk_id] = scores.get(chunk_id, 0.0) + 1.0 / (k + position)
-            hits.setdefault(chunk_id, hit)
-    order = sorted(hits, key=lambda cid: -scores[cid])[:top_k]
-    return [ChunkHit(hits[cid].chunk, scores[cid], rank) for rank, cid in enumerate(order, start=1)]
 
 
 class HydeRetriever:
