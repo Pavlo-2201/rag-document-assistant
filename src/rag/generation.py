@@ -123,12 +123,12 @@ class RAGPipeline:
     def retrieve(self, question: str):
         return self.retriever.search(question, top_k=self.config.top_k)
 
-    def answer(self, question: str) -> Answer:
+    def answer(self, question: str, on_token=None) -> Answer:
         timings = {}
         started = time.perf_counter()
         hits = self.retrieve(question)
         timings["retrieval_s"] = round(time.perf_counter() - started, 3)
-        return self.answer_from_hits(question, hits, timings)
+        return self.answer_from_hits(question, hits, timings, on_token=on_token)
 
     def refuse(self, question: str, reason: str, hits, timings: dict, raw: str = "", **extra) -> Answer:
         return Answer(
@@ -138,7 +138,7 @@ class RAGPipeline:
             top_score=round(hits[0].score, 4) if hits else None, **extra,
         )
 
-    def answer_from_hits(self, question: str, hits, timings: dict | None = None) -> Answer:
+    def answer_from_hits(self, question: str, hits, timings: dict | None = None, on_token=None) -> Answer:
         timings = dict(timings or {})
         threshold = self.config.min_retrieval_score
         if not hits or (threshold is not None and hits[0].score < threshold):
@@ -147,7 +147,20 @@ class RAGPipeline:
         prompt = build_prompt(question, hits, self.llm.count_tokens, self.config.max_context_tokens,
                               refusal=self.config.refusal)
         started = time.perf_counter()
-        raw = self.llm.chat(prompt.messages, max_tokens=self.config.max_answer_tokens)
+        if hasattr(self.llm, "stream_chat"):
+            parts = []
+            for part in self.llm.stream_chat(prompt.messages, max_tokens=self.config.max_answer_tokens):
+                if not parts:
+                    timings["first_token_s"] = round(time.perf_counter() - started, 3)
+                    timings["first_token_total_s"] = round(timings.get("retrieval_s", 0) + timings["first_token_s"], 3)
+                parts.append(part)
+                if on_token:
+                    on_token(part)
+            raw = "".join(parts).strip()
+        else:
+            raw = self.llm.chat(prompt.messages, max_tokens=self.config.max_answer_tokens)
+            if on_token:
+                on_token(raw)
         timings["generation_s"] = round(time.perf_counter() - started, 3)
         reply = read_reply(raw)
         retry = {}

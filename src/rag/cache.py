@@ -51,3 +51,24 @@ class CachedLLM:
 
     def count_tokens(self, text: str) -> int:
         return self.llm.count_tokens(text)
+
+    def stream_chat(self, messages: list[dict], max_tokens: int):
+        key = cache_key(self.fingerprint, messages, max_tokens)
+        row = self.db.execute("SELECT reply FROM answers WHERE key = ?", (key,)).fetchone()
+        if row is not None:
+            self.hits += 1
+            yield row[0]
+            return
+        self.misses += 1
+        parts = []
+        stream = self.llm.stream_chat(messages, max_tokens)
+        try:
+            for part in stream:
+                parts.append(part)
+                yield part
+        finally:
+            stream.close()
+        # Выполняется только после полного чтения. Закрытый поток не кешируется.
+        reply = "".join(parts).strip()
+        self.db.execute("INSERT OR REPLACE INTO answers VALUES (?, ?, ?)", (key, self.fingerprint, reply))
+        self.db.commit()

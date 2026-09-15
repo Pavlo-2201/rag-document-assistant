@@ -18,9 +18,22 @@ from .app import build_artifacts, build_pipeline, load_config
 from .generation import format_answer
 
 
-def _ask(pipeline, question: str, as_json: bool) -> None:
-    answer = pipeline.answer(question)
-    print(json.dumps(answer.to_dict(), ensure_ascii=False, indent=2) if as_json else format_answer(answer))
+def _ask(pipeline, question: str, as_json: bool, stream: bool = False) -> None:
+    parts = []
+    def token(part):
+        parts.append(part)
+        print(part, end="", flush=True)
+    answer = pipeline.answer(question, on_token=token if stream else None)
+    if stream:
+        print()
+        formatted = format_answer(answer)
+        if "".join(parts).strip() == answer.answer:
+            print(formatted[len(answer.answer):].lstrip("\n"))
+        else:
+            print("\nИтоговый ответ:")
+            print(formatted)
+    else:
+        print(json.dumps(answer.to_dict(), ensure_ascii=False, indent=2) if as_json else format_answer(answer))
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -38,9 +51,12 @@ def main(argv: list[str] | None = None) -> int:
         sub.add_argument("--hyde", choices=["concat", "rrf", "off"], help="переформулировка вопроса перед поиском")
         sub.add_argument("--top-k", type=int)
         sub.add_argument("--json", action="store_true")
+        sub.add_argument("--stream", action="store_true", help="показывать текст по мере генерации; ссылки проверяются в конце")
     check = commands.add_parser("check", help="проверить веса, данные, индекс и разметку")
     check.add_argument("--skip-models", action="store_true", help="не считать sha256 весов")
     args = parser.parse_args(argv)
+    if getattr(args, "stream", False) and getattr(args, "json", False):
+        parser.error("--stream и --json несовместимы")
 
     config = load_config(args.config)
     if args.command == "build":
@@ -63,12 +79,12 @@ def main(argv: list[str] | None = None) -> int:
         config.setdefault("generation", {})["top_k"] = args.top_k
     pipeline = build_pipeline(config, backend=args.backend)
     if args.command == "ask":
-        _ask(pipeline, args.question, args.json)
+        _ask(pipeline, args.question, args.json, args.stream)
         return 0
     print("Вопрос по документации MDN (пустая строка — выход):", file=sys.stderr)
     for line in sys.stdin:
         if not line.strip():
             break
-        _ask(pipeline, line.strip(), args.json)
+        _ask(pipeline, line.strip(), args.json, args.stream)
         print(file=sys.stderr)
     return 0
