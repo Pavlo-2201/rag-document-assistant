@@ -1,0 +1,6 @@
+# Отдельное окружение обучения. CUDA torch 2.11.0 ставится с индекса PyTorch.
+# Цикл обучения не требует datasets/PyArrow.
+sentence-transformers==6.1.0
+transformers==5.18.0
+numpy==2.5.3
+PyYAML==6.0.3

@@ -70,7 +70,8 @@ def build_retriever(config: dict, paths: Paths | None = None, llm=None):
         if paths.index is None:
             raise ValueError("hybrid требует dense-модель")
         retriever = HybridRetriever(retriever, build_bm25(chunks),
-                                    depth=hybrid.get("depth", 100), k=hybrid.get("rrf_k", 60))
+                                    depth=hybrid.get("depth", 100), k=hybrid.get("rrf_k", 60),
+                                    fixed_depth=hybrid.get("fixed_depth", False))
     hyde = (config.get("query_rewrite") or {}).get("hyde")
     if hyde:
         from .query_rewrite import HydeRetriever

@@ -19,10 +19,11 @@ from .retrieval import ChunkHit
 
 
 class CrossEncoderReranker:
-    def __init__(self, model_path: str = "models/reranker", max_length: int = 512, batch_size: int = 16):
+    def __init__(self, model_path: str = "models/reranker", max_length: int = 512, batch_size: int = 16,
+                 device: str = 'cpu'):
         from sentence_transformers import CrossEncoder
 
-        self.model = CrossEncoder(model_path, device="cpu", max_length=max_length, local_files_only=True)
+        self.model = CrossEncoder(model_path, device=device, max_length=max_length, local_files_only=True)
         self.batch_size = batch_size
         self.name = f"cross-encoder:{model_path.rstrip('/').rsplit('/', 1)[-1]}"
 

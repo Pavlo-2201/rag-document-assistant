@@ -32,12 +32,15 @@ def main() -> int:
     parser.add_argument("--models-config", default="configs/retrieval.yaml")
     parser.add_argument("--index-type", default="flat-ip", choices=["flat-ip", "hnsw", "ivf-flat"])
     parser.add_argument("--output")
+    parser.add_argument("--device", choices=["cpu", "cuda"])
+    parser.add_argument("--precision", choices=["float32", "float16"], default="float32")
     args = parser.parse_args()
 
     chunks = load_chunks(args.chunks)
     config = resolve_model(args.model, args.models_config)
     output = Path(args.output) if args.output else index_dir_for(args.chunks, args.model)
-    stats = build_dense_index(chunks, config, output, IndexSpec(args.index_type))
+    stats = build_dense_index(chunks, config, output, IndexSpec(args.index_type),
+                              device=args.device, precision=args.precision)
     print(json.dumps({"index": str(output), **stats}, ensure_ascii=False, indent=2))
     return 0
 

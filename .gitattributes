@@ -1,5 +1,7 @@
-# LF в рабочей копии и на Windows: хеши скопированного semsearch (tests/test_vendored.py)
-# и отпечатки файлов не зависят от core.autocrlf
+# LF keeps vendored file hashes and experiment fingerprints portable.
 * text=auto eol=lf
-# CSV пишется модулем csv с CRLF (как требует RFC 4180) — хранится как есть
-*.csv -text
+# CSV uses RFC-style CRLF; preserve bytes, including verbatim source paragraphs.
+*.csv -text whitespace=cr-at-eol
+# Keep recorded hashes of experiment inputs and raw outputs byte-identical.
+*.jsonl -text whitespace=cr-at-eol
+*.json -text whitespace=cr-at-eol

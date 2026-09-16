@@ -12,7 +12,11 @@ models/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+pytest-cache-files-*/
 .venv*/
+.gpu-runtime/
+data/synthetic/
+results/quality/**/server__*.log
 venv/
 *.egg-info/
 

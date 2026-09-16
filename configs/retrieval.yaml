@@ -22,3 +22,37 @@ models:
     max_seq_length: 512
     batch_size: 32
     notes: Многоязычная E5, 384 измерения, лицензия MIT. Веса проверены по sha256 (см. README).
+
+  e5-base:
+    backend: sentence-transformers
+    model_name: intfloat/multilingual-e5-base
+    revision: d128750597153bb5987e10b1c3493a34e5a4502a
+    local_path: models/e5-base
+    query_prefix: "query: "
+    document_prefix: "passage: "
+    pooling: mean
+    normalize: true
+    max_seq_length: 512
+    batch_size: 8
+
+  e5-large:
+    backend: sentence-transformers
+    model_name: intfloat/multilingual-e5-large
+    revision: 3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3
+    local_path: models/e5-large
+    query_prefix: "query: "
+    document_prefix: "passage: "
+    pooling: mean
+    normalize: true
+    max_seq_length: 512
+    batch_size: 4
+
+  e5-finetuned:
+    backend: sentence-transformers
+    local_path: models/e5-finetuned
+    query_prefix: "query: "
+    document_prefix: "passage: "
+    pooling: mean
+    normalize: true
+    max_seq_length: 512
+    batch_size: 8
