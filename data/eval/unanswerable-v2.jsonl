@@ -1,0 +1,40 @@
+{"id": "v2-ood-001", "split": "dev_v2", "question": "Как описать обязательный параметр запроса в FastAPI?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["FastAPI"]}
+{"id": "v2-ood-002", "split": "test_v2", "question": "Как сохранить обученные веса нейросети в PyTorch?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["PyTorch"]}
+{"id": "v2-ood-003", "split": "dev_v2", "question": "Как обучить простую модель классификации в TensorFlow?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["TensorFlow"]}
+{"id": "v2-ood-004", "split": "test_v2", "question": "Как добавить кнопку с обработчиком нажатия во Flutter?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Flutter"]}
+{"id": "v2-ood-005", "split": "dev_v2", "question": "Как связать состояние переключателя с моделью в SwiftUI?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["SwiftUI"]}
+{"id": "v2-ood-006", "split": "test_v2", "question": "Как нарисовать прокручиваемый список в Jetpack Compose?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Jetpack Compose"]}
+{"id": "v2-ood-007", "split": "dev_v2", "question": "Как создать связь один-ко-многим в SQLAlchemy?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["SQLAlchemy"]}
+{"id": "v2-ood-008", "split": "test_v2", "question": "Как описать составной уникальный ключ в Prisma?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Prisma"]}
+{"id": "v2-ood-009", "split": "dev_v2", "question": "Как подтвердить обработку сообщения в RabbitMQ?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["RabbitMQ"]}
+{"id": "v2-ood-010", "split": "test_v2", "question": "Как задать лимиты памяти для контейнера в Kubernetes?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Kubernetes"]}
+{"id": "v2-ood-011", "split": "dev_v2", "question": "Как импортировать существующий ресурс в Terraform state?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Terraform"]}
+{"id": "v2-ood-012", "split": "test_v2", "question": "Как написать обработчик перезапуска сервиса в Ansible?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Ansible"]}
+{"id": "v2-ood-013", "split": "dev_v2", "question": "Как настроить кеш зависимостей в Jenkins pipeline?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Jenkins"]}
+{"id": "v2-ood-014", "split": "test_v2", "question": "Как запускать job только для merge request в GitLab CI?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["GitLab CI"]}
+{"id": "v2-ood-015", "split": "dev_v2", "question": "Как сохранить результат сборки как artifact в GitHub Actions?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["GitHub Actions"]}
+{"id": "v2-ood-016", "split": "test_v2", "question": "Как создать задачу копирования файлов в Gradle?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Gradle"]}
+{"id": "v2-ood-017", "split": "dev_v2", "question": "Как подключить собственный репозиторий артефактов в Maven?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Maven"]}
+{"id": "v2-ood-018", "split": "test_v2", "question": "Как создать REST-контроллер со валидацией тела в Spring Boot?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Spring Boot"]}
+{"id": "v2-ood-019", "split": "dev_v2", "question": "Как зарегистрировать собственный сервис в Symfony?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Symfony"]}
+{"id": "v2-ood-020", "split": "test_v2", "question": "Как добавить middleware обработки ошибок в ASP.NET Core?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["ASP.NET Core"]}
+{"id": "v2-ood-021", "split": "dev_v2", "question": "Как выполнить параметризованный запрос к базе через Dapper?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Dapper"]}
+{"id": "v2-ood-022", "split": "test_v2", "question": "Как запустить асинхронную задачу в Tokio?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Tokio"]}
+{"id": "v2-ood-023", "split": "dev_v2", "question": "Как извлечь JSON из HTTP-запроса в Axum?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Axum"]}
+{"id": "v2-ood-024", "split": "test_v2", "question": "Как зарегистрировать команду Rust в приложении Tauri?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Tauri"]}
+{"id": "v2-ood-025", "split": "dev_v2", "question": "Как сделать защищённый серверный маршрут в SvelteKit?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["SvelteKit"]}
+{"id": "v2-ood-026", "split": "test_v2", "question": "Как настроить серверный API-обработчик в Nuxt?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Nuxt"]}
+{"id": "v2-ood-027", "split": "dev_v2", "question": "Как настроить динамический маршрут приложения в Next.js?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Next.js"]}
+{"id": "v2-ood-028", "split": "test_v2", "question": "Как добавить секретную переменную окружения в Vercel?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Vercel"]}
+{"id": "v2-ood-029", "split": "dev_v2", "question": "Как настроить перенаправления на сайте Netlify?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Netlify"]}
+{"id": "v2-ood-030", "split": "test_v2", "question": "Как настроить разделение трафика между версиями сервиса в Istio?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Istio"]}
+{"id": "v2-ood-031", "split": "dev_v2", "question": "Как подключить репозиторий приложения к Argo CD?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Argo CD"]}
+{"id": "v2-ood-032", "split": "test_v2", "question": "Как создать панель с переменной окружения в Grafana?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Grafana"]}
+{"id": "v2-ood-033", "split": "dev_v2", "question": "Как настроить внедрение зависимостей в Micronaut?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Micronaut"]}
+{"id": "v2-ood-034", "split": "test_v2", "question": "Как собрать приложение Quarkus в нативный исполняемый файл?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Quarkus"]}
+{"id": "v2-ood-035", "split": "dev_v2", "question": "Как создать долговечную подписку в NATS JetStream?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["NATS"]}
+{"id": "v2-ood-036", "split": "test_v2", "question": "Как создать таблицу MergeTree в ClickHouse?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["ClickHouse"]}
+{"id": "v2-ood-037", "split": "dev_v2", "question": "Как подключить новый каталог данных в Trino?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Trino"]}
+{"id": "v2-ood-038", "split": "test_v2", "question": "Как настроить checkpoint в Apache Flink?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Apache Flink"]}
+{"id": "v2-ood-039", "split": "dev_v2", "question": "Как задать расписание DAG в Apache Airflow?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["Apache Airflow"]}
+{"id": "v2-ood-040", "split": "test_v2", "question": "Как передать категориальные признаки в CatBoost?", "answerable": false, "kind": "out_of_domain", "absent_terms": ["CatBoost"]}

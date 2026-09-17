@@ -1,0 +1,6 @@
+llm:
+  backend: llama_server
+  base_url: http://127.0.0.1:8092
+  model_path: models/judge/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf
+  seed: 42
+max_tokens: 16

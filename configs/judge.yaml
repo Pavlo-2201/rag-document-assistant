@@ -1,0 +1,9 @@
+# Отдельный от генератора судья; CPU или GPU offload через n_gpu_layers.
+llm:
+  backend: llama_cpp
+  model_path: models/judge/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf
+  n_ctx: 8192
+  n_threads: 6
+  n_gpu_layers: 0
+  seed: 42
+max_tokens: 16

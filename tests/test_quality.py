@@ -34,3 +34,11 @@ def test_kappa_chance_and_degenerate():
     assert cohen_kappa(["ДА"], ["ДА"])["kappa"] is None
     with pytest.raises(ValueError):
         cohen_kappa(["?"], ["ДА"])
+
+
+def test_answer_evidence_requires_resolved_spans():
+    from rag.answer_eval import score_answer
+    from rag.qa import QAItem, Evidence
+    item=QAItem('q','test','вопрос',True,evidence=[Evidence('slug','doc','цитата')])
+    with pytest.raises(ValueError,match='смещения'):
+        score_answer({'refused':True,'sources':[],'context':[],'refusal_reason':'model'},item)

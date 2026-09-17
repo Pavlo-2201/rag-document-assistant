@@ -41,6 +41,8 @@ def span_from_chunk_id(chunk_id: str) -> ChunkSpan:
 
 
 def _has_evidence(chunk_ids: Sequence[str], item: QAItem) -> bool:
+    if any(ev.start < 0 or ev.end <= ev.start for ev in item.evidence):
+        raise ValueError('для метрик evidence загрузите QA с documents: нужны разрешённые смещения цитат')
     return any(covers(span_from_chunk_id(c), ev) for c in chunk_ids for ev in item.evidence)
 
 

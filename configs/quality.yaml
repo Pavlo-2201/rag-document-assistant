@@ -1,0 +1,48 @@
+# Протокол v2: старый test теперь диагностический, параметры выбираются на dev.
+chunks: data/processed/chunks-c1000-o150.jsonl
+baseline: dense-small
+selected_retriever: dense-small
+retrievers:
+  dense-small: {model: e5-small, candidates: 20}
+  hybrid-small: {model: e5-small, hybrid: true, depth: 100, rrf_k: 60, candidates: 20}
+  dense-small60: {model: e5-small, candidates: 60}
+  hybrid-small60: {model: e5-small, hybrid: true, depth: 100, rrf_k: 60, candidates: 60}
+  dense-base: {model: e5-base, candidates: 20}
+  dense-base60: {model: e5-base, candidates: 60}
+  hybrid-base60: {model: e5-base, hybrid: true, depth: 100, rrf_k: 60, candidates: 60}
+  hybrid-small-hyde60: {model: e5-small, hybrid: true, hyde: rrf, depth: 100, rrf_k: 60, candidates: 60}
+  dense-tuned: {model: e5-finetuned, candidates: 20}
+  hybrid-tuned60: {model: e5-finetuned, hybrid: true, depth: 100, rrf_k: 60, candidates: 60}
+  hybrid-union40: {model: e5-small, hybrid: true, depth: 20, fixed_depth: true, rrf_k: 60, candidates: 40}
+rewrite_llm:
+  backend: llama_server
+  base_url: http://127.0.0.1:8091
+  model_path: models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf
+  seed: 42
+generation:
+  top_k: 5
+  max_context_tokens: 3000
+  max_answer_tokens: 300
+  refusal: strict
+  retry_empty: true
+generators:
+  qwen1.5b:
+    backend: llama_cpp
+    model_path: models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf
+    n_ctx: 4096
+    n_threads: 6
+    seed: 42
+  qwen3b:
+    backend: llama_cpp
+    model_path: models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf
+    n_ctx: 4096
+    n_threads: 6
+    seed: 42
+  qwen4b:
+    backend: llama_server
+    base_url: http://127.0.0.1:8093
+    model_path: models/qwen4b/Qwen3-4B-Q4_K_M.gguf
+    chat_template_kwargs: {enable_thinking: false}
+    n_ctx: 4096
+    n_threads: 6
+    seed: 42

@@ -41,11 +41,12 @@ def check_models(config: dict) -> list[tuple]:
 
 
 def check_corpus() -> list[tuple]:
-    meta_path = Path("data/corpus.meta.json")
+    corpus_config = yaml.safe_load(Path("configs/corpus.yaml").read_text(encoding="utf-8"))
+    meta_path = Path(corpus_config["paths"]["raw_dir"]) / "meta.json"
     if not meta_path.exists():
-        return [("корпус", "fail", "нет data/corpus.meta.json: python scripts/download_corpus.py")]
+        return [("корпус", "fail", f"нет {meta_path}: python scripts/download_corpus.py")]
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
-    reference = yaml.safe_load(Path("configs/corpus.yaml").read_text(encoding="utf-8"))["reference_fingerprint_sha256"]
+    reference = corpus_config["reference_fingerprint_sha256"]
     ok = meta.get("semsearch_fingerprint_sha256") == reference
     return [("корпус = корпус semantic-search-engine", "ok" if ok else "fail",
              f"документов: {meta.get('documents')}, commit {meta['source']['ref'][:12]}")]
@@ -55,10 +56,13 @@ def check_documents(paths: Paths) -> tuple[list[tuple], list]:
     if not paths.documents.exists():
         return [("документы", "fail", f"нет {paths.documents}: python scripts/ingest.py")], []
     documents = load_documents(paths.documents)
-    report = json.loads(Path("data/documents.report.json").read_text(encoding="utf-8"))
+    report_path = paths.documents.with_suffix(".report.json")
+    if not report_path.exists():
+        return [("отчёт ingest", "fail", f"нет {report_path}: python scripts/ingest.py")], documents
+    report = json.loads(report_path.read_text(encoding="utf-8"))
     ok = documents_fingerprint(documents) == report["fingerprint_sha256"]
-    detail = f"документов: {len(documents)}" + ("" if ok else ": текст отличается от data/documents.report.json (другой парсер?)")
-    return [("документы = версия в репозитории", "ok" if ok else "fail", detail)], documents
+    detail = f"документов: {len(documents)}" + ("" if ok else f": текст отличается от {report_path} (другой парсер?)")
+    return [("документы = отчёт ingest", "ok" if ok else "fail", detail)], documents
 
 
 def check_chunks_and_index(paths: Paths) -> list[tuple]:

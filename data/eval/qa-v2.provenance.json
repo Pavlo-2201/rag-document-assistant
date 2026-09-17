@@ -1,0 +1,26 @@
+{
+  "questions": 200,
+  "answerable": 160,
+  "unanswerable": "40 questions authored by Codex, each absent_terms string checked across titles and texts.",
+  "splits": {
+    "dev_v2": 100,
+    "test_v2": 100
+  },
+  "reviewer": "Codex",
+  "reviewer_type": "assistant",
+  "human_review_status": "pending",
+  "candidate_questions": 240,
+  "accepted_after_review": 177,
+  "sampled_answerable": 160,
+  "sampling_seed": 20260916,
+  "shuffle_seed": 20260917,
+  "selection": "First 160 from seed-shuffled accepted questions; no retrieval or answer scores used.",
+  "references": "Document title and exact evidence quote; unsupported synthetic reference additions removed.",
+  "license": "MDN evidence quotes: CC-BY-SA-2.5; attribution: MDN Web Docs contributors; source f39fd206b38a94264315eb2bcacb705bd8b5d326",
+  "sha256": {
+    "data/eval/qa-v2.jsonl": "e48e76de69a971d53d67c20dd021a3b25f1d0ed9cc0c2339624eefac7d96f7a0",
+    "data/eval/candidates-v2-json/questions.jsonl": "4b369979a01be69327713d90980c791d66b25acaf36bb2defd17f9e5e57ccca3",
+    "data/eval/candidates-v2-json/assistant_review.csv": "f10439fbbbbbc854acd7de361c7fc65c25d0b6b97b57541f17dabedf8a8e28c9",
+    "data/eval/candidates-v2-json/reserved_docs.json": "fd7d696132f8e2c5b0ea5b7ca67416b508289b2a2dfefc9ad6425adcbc720920"
+  }
+}
