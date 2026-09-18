@@ -1,0 +1,24 @@
+{
+  "qwen4b": {
+    "term_hit": {
+      "n": 80,
+      "mean": 0.1625,
+      "low": 0.0625,
+      "high": 0.2625,
+      "confidence": 0.95,
+      "samples": 10000,
+      "seed": 42,
+      "method": "paired percentile"
+    },
+    "cited_evidence": {
+      "n": 80,
+      "mean": 0.25,
+      "low": 0.1375,
+      "high": 0.3625,
+      "confidence": 0.95,
+      "samples": 10000,
+      "seed": 42,
+      "method": "paired percentile"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{"id": "test-001", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ДА", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ДА"}
+{"id": "test-002", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ДА", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ДА"}
+{"id": "test-003", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-004", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-005", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-006", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": false, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "НЕТ", "correct_raw": "ЧАСТИЧНО", "grounded_raw": ""}
+{"id": "test-007", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": false, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "НЕТ", "correct_raw": "ЧАСТИЧНО", "grounded_raw": ""}
+{"id": "test-008", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": false, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "НЕТ", "correct_raw": "ЧАСТИЧНО", "grounded_raw": ""}
+{"id": "test-009", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": false, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "НЕТ", "correct_raw": "ЧАСТИЧНО", "grounded_raw": ""}
+{"id": "test-010", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-011", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-012", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-013", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-014", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-015", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-016", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-017", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-018", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ДА", "judge_grounded": "ДА", "correct_raw": "ДА", "grounded_raw": "ДА"}
+{"id": "test-019", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-020", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-021", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-022", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-023", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-024", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ДА", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ДА"}
+{"id": "test-025", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": false, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "НЕТ", "correct_raw": "ЧАСТИЧНО", "grounded_raw": ""}
+{"id": "test-026", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-027", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-028", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "НЕТ", "judge_grounded": "НЕТ", "correct_raw": "НЕТ", "grounded_raw": "НЕТ"}
+{"id": "test-029", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-030", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-031", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ДА", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ДА"}
+{"id": "test-032", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "НЕТ", "judge_grounded": ""}
+{"id": "test-033", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-034", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "test-035", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "НЕТ", "judge_grounded": "ДА", "correct_raw": "НЕТ", "grounded_raw": "ДА"}
+{"id": "test-036", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "ЧАСТИЧНО", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "ЧАСТИЧНО", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "u-test-01", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-02", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-03", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-04", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-05", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-06", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-07", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-08", "refused": false, "model_scored": true, "model_scored_correct": true, "model_scored_grounded": true, "judge_correct": "НЕТ", "judge_grounded": "ЧАСТИЧНО", "correct_raw": "НЕТ", "grounded_raw": "ЧАСТИЧНО"}
+{"id": "u-test-09", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-10", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-11", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}
+{"id": "u-test-12", "refused": true, "model_scored": false, "model_scored_correct": false, "model_scored_grounded": false, "judge_correct": "ДА", "judge_grounded": ""}

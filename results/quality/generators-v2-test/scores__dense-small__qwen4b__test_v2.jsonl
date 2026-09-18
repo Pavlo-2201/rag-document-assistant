@@ -1,0 +1,100 @@
+{"id": "v2-ood-022", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0154", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0185", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0093", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0025", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "syn-eval-0181", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0050", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "syn-eval-0089", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0133", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0018", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0203", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "v2-ood-020", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0072", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0143", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0027", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "v2-ood-010", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0073", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0038", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0213", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0126", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0178", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0240", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "v2-ood-004", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0117", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0115", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0021", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "v2-ood-016", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "v2-ood-024", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0139", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0092", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "v2-ood-040", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0015", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0163", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "v2-ood-038", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0110", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0208", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0199", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0055", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "v2-ood-036", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0066", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "v2-ood-014", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0119", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0217", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "syn-eval-0230", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "v2-ood-006", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "v2-ood-026", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0037", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0082", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "v2-ood-018", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0079", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0188", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0051", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0175", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0009", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "v2-ood-002", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0162", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "v2-ood-012", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0210", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0150", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0059", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0167", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "v2-ood-028", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0165", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0135", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0100", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0013", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0020", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "syn-eval-0197", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "v2-ood-032", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "v2-ood-034", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0007", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0060", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0177", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0047", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "syn-eval-0070", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0083", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "syn-eval-0231", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0127", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0189", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0112", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0206", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0069", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0235", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0130", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0182", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0012", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "syn-eval-0046", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "v2-ood-030", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0136", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0223", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "syn-eval-0019", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0044", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0116", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0067", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0186", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "syn-eval-0045", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0158", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "v2-ood-008", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "syn-eval-0192", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "syn-eval-0087", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}

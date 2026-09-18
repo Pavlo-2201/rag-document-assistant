@@ -1,0 +1,46 @@
+{
+  "qwen3b": {
+    "term_hit": {
+      "n": 36,
+      "mean": -0.2222222222222222,
+      "low": -0.4166666666666667,
+      "high": -0.027777777777777776,
+      "confidence": 0.95,
+      "samples": 10000,
+      "seed": 42,
+      "method": "paired percentile"
+    },
+    "cited_evidence": {
+      "n": 36,
+      "mean": 0.1111111111111111,
+      "low": -0.027777777777777776,
+      "high": 0.25,
+      "confidence": 0.95,
+      "samples": 10000,
+      "seed": 42,
+      "method": "paired percentile"
+    }
+  },
+  "qwen4b": {
+    "term_hit": {
+      "n": 36,
+      "mean": 0.16666666666666666,
+      "low": 0.0,
+      "high": 0.3333333333333333,
+      "confidence": 0.95,
+      "samples": 10000,
+      "seed": 42,
+      "method": "paired percentile"
+    },
+    "cited_evidence": {
+      "n": 36,
+      "mean": 0.3055555555555556,
+      "low": 0.16666666666666666,
+      "high": 0.4722222222222222,
+      "confidence": 0.95,
+      "samples": 10000,
+      "seed": 42,
+      "method": "paired percentile"
+    }
+  }
+}

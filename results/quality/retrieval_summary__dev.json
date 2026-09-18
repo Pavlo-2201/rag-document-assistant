@@ -1,0 +1,680 @@
+{
+  "baseline": "dense-small",
+  "split": "dev",
+  "comparisons": {
+    "hybrid-small": {
+      "evidence@5": {
+        "n": 36,
+        "mean": -0.16666666666666666,
+        "low": -0.3055555555555556,
+        "high": -0.05555555555555555,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": -0.2777777777777778,
+        "low": -0.4166666666666667,
+        "high": -0.1388888888888889,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": -0.25,
+        "low": -0.4166666666666667,
+        "high": -0.08333333333333333,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "dense-small60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": -0.027777777777777776,
+        "low": -0.08333333333333333,
+        "high": 0.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.027777777777777776,
+        "low": 0.0,
+        "high": 0.08333333333333333,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.08333333333333333,
+        "low": 0.0,
+        "high": 0.19444444444444445,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "hybrid-small60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": -0.05555555555555555,
+        "low": -0.1388888888888889,
+        "high": 0.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0,
+        "low": 0.0,
+        "high": 0.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.08333333333333333,
+        "low": 0.0,
+        "high": 0.19444444444444445,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "dense-base": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0,
+        "low": -0.08333333333333333,
+        "high": 0.08333333333333333,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": -0.05555555555555555,
+        "low": -0.16666666666666666,
+        "high": 0.05555555555555555,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": -0.027777777777777776,
+        "low": -0.16666666666666666,
+        "high": 0.1111111111111111,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "dense-base60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0,
+        "low": 0.0,
+        "high": 0.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0,
+        "low": -0.1111111111111111,
+        "high": 0.1111111111111111,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.027777777777777776,
+        "low": -0.08333333333333333,
+        "high": 0.1388888888888889,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "hybrid-base60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": -0.05555555555555555,
+        "low": -0.1388888888888889,
+        "high": 0.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0,
+        "low": -0.08333333333333333,
+        "high": 0.08333333333333333,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0,
+        "low": -0.1388888888888889,
+        "high": 0.1388888888888889,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "hybrid-small-hyde60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": -0.027777777777777776,
+        "low": -0.1388888888888889,
+        "high": 0.05555555555555555,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.25,
+        "low": 0.1111111111111111,
+        "high": 0.3888888888888889,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.1111111111111111,
+        "low": 0.027777777777777776,
+        "high": 0.2222222222222222,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "dense-tuned": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.027777777777777776,
+        "low": 0.0,
+        "high": 0.08333333333333333,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.05555555555555555,
+        "low": 0.0,
+        "high": 0.1388888888888889,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.027777777777777776,
+        "low": -0.05555555555555555,
+        "high": 0.1388888888888889,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "hybrid-tuned60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": -0.05555555555555555,
+        "low": -0.16666666666666666,
+        "high": 0.05555555555555555,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.027777777777777776,
+        "low": 0.0,
+        "high": 0.08333333333333333,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.05555555555555555,
+        "low": -0.05555555555555555,
+        "high": 0.16666666666666666,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    },
+    "hybrid-union40": {
+      "evidence@5": {
+        "n": 36,
+        "mean": -0.05555555555555555,
+        "low": -0.1388888888888889,
+        "high": 0.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0,
+        "low": 0.0,
+        "high": 0.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.05555555555555555,
+        "low": 0.0,
+        "high": 0.1388888888888889,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    }
+  },
+  "systems": {
+    "dense-small": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.4166666666666667,
+        "low": 0.25,
+        "high": 0.5833333333333334,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.6666666666666666,
+        "low": 0.5,
+        "high": 0.8055555555555556,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.8333333333333334,
+        "low": 0.6944444444444444,
+        "high": 0.9444444444444444,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "hybrid-small": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.25,
+        "low": 0.1111111111111111,
+        "high": 0.3888888888888889,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.3888888888888889,
+        "low": 0.2222222222222222,
+        "high": 0.5555555555555556,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.5833333333333334,
+        "low": 0.4166666666666667,
+        "high": 0.75,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "dense-small60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.3888888888888889,
+        "low": 0.2222222222222222,
+        "high": 0.5555555555555556,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.6944444444444444,
+        "low": 0.5277777777777778,
+        "high": 0.8333333333333334,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.9166666666666666,
+        "low": 0.8055555555555556,
+        "high": 1.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "hybrid-small60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.3611111111111111,
+        "low": 0.19444444444444445,
+        "high": 0.5277777777777778,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.6666666666666666,
+        "low": 0.5,
+        "high": 0.8055555555555556,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.9166666666666666,
+        "low": 0.8055555555555556,
+        "high": 1.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "dense-base": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.4166666666666667,
+        "low": 0.25,
+        "high": 0.5833333333333334,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.6111111111111112,
+        "low": 0.4444444444444444,
+        "high": 0.7777777777777778,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.8055555555555556,
+        "low": 0.6666666666666666,
+        "high": 0.9166666666666666,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "dense-base60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.4166666666666667,
+        "low": 0.25,
+        "high": 0.5833333333333334,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.6666666666666666,
+        "low": 0.5,
+        "high": 0.8055555555555556,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.8611111111111112,
+        "low": 0.75,
+        "high": 0.9722222222222222,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "hybrid-base60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.3611111111111111,
+        "low": 0.19444444444444445,
+        "high": 0.5277777777777778,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.6666666666666666,
+        "low": 0.5,
+        "high": 0.8055555555555556,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.8333333333333334,
+        "low": 0.6944444444444444,
+        "high": 0.9444444444444444,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "hybrid-small-hyde60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.3888888888888889,
+        "low": 0.2222222222222222,
+        "high": 0.5555555555555556,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.9166666666666666,
+        "low": 0.8055555555555556,
+        "high": 1.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.9444444444444444,
+        "low": 0.8611111111111112,
+        "high": 1.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "dense-tuned": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.4444444444444444,
+        "low": 0.2777777777777778,
+        "high": 0.6111111111111112,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.7222222222222222,
+        "low": 0.5833333333333334,
+        "high": 0.8611111111111112,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.8611111111111112,
+        "low": 0.75,
+        "high": 0.9722222222222222,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "hybrid-tuned60": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.3611111111111111,
+        "low": 0.2222222222222222,
+        "high": 0.5277777777777778,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.6944444444444444,
+        "low": 0.5555555555555556,
+        "high": 0.8333333333333334,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.8888888888888888,
+        "low": 0.7777777777777778,
+        "high": 0.9722222222222222,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "hybrid-union40": {
+      "evidence@5": {
+        "n": 36,
+        "mean": 0.3611111111111111,
+        "low": 0.19444444444444445,
+        "high": 0.5277777777777778,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 36,
+        "mean": 0.6666666666666666,
+        "low": 0.5,
+        "high": 0.8055555555555556,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 36,
+        "mean": 0.8888888888888888,
+        "low": 0.7777777777777778,
+        "high": 0.9722222222222222,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    }
+  }
+}

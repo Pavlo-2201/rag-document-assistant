@@ -91,6 +91,7 @@ def main():
         answers=read_jsonl(output/f'answers__{args.retriever}__{name}__{args.split}.jsonl')
         all_scores[name]={a['id']:score_answer(a,items[a['id']]) for a in answers if items[a['id']].answerable}
     write_json(output/'models.json',table)
+    write_json(output/f'generation_summary__{args.retriever}__{args.split}.json',table)
     baseline=next(iter(all_scores))
     write_json(output/'paired_deltas.json',{name:compare(all_scores,baseline,name,['term_hit','cited_evidence'])
         for name in all_scores if name!=baseline})

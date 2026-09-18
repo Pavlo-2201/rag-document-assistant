@@ -1,0 +1,10 @@
+{
+  "selected_generator": "qwen4b",
+  "selected_at_utc": "2026-10-16T18:29:55.379790+00:00",
+  "selection_split": "dev",
+  "retriever": "dense-small",
+  "baseline": "qwen1.5b",
+  "rule": "Prefer cited evidence and OOD refusals on old dev: 4B cites evidence 15/36 vs 4/36; OOD refusals 12/12 vs 9/12. Accept higher answered latency 3.182 vs 1.894 s.",
+  "next_evaluation": "qa-v2 test_v2, all 100 questions, fixed configurations; no tuning from test results",
+  "source": "generators-gpu/models.json"
+}

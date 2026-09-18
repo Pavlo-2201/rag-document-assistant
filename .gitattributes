@@ -5,3 +5,4 @@
 # Keep recorded hashes of experiment inputs and raw outputs byte-identical.
 *.jsonl -text whitespace=cr-at-eol
 *.json -text whitespace=cr-at-eol
+*.yaml -text whitespace=cr-at-eol

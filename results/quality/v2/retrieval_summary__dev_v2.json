@@ -1,0 +1,104 @@
+{
+  "baseline": "dense-small",
+  "split": "dev_v2",
+  "comparisons": {
+    "dense-tuned": {
+      "evidence@5": {
+        "n": 80,
+        "mean": -0.0375,
+        "low": -0.0875,
+        "high": 0.0,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "evidence@candidates": {
+        "n": 80,
+        "mean": -0.025,
+        "low": -0.075,
+        "high": 0.025,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      },
+      "candidate_page_hit": {
+        "n": 80,
+        "mean": -0.0125,
+        "low": -0.075,
+        "high": 0.0375,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "paired percentile"
+      }
+    }
+  },
+  "systems": {
+    "dense-small": {
+      "evidence@5": {
+        "n": 80,
+        "mean": 0.875,
+        "low": 0.8,
+        "high": 0.9375,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 80,
+        "mean": 0.8875,
+        "low": 0.8125,
+        "high": 0.95,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 80,
+        "mean": 0.925,
+        "low": 0.8625,
+        "high": 0.975,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    },
+    "dense-tuned": {
+      "evidence@5": {
+        "n": 80,
+        "mean": 0.8375,
+        "low": 0.75,
+        "high": 0.9125,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "evidence@candidates": {
+        "n": 80,
+        "mean": 0.8625,
+        "low": 0.7875,
+        "high": 0.9375,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      },
+      "candidate_page_hit": {
+        "n": 80,
+        "mean": 0.9125,
+        "low": 0.85,
+        "high": 0.975,
+        "confidence": 0.95,
+        "samples": 10000,
+        "seed": 42,
+        "method": "percentile"
+      }
+    }
+  }
+}

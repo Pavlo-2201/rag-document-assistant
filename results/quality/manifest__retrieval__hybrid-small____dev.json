@@ -1,0 +1,53 @@
+{
+  "started_at_utc": "2026-10-16T13:04:22.597900+00:00",
+  "config": {
+    "chunks": "data/processed/chunks-c1000-o150.jsonl",
+    "baseline": "dense-small",
+    "selected_retriever": "hybrid-small",
+    "retrievers": {
+      "dense-small": {
+        "model": "e5-small",
+        "candidates": 20
+      },
+      "hybrid-small": {
+        "model": "e5-small",
+        "hybrid": true,
+        "depth": 100,
+        "rrf_k": 60,
+        "candidates": 20
+      },
+      "dense-small60": {
+        "model": "e5-small",
+        "candidates": 60
+      },
+      "hybrid-small60": {
+        "model": "e5-small",
+        "hybrid": true,
+        "depth": 100,
+        "rrf_k": 60,
+        "candidates": 60
+      }
+    },
+    "generation": {
+      "top_k": 5,
+      "max_context_tokens": 3000,
+      "max_answer_tokens": 300,
+      "refusal": "strict",
+      "retry_empty": true
+    },
+    "generators": {
+      "qwen1.5b": {
+        "backend": "llama_cpp",
+        "model_path": "models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "n_ctx": 4096,
+        "n_threads": 6,
+        "seed": 42
+      }
+    }
+  },
+  "config_sha256": "4773de124f83c1abd46e4864d835d329e47aa6d171a8583c6e57ccc469e73450",
+  "qa_sha256": "687a67d32a4ee1fc3dbdd5812267d8debe048fa156e21566ee5e72509b8ea226",
+  "chunks_sha256": "a734c9a359525f1018880649705969c42fc8098a8de978a41e1d42bb169e6e1b",
+  "python": "3.13.16 (tags/v3.13.16:cbc944f, Sep 30 2026, 19:17:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0"
+}

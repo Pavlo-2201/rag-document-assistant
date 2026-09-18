@@ -1,0 +1,42 @@
+# Optional 4B profile; start local llama-server first (docs/quality-v2.md).
+data_dir: data
+chunking:
+  chunk_size: 1000
+  overlap: 150
+retriever:
+  model: e5-small
+  models_config: configs/retrieval.yaml
+reranker:
+  model_path: models/reranker
+  candidates: 20
+query_rewrite:
+  hyde: null
+generation:
+  top_k: 5
+  max_context_tokens: 3000
+  refusal: strict
+  retry_empty: true
+  min_retrieval_score: null
+llm:
+  backend: llama_server
+  base_url: http://127.0.0.1:8093
+  model_path: models/qwen4b/Qwen3-4B-Q4_K_M.gguf
+  chat_template_kwargs:
+    enable_thinking: false
+  seed: 42
+cache:
+  llm: false
+  dir: data/cache
+models:
+  e5-small:
+    path: models/e5-small/model.safetensors
+    revision: 614241f622f53c4eeff9890bdc4f31cfecc418b3
+    sha256: 1a55775f53449dac10a2bcbc312469fac40b96d53198c407081a831f81c98477
+  reranker:
+    path: models/reranker/model.safetensors
+    revision: 1427fd652930e4ba29e8149678df786c240d8825
+    sha256: 5daeca2481a76b5976a2bdc32f0a78532b6716da4f8cd3ff59460ef8d2f359b4
+  qwen3-4b-q4_k_m:
+    path: models/qwen4b/Qwen3-4B-Q4_K_M.gguf
+    revision: bc640142c66e1fdd12af0bd68f40445458f3869b
+    sha256: 7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5

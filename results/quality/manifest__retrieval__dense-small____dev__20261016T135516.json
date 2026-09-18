@@ -1,0 +1,59 @@
+{
+  "started_at_utc": "2026-10-16T13:55:16.537486+00:00",
+  "config": {
+    "chunks": "data/processed/chunks-c1000-o150.jsonl",
+    "baseline": "dense-small",
+    "selected_retriever": "dense-small",
+    "retrievers": {
+      "dense-small": {
+        "model": "e5-small",
+        "candidates": 20
+      },
+      "dense-tuned": {
+        "model": "e5-finetuned",
+        "candidates": 20
+      },
+      "hybrid-tuned60": {
+        "model": "e5-finetuned",
+        "hybrid": true,
+        "depth": 100,
+        "rrf_k": 60,
+        "candidates": 60
+      }
+    },
+    "rewrite_llm": {
+      "backend": "llama_server",
+      "base_url": "http://127.0.0.1:8091",
+      "model_path": "models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf",
+      "seed": 42
+    },
+    "generation": {
+      "top_k": 5,
+      "max_context_tokens": 3000,
+      "max_answer_tokens": 300,
+      "refusal": "strict",
+      "retry_empty": true
+    },
+    "generators": {
+      "qwen1.5b": {
+        "backend": "llama_cpp",
+        "model_path": "models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "n_ctx": 4096,
+        "n_threads": 6,
+        "seed": 42
+      },
+      "qwen3b": {
+        "backend": "llama_cpp",
+        "model_path": "models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf",
+        "n_ctx": 4096,
+        "n_threads": 6,
+        "seed": 42
+      }
+    }
+  },
+  "config_sha256": "f0720cfc644336b7c8ef4cfcc0cbfdce847d1216217b63755d9e69bf31862cb2",
+  "qa_sha256": "687a67d32a4ee1fc3dbdd5812267d8debe048fa156e21566ee5e72509b8ea226",
+  "chunks_sha256": "a734c9a359525f1018880649705969c42fc8098a8de978a41e1d42bb169e6e1b",
+  "python": "3.13.16 (tags/v3.13.16:cbc944f, Sep 30 2026, 19:17:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0"
+}

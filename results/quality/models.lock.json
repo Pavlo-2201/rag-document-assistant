@@ -1,0 +1,104 @@
+{
+  "e5-base": {
+    "repository": "intfloat/multilingual-e5-base",
+    "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "files": [
+      {
+        "path": "models/e5-base/config.json",
+        "bytes": 694,
+        "sha256": "9dab198f24c8c0879e481cf7822005d5ecbceedbacb390ffafa594e28d31bac4",
+        "hf_lfs_sha256": null
+      },
+      {
+        "path": "models/e5-base/modules.json",
+        "bytes": 387,
+        "sha256": "c6e29747481e8b5dd2b58401966aeac910de39092f90cda9a704b1545f902b04",
+        "hf_lfs_sha256": null
+      },
+      {
+        "path": "models/e5-base/sentence_bert_config.json",
+        "bytes": 57,
+        "sha256": "948201d8329907aae938fa62f9ceeed53f5694dacc2b87b9f3b78b37ee986529",
+        "hf_lfs_sha256": null
+      },
+      {
+        "path": "models/e5-base/1_Pooling/config.json",
+        "bytes": 200,
+        "sha256": "f586ab6c734af7b8d14d898bfa7faa886f23b46f86dd1730514309893af13d75",
+        "hf_lfs_sha256": null
+      },
+      {
+        "path": "models/e5-base/tokenizer.json",
+        "bytes": 17082660,
+        "sha256": "62c24cdc13d4c9952d63718d6c9fa4c287974249e16b7ade6d5a85e7bbb75626",
+        "hf_lfs_sha256": "62c24cdc13d4c9952d63718d6c9fa4c287974249e16b7ade6d5a85e7bbb75626"
+      },
+      {
+        "path": "models/e5-base/tokenizer_config.json",
+        "bytes": 418,
+        "sha256": "efb5c0d09722e5fe59a462cd2a9976ee216d55b037597d997cd3fe833216da15",
+        "hf_lfs_sha256": null
+      },
+      {
+        "path": "models/e5-base/special_tokens_map.json",
+        "bytes": 280,
+        "sha256": "06e405a36dfe4b9604f484f6a1e619af1a7f7d09e34a8555eb0b77b66318067f",
+        "hf_lfs_sha256": null
+      },
+      {
+        "path": "models/e5-base/sentencepiece.bpe.model",
+        "bytes": 5069051,
+        "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+        "hf_lfs_sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+      },
+      {
+        "path": "models/e5-base/model.safetensors",
+        "bytes": 1112201288,
+        "sha256": "a18a44fad1d0b46ded15928144138cff1135d5cc8233bdd90be5f18822de09a7",
+        "hf_lfs_sha256": "a18a44fad1d0b46ded15928144138cff1135d5cc8233bdd90be5f18822de09a7"
+      }
+    ]
+  },
+  "qwen3b": {
+    "repository": "Qwen/Qwen2.5-3B-Instruct-GGUF",
+    "revision": "7dabda4d13d513e3e842b20f0d435c732f172cbe",
+    "files": [
+      {
+        "path": "models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf",
+        "bytes": 2104932768,
+        "sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+        "hf_lfs_sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d"
+      }
+    ]
+  },
+  "judge7b": {
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "files": [
+      {
+        "path": "models/judge/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "bytes": 3993201344,
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db",
+        "hf_lfs_sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "path": "models/judge/qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "bytes": 689872288,
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a",
+        "hf_lfs_sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      }
+    ]
+  },
+  "qwen4b": {
+    "repository": "Qwen/Qwen3-4B-GGUF",
+    "revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "files": [
+      {
+        "path": "models/qwen4b/Qwen3-4B-Q4_K_M.gguf",
+        "bytes": 2497280256,
+        "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+        "hf_lfs_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+      }
+    ]
+  }
+}

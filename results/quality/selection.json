@@ -1,0 +1,10 @@
+{
+  "selected_retriever": "dense-small",
+  "selected_at_utc": "2026-10-16T14:06:36.431118+00:00",
+  "selection_split": "dev",
+  "rule": "1-2 questions out of 36 are treated as noise; retain cheaper established baseline",
+  "best_candidate": "dense-tuned",
+  "baseline_evidence@5": 15,
+  "candidate_evidence@5": 16,
+  "heldout_note": "original test is diagnostic after prior error analysis; v2 is assistant-reviewed and awaits independent human review"
+}

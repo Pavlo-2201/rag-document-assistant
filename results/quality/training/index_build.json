@@ -1,0 +1,10 @@
+{
+  "model": "e5-finetuned",
+  "vectors": 16941,
+  "dim": 384,
+  "build_seconds": 45.3,
+  "index_bytes": 26644314,
+  "device": "cuda:0",
+  "precision": "float16",
+  "weights_sha256": "54078d1c146bc8d56014ecfa4bca737cb5e944b831fde8ac62c590c8fdbdd477"
+}

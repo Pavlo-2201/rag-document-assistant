@@ -1,0 +1,29 @@
+{
+  "started_at_utc": "2026-10-16T13:53:02.987037+00:00",
+  "pairs": 164,
+  "base": "models/e5-small",
+  "seed": 42,
+  "batch_size": 16,
+  "epochs": 2,
+  "loss": "MultipleNegativesRankingLoss",
+  "sampler": "seeded shuffle, no duplicate strings",
+  "trainable": "all parameters",
+  "sha256": {
+    "data/train/synthetic-v1/questions.jsonl": "2ef0bf3ce9c6393987d50f3c66a090d6509e85d30d24904f98fe720f54d9c708",
+    "data/train/synthetic-v1/auto_review.csv": "8a04328b4a9395f57409f4899d5db3c00eed53b751a51abc4a43742825c5980c",
+    "data/eval/qa.jsonl": "687a67d32a4ee1fc3dbdd5812267d8debe048fa156e21566ee5e72509b8ea226",
+    "data/eval/qa-v2.jsonl": "e48e76de69a971d53d67c20dd021a3b25f1d0ed9cc0c2339624eefac7d96f7a0",
+    "data/eval/candidates-v2-json/reserved_docs.json": "fd7d696132f8e2c5b0ea5b7ca67416b508289b2a2dfefc9ad6425adcbc720920"
+  },
+  "reviewer_types": [
+    "automated"
+  ],
+  "completed_at_utc": "2026-10-16T13:53:22.604317+00:00",
+  "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "torch": "2.11.0+cu128",
+  "sentence_transformers": "6.1.0",
+  "trainer": "PyTorch AMP loop; unique anchor/positive strings in all batches",
+  "steps": 22,
+  "max_seq_length": 256,
+  "training_seconds": 6.741801800002577
+}

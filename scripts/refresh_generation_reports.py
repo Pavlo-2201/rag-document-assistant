@@ -44,6 +44,9 @@ def main():
         table.append(stats)
         scores[model]={r['id']:r for r in rows if r['answerable']}
     write_json(folder/'models.json',table)
+    for retriever in {r['retriever'] for r in table}:
+        write_json(folder/f'generation_summary__{retriever}__{args.split}.json',
+                   [r for r in table if r['retriever']==retriever])
     if args.baseline not in scores: raise ValueError('baseline отсутствует среди сырых ответов')
     write_json(folder/'paired_deltas.json',{m:compare(scores,args.baseline,m,['term_hit','cited_evidence']) for m in scores if m!=args.baseline})
     print([(r['model'],r['answerable']['term_hit'],r['answerable']['cited_evidence'],r['cost']['generation_s_answered_median']) for r in table])

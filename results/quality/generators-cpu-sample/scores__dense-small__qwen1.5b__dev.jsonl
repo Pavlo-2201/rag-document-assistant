@@ -1,0 +1,12 @@
+{"id": "dev-001", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-005", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "dev-009", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": false, "unsupported": true, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-013", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "dev-017", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-021", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-025", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-029", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "dev-033", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "u-dev-01", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-05", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-09", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}

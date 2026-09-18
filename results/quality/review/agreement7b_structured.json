@@ -1,0 +1,120 @@
+{
+  "assistant__correct": {
+    "reviewer_type": "assistant",
+    "paired": 22,
+    "missing": [],
+    "invalid": [],
+    "excluded": {
+      "test-003": "not scored by LLM: refusal or no cited fragments",
+      "test-005": "not scored by LLM: refusal or no cited fragments",
+      "test-010": "not scored by LLM: refusal or no cited fragments",
+      "test-011": "not scored by LLM: refusal or no cited fragments",
+      "test-012": "not scored by LLM: refusal or no cited fragments",
+      "test-015": "not scored by LLM: refusal or no cited fragments",
+      "test-019": "not scored by LLM: refusal or no cited fragments",
+      "test-020": "not scored by LLM: refusal or no cited fragments",
+      "test-021": "not scored by LLM: refusal or no cited fragments",
+      "test-022": "not scored by LLM: refusal or no cited fragments",
+      "test-023": "not scored by LLM: refusal or no cited fragments",
+      "test-029": "not scored by LLM: refusal or no cited fragments",
+      "test-030": "not scored by LLM: refusal or no cited fragments",
+      "test-032": "not scored by LLM: refusal or no cited fragments",
+      "u-test-01": "not scored by LLM: refusal or no cited fragments",
+      "u-test-02": "not scored by LLM: refusal or no cited fragments",
+      "u-test-03": "not scored by LLM: refusal or no cited fragments",
+      "u-test-04": "not scored by LLM: refusal or no cited fragments",
+      "u-test-05": "not scored by LLM: refusal or no cited fragments",
+      "u-test-06": "not scored by LLM: refusal or no cited fragments",
+      "u-test-07": "not scored by LLM: refusal or no cited fragments",
+      "u-test-08": "adjudication required",
+      "u-test-09": "not scored by LLM: refusal or no cited fragments",
+      "u-test-10": "not scored by LLM: refusal or no cited fragments",
+      "u-test-11": "not scored by LLM: refusal or no cited fragments",
+      "u-test-12": "not scored by LLM: refusal or no cited fragments"
+    },
+    "statistics": {
+      "n": 22,
+      "agreement": 0.4090909090909091,
+      "kappa": 0.16860465116279075,
+      "confusion": {
+        "ДА": {
+          "ДА": 2,
+          "ЧАСТИЧНО": 8,
+          "НЕТ": 0
+        },
+        "ЧАСТИЧНО": {
+          "ДА": 0,
+          "ЧАСТИЧНО": 6,
+          "НЕТ": 0
+        },
+        "НЕТ": {
+          "ДА": 0,
+          "ЧАСТИЧНО": 5,
+          "НЕТ": 1
+        }
+      },
+      "undefined_reason": null
+    }
+  },
+  "assistant__grounded": {
+    "reviewer_type": "assistant",
+    "paired": 18,
+    "missing": [],
+    "invalid": [],
+    "excluded": {
+      "test-003": "not scored by LLM: refusal or no cited fragments",
+      "test-005": "not scored by LLM: refusal or no cited fragments",
+      "test-006": "not scored by LLM: refusal or no cited fragments",
+      "test-007": "not scored by LLM: refusal or no cited fragments",
+      "test-008": "not scored by LLM: refusal or no cited fragments",
+      "test-009": "not scored by LLM: refusal or no cited fragments",
+      "test-010": "not scored by LLM: refusal or no cited fragments",
+      "test-011": "not scored by LLM: refusal or no cited fragments",
+      "test-012": "not scored by LLM: refusal or no cited fragments",
+      "test-015": "not scored by LLM: refusal or no cited fragments",
+      "test-019": "not scored by LLM: refusal or no cited fragments",
+      "test-020": "not scored by LLM: refusal or no cited fragments",
+      "test-021": "not scored by LLM: refusal or no cited fragments",
+      "test-022": "not scored by LLM: refusal or no cited fragments",
+      "test-023": "not scored by LLM: refusal or no cited fragments",
+      "test-025": "not scored by LLM: refusal or no cited fragments",
+      "test-029": "not scored by LLM: refusal or no cited fragments",
+      "test-030": "not scored by LLM: refusal or no cited fragments",
+      "test-032": "not scored by LLM: refusal or no cited fragments",
+      "u-test-01": "not scored by LLM: refusal or no cited fragments",
+      "u-test-02": "not scored by LLM: refusal or no cited fragments",
+      "u-test-03": "not scored by LLM: refusal or no cited fragments",
+      "u-test-04": "not scored by LLM: refusal or no cited fragments",
+      "u-test-05": "not scored by LLM: refusal or no cited fragments",
+      "u-test-06": "not scored by LLM: refusal or no cited fragments",
+      "u-test-07": "not scored by LLM: refusal or no cited fragments",
+      "u-test-09": "not scored by LLM: refusal or no cited fragments",
+      "u-test-10": "not scored by LLM: refusal or no cited fragments",
+      "u-test-11": "not scored by LLM: refusal or no cited fragments",
+      "u-test-12": "not scored by LLM: refusal or no cited fragments"
+    },
+    "statistics": {
+      "n": 18,
+      "agreement": 0.6111111111111112,
+      "kappa": 0.3225806451612904,
+      "confusion": {
+        "ДА": {
+          "ДА": 7,
+          "ЧАСТИЧНО": 4,
+          "НЕТ": 1
+        },
+        "ЧАСТИЧНО": {
+          "ДА": 2,
+          "ЧАСТИЧНО": 2,
+          "НЕТ": 0
+        },
+        "НЕТ": {
+          "ДА": 0,
+          "ЧАСТИЧНО": 0,
+          "НЕТ": 2
+        }
+      },
+      "undefined_reason": null
+    }
+  }
+}

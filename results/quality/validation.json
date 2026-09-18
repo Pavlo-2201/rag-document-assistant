@@ -1,0 +1,24 @@
+{
+  "checked_at_utc": "2026-10-16T18:38:03.978054+00:00",
+  "qa_v2_questions": 200,
+  "qa_v2_exact_source_quotes": 160,
+  "approved_training_pairs": 164,
+  "train_eval_page_overlap": 0,
+  "input_sha256_verified": {
+    "data/train/synthetic-v1/questions.jsonl": "2ef0bf3ce9c6393987d50f3c66a090d6509e85d30d24904f98fe720f54d9c708",
+    "data/train/synthetic-v1/auto_review.csv": "8a04328b4a9395f57409f4899d5db3c00eed53b751a51abc4a43742825c5980c",
+    "data/eval/qa.jsonl": "687a67d32a4ee1fc3dbdd5812267d8debe048fa156e21566ee5e72509b8ea226",
+    "data/eval/qa-v2.jsonl": "e48e76de69a971d53d67c20dd021a3b25f1d0ed9cc0c2339624eefac7d96f7a0",
+    "data/eval/candidates-v2-json/reserved_docs.json": "fd7d696132f8e2c5b0ea5b7ca67416b508289b2a2dfefc9ad6425adcbc720920",
+    "data/eval/candidates-v2-json/questions.jsonl": "4b369979a01be69327713d90980c791d66b25acaf36bb2defd17f9e5e57ccca3",
+    "data/eval/candidates-v2-json/assistant_review.csv": "f10439fbbbbbc854acd7de361c7fc65c25d0b6b97b57541f17dabedf8a8e28c9"
+  },
+  "pytest": {
+    "passed": 97,
+    "command": "python -m pytest -o addopts=\"\" -q -p no:cacheprovider",
+    "seconds": 2.66
+  },
+  "cli_check": "local src: rag check --skip-models passed corpus/documents/chunks/index/QA/mock checks",
+  "stream_smoke": "local src: rag ask --backend mock --stream returned String.length with checked source",
+  "human_review_status": "pending"
+}

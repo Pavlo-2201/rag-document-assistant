@@ -1,0 +1,76 @@
+baseline: dense-small
+chunks: data/processed/chunks-c1000-o150.jsonl
+generation:
+  max_answer_tokens: 300
+  max_context_tokens: 3000
+  refusal: strict
+  retry_empty: true
+  top_k: 5
+generators:
+  qwen1.5b:
+    backend: llama_server
+    base_url: http://127.0.0.1:8093
+    model_path: models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf
+    n_ctx: 4096
+    n_threads: 6
+    seed: 42
+retrievers:
+  dense-base:
+    candidates: 20
+    model: e5-base
+  dense-base60:
+    candidates: 60
+    model: e5-base
+  dense-small:
+    candidates: 20
+    model: e5-small
+  dense-small60:
+    candidates: 60
+    model: e5-small
+  dense-tuned:
+    candidates: 20
+    model: e5-finetuned
+  hybrid-base60:
+    candidates: 60
+    depth: 100
+    hybrid: true
+    model: e5-base
+    rrf_k: 60
+  hybrid-small:
+    candidates: 20
+    depth: 100
+    hybrid: true
+    model: e5-small
+    rrf_k: 60
+  hybrid-small-hyde60:
+    candidates: 60
+    depth: 100
+    hybrid: true
+    hyde: rrf
+    model: e5-small
+    rrf_k: 60
+  hybrid-small60:
+    candidates: 60
+    depth: 100
+    hybrid: true
+    model: e5-small
+    rrf_k: 60
+  hybrid-tuned60:
+    candidates: 60
+    depth: 100
+    hybrid: true
+    model: e5-finetuned
+    rrf_k: 60
+  hybrid-union40:
+    candidates: 40
+    depth: 20
+    fixed_depth: true
+    hybrid: true
+    model: e5-small
+    rrf_k: 60
+rewrite_llm:
+  backend: llama_server
+  base_url: http://127.0.0.1:8091
+  model_path: models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf
+  seed: 42
+selected_retriever: dense-small
