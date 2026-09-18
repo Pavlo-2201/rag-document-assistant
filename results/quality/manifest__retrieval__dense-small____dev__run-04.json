@@ -1,5 +1,4 @@
 {
-  "started_at_utc": "2026-10-16T13:37:19.106432+00:00",
   "config": {
     "chunks": "data/processed/chunks-c1000-o150.jsonl",
     "baseline": "dense-small",
@@ -9,46 +8,13 @@
         "model": "e5-small",
         "candidates": 20
       },
-      "hybrid-small": {
+      "hybrid-union40": {
         "model": "e5-small",
         "hybrid": true,
-        "depth": 100,
+        "depth": 20,
+        "fixed_depth": true,
         "rrf_k": 60,
-        "candidates": 20
-      },
-      "dense-small60": {
-        "model": "e5-small",
-        "candidates": 60
-      },
-      "hybrid-small60": {
-        "model": "e5-small",
-        "hybrid": true,
-        "depth": 100,
-        "rrf_k": 60,
-        "candidates": 60
-      },
-      "dense-base": {
-        "model": "e5-base",
-        "candidates": 20
-      },
-      "dense-base60": {
-        "model": "e5-base",
-        "candidates": 60
-      },
-      "hybrid-base60": {
-        "model": "e5-base",
-        "hybrid": true,
-        "depth": 100,
-        "rrf_k": 60,
-        "candidates": 60
-      },
-      "hybrid-small-hyde60": {
-        "model": "e5-small",
-        "hybrid": true,
-        "hyde": "rrf",
-        "depth": 100,
-        "rrf_k": 60,
-        "candidates": 60
+        "candidates": 40
       }
     },
     "rewrite_llm": {
@@ -81,7 +47,7 @@
       }
     }
   },
-  "config_sha256": "f300a2c346d95dac648bb697082684ab04cd8acddfb9dab6cf79621c6aed8f0b",
+  "config_sha256": "aa2e6bb7e7fd8f45d6a1ae8898c71226b02267f3dbf91615ea0cc5e300213fa7",
   "qa_sha256": "687a67d32a4ee1fc3dbdd5812267d8debe048fa156e21566ee5e72509b8ea226",
   "chunks_sha256": "a734c9a359525f1018880649705969c42fc8098a8de978a41e1d42bb169e6e1b",
   "python": "3.13.16 (tags/v3.13.16:cbc944f, Sep 30 2026, 19:17:50) [MSC v.1944 64 bit (AMD64)]",

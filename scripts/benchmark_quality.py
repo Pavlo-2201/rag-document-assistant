@@ -13,7 +13,7 @@ import platform
 import statistics
 import sys
 import time
-from datetime import datetime, timezone
+from uuid import uuid4
 from pathlib import Path
 
 import yaml
@@ -196,9 +196,9 @@ def main():
     if not items or len({i.id for i in items}) != len(items):
         raise ValueError("пустой split или повтор id")
     chunks = load_chunks(cfg["chunks"])
-    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
+    run_id = uuid4().hex[:12]
     manifest = output / f"manifest__{args.phase}__{args.retriever or cfg['selected_retriever']}__{'-'.join(args.model or [])}__{args.split}__{run_id}.json"
-    write_json(manifest, {"started_at_utc": datetime.now(timezone.utc).isoformat(), "config": cfg,
+    write_json(manifest, {"config": cfg,
                          "config_sha256": digest(args.config), "qa_sha256": digest(args.qa),
                          "question_ids":[i.id for i in items], "sample_stride":args.sample_stride,
                          "chunks_sha256": digest(cfg["chunks"]), "python": sys.version, "platform": platform.platform()})

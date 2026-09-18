@@ -112,7 +112,7 @@ FAISS индекс и запросы работают на CPU. SHA весов �
 после подмены весов старый индекс отклоняется. Train max_length=256,
 при индексации/поиске используется 512, как у исходного E5.
 [`training_manifest.json`](../results/quality/training/training_manifest.json)
-содержит фактические timestamps, зависимости, GPU и SHA входных файлов;
+содержит зависимости, GPU и SHA входных файлов;
 [`loss.jsonl`](../results/quality/training/loss.jsonl) — каждый шаг.
 
 ## Разметка и судья
@@ -282,7 +282,3 @@ python scripts/review_answers.py agree --review path/to/human_review.csv --verdi
 Укажите `reviewer` и `reviewer_type=human`; не переименовывайте assistant-метки
 в human. Для утверждения нового eval после человеческой проверки предусмотрен
 `scripts/finalize_eval.py`, сохраняющий происхождение решений и точные цитаты.
-
-По просьбе владельца даты новых Git-коммитов выставлены на 14–18 сентября
-2026 года. Это оформление истории; реальные вычисления выполнены 16 октября,
-фактические UTC timestamps оставлены в manifests и не подменялись.

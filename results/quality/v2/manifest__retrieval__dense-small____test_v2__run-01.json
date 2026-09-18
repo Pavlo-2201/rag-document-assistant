@@ -1,92 +1,16 @@
 {
-  "started_at_utc": "2026-10-16T18:32:15.532390+00:00",
   "config": {
-    "baseline": "dense-small",
     "chunks": "data/processed/chunks-c1000-o150.jsonl",
-    "generation": {
-      "max_answer_tokens": 300,
-      "max_context_tokens": 3000,
-      "refusal": "strict",
-      "retry_empty": true,
-      "top_k": 5
-    },
-    "generators": {
-      "qwen4b": {
-        "backend": "llama_server",
-        "base_url": "http://127.0.0.1:8093",
-        "chat_template_kwargs": {
-          "enable_thinking": false
-        },
-        "model_path": "models/qwen4b/Qwen3-4B-Q4_K_M.gguf",
-        "n_ctx": 4096,
-        "n_threads": 6,
-        "seed": 42
-      }
-    },
+    "baseline": "dense-small",
+    "selected_retriever": "dense-small",
     "retrievers": {
-      "dense-base": {
-        "candidates": 20,
-        "model": "e5-base"
-      },
-      "dense-base60": {
-        "candidates": 60,
-        "model": "e5-base"
-      },
       "dense-small": {
-        "candidates": 20,
-        "model": "e5-small"
-      },
-      "dense-small60": {
-        "candidates": 60,
-        "model": "e5-small"
+        "model": "e5-small",
+        "candidates": 20
       },
       "dense-tuned": {
-        "candidates": 20,
-        "model": "e5-finetuned"
-      },
-      "hybrid-base60": {
-        "candidates": 60,
-        "depth": 100,
-        "hybrid": true,
-        "model": "e5-base",
-        "rrf_k": 60
-      },
-      "hybrid-small": {
-        "candidates": 20,
-        "depth": 100,
-        "hybrid": true,
-        "model": "e5-small",
-        "rrf_k": 60
-      },
-      "hybrid-small-hyde60": {
-        "candidates": 60,
-        "depth": 100,
-        "hybrid": true,
-        "hyde": "rrf",
-        "model": "e5-small",
-        "rrf_k": 60
-      },
-      "hybrid-small60": {
-        "candidates": 60,
-        "depth": 100,
-        "hybrid": true,
-        "model": "e5-small",
-        "rrf_k": 60
-      },
-      "hybrid-tuned60": {
-        "candidates": 60,
-        "depth": 100,
-        "hybrid": true,
         "model": "e5-finetuned",
-        "rrf_k": 60
-      },
-      "hybrid-union40": {
-        "candidates": 40,
-        "depth": 20,
-        "fixed_depth": true,
-        "hybrid": true,
-        "model": "e5-small",
-        "rrf_k": 60
+        "candidates": 20
       }
     },
     "rewrite_llm": {
@@ -95,9 +19,42 @@
       "model_path": "models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf",
       "seed": 42
     },
-    "selected_retriever": "dense-small"
+    "generation": {
+      "top_k": 5,
+      "max_context_tokens": 3000,
+      "max_answer_tokens": 300,
+      "refusal": "strict",
+      "retry_empty": true
+    },
+    "generators": {
+      "qwen1.5b": {
+        "backend": "llama_cpp",
+        "model_path": "models/qwen/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "n_ctx": 4096,
+        "n_threads": 6,
+        "seed": 42
+      },
+      "qwen3b": {
+        "backend": "llama_cpp",
+        "model_path": "models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf",
+        "n_ctx": 4096,
+        "n_threads": 6,
+        "seed": 42
+      },
+      "qwen4b": {
+        "backend": "llama_server",
+        "base_url": "http://127.0.0.1:8093",
+        "model_path": "models/qwen4b/Qwen3-4B-Q4_K_M.gguf",
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "n_ctx": 4096,
+        "n_threads": 6,
+        "seed": 42
+      }
+    }
   },
-  "config_sha256": "5bbfc63566dca26e0ac2f6e5b328f51d09370da2cb88041dab1d34257018393d",
+  "config_sha256": "5732cc4f63dc3856ea31ec5c738ad2ce3c76d5b1dee8025089cd6083fc5362ac",
   "qa_sha256": "e48e76de69a971d53d67c20dd021a3b25f1d0ed9cc0c2339624eefac7d96f7a0",
   "question_ids": [
     "v2-ood-022",

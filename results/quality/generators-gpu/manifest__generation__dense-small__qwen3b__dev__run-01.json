@@ -1,5 +1,4 @@
 {
-  "started_at_utc": "2026-10-16T18:37:13.199527+00:00",
   "config": {
     "baseline": "dense-small",
     "chunks": "data/processed/chunks-c1000-o150.jsonl",
@@ -11,13 +10,10 @@
       "top_k": 5
     },
     "generators": {
-      "qwen4b": {
+      "qwen3b": {
         "backend": "llama_server",
         "base_url": "http://127.0.0.1:8093",
-        "chat_template_kwargs": {
-          "enable_thinking": false
-        },
-        "model_path": "models/qwen4b/Qwen3-4B-Q4_K_M.gguf",
+        "model_path": "models/qwen3b/qwen2.5-3b-instruct-q4_k_m.gguf",
         "n_ctx": 4096,
         "n_threads": 6,
         "seed": 42
@@ -97,23 +93,59 @@
     },
     "selected_retriever": "dense-small"
   },
-  "config_sha256": "5bbfc63566dca26e0ac2f6e5b328f51d09370da2cb88041dab1d34257018393d",
+  "config_sha256": "1ed44e279a259556f6cdbd2913e2847d96f023f4c363a04dec682c63bee655a8",
   "qa_sha256": "687a67d32a4ee1fc3dbdd5812267d8debe048fa156e21566ee5e72509b8ea226",
   "question_ids": [
     "dev-001",
+    "dev-002",
+    "dev-003",
+    "dev-004",
     "dev-005",
+    "dev-006",
+    "dev-007",
+    "dev-008",
     "dev-009",
+    "dev-010",
+    "dev-011",
+    "dev-012",
     "dev-013",
+    "dev-014",
+    "dev-015",
+    "dev-016",
     "dev-017",
+    "dev-018",
+    "dev-019",
+    "dev-020",
     "dev-021",
+    "dev-022",
+    "dev-023",
+    "dev-024",
     "dev-025",
+    "dev-026",
+    "dev-027",
+    "dev-028",
     "dev-029",
+    "dev-030",
+    "dev-031",
+    "dev-032",
     "dev-033",
+    "dev-034",
+    "dev-035",
+    "dev-036",
     "u-dev-01",
+    "u-dev-02",
+    "u-dev-03",
+    "u-dev-04",
     "u-dev-05",
-    "u-dev-09"
+    "u-dev-06",
+    "u-dev-07",
+    "u-dev-08",
+    "u-dev-09",
+    "u-dev-10",
+    "u-dev-11",
+    "u-dev-12"
   ],
-  "sample_stride": 4,
+  "sample_stride": 1,
   "chunks_sha256": "a734c9a359525f1018880649705969c42fc8098a8de978a41e1d42bb169e6e1b",
   "python": "3.13.16 (tags/v3.13.16:cbc944f, Sep 30 2026, 19:17:50) [MSC v.1944 64 bit (AMD64)]",
   "platform": "Windows-10-10.0.19045-SP0"

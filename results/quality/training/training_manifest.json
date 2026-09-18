@@ -1,5 +1,4 @@
 {
-  "started_at_utc": "2026-10-16T13:53:02.987037+00:00",
   "pairs": 164,
   "base": "models/e5-small",
   "seed": 42,
@@ -18,7 +17,6 @@
   "reviewer_types": [
     "automated"
   ],
-  "completed_at_utc": "2026-10-16T13:53:22.604317+00:00",
   "gpu": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
   "torch": "2.11.0+cu128",
   "sentence_transformers": "6.1.0",

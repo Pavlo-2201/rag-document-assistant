@@ -10,7 +10,6 @@ import sys
 import random
 import time
 import math
-from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -70,7 +69,7 @@ def main():
     pairs = training_pairs(items, load_chunks("data/processed/chunks-c1000-o150.jsonl"), forbidden)
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
-    manifest = {"started_at_utc": datetime.now(timezone.utc).isoformat(), "pairs": len(pairs), "base": args.model,
+    manifest = {"pairs": len(pairs), "base": args.model,
                 "seed": args.seed, "batch_size": args.batch_size, "epochs": args.epochs,
                 "loss": "MultipleNegativesRankingLoss", "sampler": "NO_DUPLICATES", "trainable": "all parameters",
                 "sha256": {f: hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in [args.train, args.review, *args.exclude, *args.reserved_docs]},
@@ -132,8 +131,7 @@ def main():
             print(json.dumps(row), flush=True)
     model.eval()
     model.save_pretrained(str(output))
-    manifest.update({"completed_at_utc": datetime.now(timezone.utc).isoformat(),
-                     "gpu": torch.cuda.get_device_name(), "torch": torch.__version__,
+    manifest.update({"gpu": torch.cuda.get_device_name(), "torch": torch.__version__,
                      "sentence_transformers":sentence_transformers.__version__,
                      "trainer":"PyTorch AMP loop; unique anchor/positive strings in all batches",
                      "sampler":"seeded shuffle, no duplicate strings", "steps":len(history),

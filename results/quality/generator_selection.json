@@ -1,6 +1,5 @@
 {
   "selected_generator": "qwen4b",
-  "selected_at_utc": "2026-10-16T18:29:55.379790+00:00",
   "selection_split": "dev",
   "retriever": "dense-small",
   "baseline": "qwen1.5b",

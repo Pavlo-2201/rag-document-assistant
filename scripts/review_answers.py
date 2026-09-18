@@ -11,7 +11,6 @@ import csv
 import hashlib
 import json
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
@@ -112,7 +111,7 @@ def main():
         judge = judge_class(make_backend(cfg["llm"]), max_tokens=cfg.get("max_tokens", 16))
         path = Path(args.verdicts)
         path.parent.mkdir(parents=True, exist_ok=True)
-        metadata = {"started_at_utc": datetime.now(timezone.utc).isoformat(), **judge.config(),
+        metadata = {**judge.config(),
                     "answers_sha256": hashlib.sha256(Path(args.answers).read_bytes()).hexdigest(),
                     "qa_sha256": hashlib.sha256(Path(args.qa).read_bytes()).hexdigest(),
                     "refusal_correctness": "deterministic; excluded from LLM-only kappa", "refusal_groundedness": "N/A"}

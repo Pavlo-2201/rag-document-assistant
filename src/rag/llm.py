@@ -146,8 +146,11 @@ class LlamaServerBackend:
         version = self.session.get(self.base_url + "/version", timeout=10)
         # Некоторые версии не имеют /version; полный /props всё равно сохранён.
         self.version = version.json() if version.ok else {"status": version.status_code}
+        fingerprint_props = {**self.props, "model_path": path.name}
+        if loaded_path and self.props.get("model_alias") == loaded_path:
+            fingerprint_props["model_alias"] = path.name
         self.fingerprint = json.dumps({"name": self.name, "weights": self.weights_hashes,
-                                       "props": self.props, "version": self.version,
+                                       "props": fingerprint_props, "version": self.version,
                                        "seed": seed, "chat_template_kwargs":self.chat_template_kwargs}, sort_keys=True)
 
     def _payload(self, messages, max_tokens):

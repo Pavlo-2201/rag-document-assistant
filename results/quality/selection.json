@@ -1,6 +1,5 @@
 {
   "selected_retriever": "dense-small",
-  "selected_at_utc": "2026-10-16T14:06:36.431118+00:00",
   "selection_split": "dev",
   "rule": "1-2 questions out of 36 are treated as noise; retain cheaper established baseline",
   "best_candidate": "dense-tuned",

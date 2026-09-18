@@ -13,7 +13,7 @@ import json
 import random
 import re
 import sys
-from datetime import datetime, timezone
+from uuid import uuid4
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
@@ -105,11 +105,11 @@ question: 'Как оставить в списке только подходящ
 Пример: фрагмент 'border-radius задаёт скругление углов' → question:
 'Как сделать уголки карточки круглыми?', reference_answer: 'Используйте border-radius.',
 answer_terms: ['border-radius']. Придумай аналогичный вопрос по данному фрагменту."""
-    provenance = {"started_at_utc": datetime.now(timezone.utc).isoformat(), "purpose": args.purpose,
+    provenance = {"purpose": args.purpose,
                   "seed": args.seed, "generator": llm.fingerprint, "prompt": system,
                   "exclude_sha256": {f: hashlib.sha256(Path(f).read_bytes()).hexdigest() for f in args.exclude},
                   "target": args.count, "review_status": "unreviewed", "answerability": "answerable only"}
-    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
+    run_id = uuid4().hex[:12]
     (output / f"provenance-{run_id}.json").write_text(json.dumps(provenance, ensure_ascii=False, indent=2), encoding="utf-8")
     seen = {normalize(i.question) for path in args.exclude for i in load_qa(path)}
     questions_path, attempts_path = output / "questions.jsonl", output / "attempts.jsonl"

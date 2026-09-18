@@ -1,5 +1,4 @@
 {
-  "started_at_utc": "2026-10-16T13:11:31.577724+00:00",
   "purpose": "eval",
   "seed": 42,
   "generator": "llama.cpp:qwen2.5-3b-instruct-q4_k_m.gguf|sha256:8df80c0e406f7eed415ff3a2830b1d55a075edbdbf9c206ed070dd56d847abba|llama-cpp-python 0.3.19|n_ctx:4096|n_gpu_layers:0|[('repeat_penalty', 1.1), ('seed', 42), ('temperature', 0.0), ('top_p', 1.0)]",
