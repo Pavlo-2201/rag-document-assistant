@@ -1,0 +1,15 @@
+# версии зафиксированы по окружению сборки (Python 3.13, CPU)
+PyYAML==6.0.3
+requests==2.34.2
+tqdm==4.70.1
+pytest==9.1.1
+
+# поиск: те же версии, что в semantic-search-engine
+numpy==2.5.3
+scikit-learn==1.9.1
+snowballstemmer==3.1.1
+faiss-cpu==1.15.1
+torch==2.14.1
+transformers==5.18.0
+sentence-transformers==6.1.0
+llama-cpp-python==0.3.16
