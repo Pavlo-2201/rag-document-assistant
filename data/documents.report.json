@@ -1,9 +1,9 @@
 {
   "documents": 2570,
-  "total_chars": 11054937,
-  "median_chars": 2071,
+  "total_chars": 11050947,
+  "median_chars": 2067,
   "max_chars": 81853,
   "sections": 21978,
   "documents_with_code": 2049,
-  "fingerprint_sha256": "7521210ecc53e4f9778e38d07ed8131665695e07a492a607d23a3199eed7c87a"
+  "fingerprint_sha256": "4cc583038d8995df2a76cd57e900784cbe0d7ff80744aaaefed75c713c3e0a52"
 }

@@ -4,13 +4,13 @@
     "overlap": 150
   },
   "documents": 2570,
-  "chunks": 16944,
+  "chunks": 16941,
   "chunks_per_document_median": 3.0,
-  "chunk_chars_median": 768,
+  "chunk_chars_median": 767,
   "chunk_chars_p95": 985,
   "chunk_chars_max": 1000,
-  "total_chunk_chars": 11960221,
+  "total_chunk_chars": 11955802,
   "duplication_ratio": 1.0819,
-  "seconds": 0.1,
-  "fingerprint_sha256": "8675bda0f2500a6635681c0a0bf3d29a11699fa4c534ea4ddd25dbf81fe775db"
+  "seconds": 0.08,
+  "fingerprint_sha256": "f877acb8187670a9f95b580ef4fb8753cce2b4b1da2c4e2be97bc0f1619633cc"
 }

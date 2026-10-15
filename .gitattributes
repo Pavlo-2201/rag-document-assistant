@@ -1,0 +1,5 @@
+# LF в рабочей копии и на Windows: хеши скопированного semsearch (tests/test_vendored.py)
+# и отпечатки файлов не зависят от core.autocrlf
+* text=auto eol=lf
+# CSV пишется модулем csv с CRLF (как требует RFC 4180) — хранится как есть
+*.csv -text

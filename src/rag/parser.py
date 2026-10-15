@@ -15,6 +15,7 @@
 
 from __future__ import annotations
 
+import html
 import re
 from dataclasses import asdict, dataclass, field
 
@@ -30,6 +31,9 @@ INLINE_CODE_RE = re.compile(r"(`+)(.+?)\1")
 # экранирование Markdown: «\<details>» — это текст «<details>», а не тег
 ESCAPE_RE = re.compile(r"\\([\\<>|*_\[\]`#])")
 _ESCAPED_ANGLE = {"<": "\x00", ">": "\x01"}
+# HTML-сущность только с «;»: html.unescape сам по себе раскрывает и
+# «&para» без «;» (наследие HTML), а в тексте MDN это бывает кусок URL «?a=1&para=2»
+HTML_ENTITY_RE = re.compile(r"&(?:#[0-9]+|#[xX][0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]*);")
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
 BOLD_RE = re.compile(r"\*\*(.+?)\*\*")
 DEFINITION_RE = re.compile(r"^(\s*)- : ")
@@ -100,21 +104,33 @@ def _strip_tags(text: str) -> str:
     return HTML_TAG_RE.sub("", text).replace("\x00", "<").replace("\x01", ">")
 
 
-def _strip_tags_outside_code(line: str) -> str:
-    """Убрать HTML-теги разметки, но не внутри `кода`: там `<canvas>` — содержание."""
+def _decode_entity(match: re.Match) -> str:
+    # неразрывный пробел — обычный: иначе «длина&nbsp;строки» не совпадает с
+    # «длина строки» при поиске по терминам
+    return html.unescape(match.group(0)).replace("\xa0", " ")
+
+
+def _clean_markup(text: str) -> str:
+    """Теги убираются до раскрытия сущностей: «&lt;length&gt;» — текст `<length>`, не тег."""
+    return HTML_ENTITY_RE.sub(_decode_entity, _strip_tags(text))
+
+
+def _clean_outside_code(line: str) -> str:
+    """Убрать HTML-теги и раскрыть сущности, но не внутри `кода`: там `<canvas>`
+    и `&lt;` — содержание (Markdown не раскрывает сущности в коде)."""
     parts, last = [], 0
     for match in INLINE_CODE_RE.finditer(line):
-        parts.append(_strip_tags(line[last:match.start()]))
+        parts.append(_clean_markup(line[last:match.start()]))
         parts.append(match.group(0))
         last = match.end()
-    parts.append(_strip_tags(line[last:]))
+    parts.append(_clean_markup(line[last:]))
     return "".join(parts)
 
 
 def clean_inline(line: str) -> str:
     # теги убираются до раскрытия макросов: {{HTMLElement("canvas")}} даёт
     # «<canvas>», и этот текст не должен удаляться как тег
-    line = _strip_tags_outside_code(line)
+    line = _clean_outside_code(line)
     line = MACRO_RE.sub(_macro_text, line)
     line = IMAGE_RE.sub(r"\1", line)
     line = LINK_RE.sub(r"\1", line)

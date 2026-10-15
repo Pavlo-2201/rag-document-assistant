@@ -79,3 +79,9 @@ def test_escaped_angle_brackets_are_text_not_tags():
     # «\<details>» в Markdown — текст; раньше тег удалялся и оставался «\»
     doc = parse_markdown("Элемент \\<details> или [\\<script>](/ru/docs/x), значения a \\| b, а `\\<x>` — код.\n")
     assert doc.text.strip() == "Элемент <details> или <script>, значения a | b, а `\\<x>` — код."
+
+
+def test_html_entities_decoded_outside_code_only():
+    # раньше «&lt;length&gt;» попадало во фрагменты как есть (1107 сущностей в 190 документах)
+    doc = parse_markdown("Значение &lt;length&gt;&nbsp;или&#x20;<b>auto</b> &amp; `&lt;b&gt;`, адрес ?a=1&para=2.\n")
+    assert doc.text.strip() == "Значение <length> или auto & `&lt;b&gt;`, адрес ?a=1&para=2."
