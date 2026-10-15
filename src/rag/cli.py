@@ -3,6 +3,7 @@
     python -m rag build                      # фрагменты и индекс по configs/rag.yaml
     python -m rag ask "как узнать длину строки"
     python -m rag ask --backend mock "что значит код 404"   # без весов LLM
+    python -m rag ask --hyde rrf "как рисовать графику прямо в браузере"
     python -m rag chat                       # вопросы по одному в терминале
     python -m rag check                      # веса, корпус, индекс, разметка, связность
 """
@@ -34,6 +35,7 @@ def main(argv: list[str] | None = None) -> int:
     for sub in (ask, chat):
         sub.add_argument("--backend", choices=["llama_cpp", "mock"], help="LLM-бэкенд вместо указанного в конфиге")
         sub.add_argument("--no-rerank", action="store_true", help="без cross-encoder'а")
+        sub.add_argument("--hyde", choices=["concat", "rrf", "off"], help="переформулировка вопроса перед поиском")
         sub.add_argument("--top-k", type=int)
         sub.add_argument("--json", action="store_true")
     check = commands.add_parser("check", help="проверить веса, данные, индекс и разметку")
@@ -55,6 +57,8 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.no_rerank:
         config["reranker"] = None
+    if args.hyde:
+        config["query_rewrite"] = {"hyde": None if args.hyde == "off" else args.hyde}
     if args.top_k:
         config.setdefault("generation", {})["top_k"] = args.top_k
     pipeline = build_pipeline(config, backend=args.backend)

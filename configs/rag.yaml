@@ -16,6 +16,11 @@ reranker:
   model_path: models/reranker
   candidates: 20                   # 0 или null — без переранжирования
 
+query_rewrite:
+  # HyDE перед поиском: concat | rrf | null. На dev с rerank@20 не прошёл правило
+  # выбора (docs/experiments.md, «Сущности и HyDE»); включается флагом --hyde
+  hyde: null
+
 generation:
   top_k: 5
   max_context_tokens: 3000         # как в экспериментах; top-5 на dev занимает до 1517

@@ -4,6 +4,7 @@
     python scripts/run_experiments.py retrieval --split dev --split test
     python scripts/run_experiments.py generation --split dev            # все варианты из конфига
     python scripts/run_experiments.py generation --split dev --variant top3
+    python scripts/run_experiments.py retrieval --config configs/experiments-hyde.yaml         --output results/experiments-hyde --split dev --split test
 
 Параметры — configs/experiments.yaml. Недостающие нарезки и индексы
 собираются (время сборки записывается). Посчитанные строки поиска и ответы
@@ -26,12 +27,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from semsearch.evaluation import load_queries  # noqa: E402
 
 from rag.answer_eval import score_answer, summarize_scores  # noqa: E402
+from rag.cache import CachedLLM  # noqa: E402
 from rag.chunking import ChunkingConfig, chunk_documents, load_chunks, write_chunks  # noqa: E402
 from rag.evaluation import average, document_metrics, evidence_metrics  # noqa: E402
 from rag.generation import GenerationConfig, RAGPipeline  # noqa: E402
 from rag.ingest import load_documents  # noqa: E402
 from rag.llm import make_backend  # noqa: E402
 from rag.qa import load_qa  # noqa: E402
+from rag.query_rewrite import HydeRetriever  # noqa: E402
 from rag.retrieval import build_bm25, build_dense_index, load_dense, resolve_model  # noqa: E402
 
 DOCUMENTS = "data/processed/documents.jsonl"
@@ -58,16 +61,31 @@ def ensure_dense(chunks, path: Path, model: str) -> tuple[object, dict]:
     return load_dense(chunks, index_dir), build
 
 
+_LLM = None
+
+
+def experiment_llm():
+    """Одна модель на все варианты; ответы кешируются, поэтому абзацы HyDE,
+    посчитанные в поиске, не генерируются заново в генерации."""
+    global _LLM
+    if _LLM is None:
+        _LLM = CachedLLM(make_backend({"backend": "llama_cpp", "model_path": GGUF}), "data/cache/llm.sqlite")
+    return _LLM
+
+
 def open_retriever(spec: str, chunks, path: Path):
-    """bm25 | <модель> | <модель>+rerank<N>"""
+    """bm25 | <модель>[+hyde-concat|+hyde-rrf][+rerank<N>]"""
     build = {}
     if spec == "bm25":
         started = time.perf_counter()
         retriever = build_bm25(chunks)
         build = {"build_seconds": round(time.perf_counter() - started, 1)}
         return retriever, build
-    model, _, rerank = spec.partition("+rerank")
+    first, _, rerank = spec.partition("+rerank")
+    model, _, hyde = first.partition("+hyde-")
     retriever, build = ensure_dense(chunks, path, model)
+    if hyde:
+        retriever = HydeRetriever(retriever, experiment_llm(), mode=hyde)
     if rerank:
         from rag.reranker import CrossEncoderReranker, RerankingRetriever
 
@@ -106,9 +124,9 @@ def retrieval_plan(config) -> list[tuple[dict, list[str]]]:
 
 
 def run_retrieval(args, config) -> int:
-    """Уже посчитанные строки results/experiments/retrieval.json не пересчитываются."""
+    """Уже посчитанные строки <output>/retrieval.json не пересчитываются."""
     documents = load_documents(DOCUMENTS)
-    output = Path("results/experiments")
+    output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     rows_path = output / "retrieval.json"
     rows = json.loads(rows_path.read_text(encoding="utf-8")) if rows_path.exists() else []
@@ -143,7 +161,7 @@ def run_generation(args, config) -> int:
     documents = load_documents(DOCUMENTS)
     gen = config["generation"]
     names = args.variant or list(gen["variants"])
-    output = Path("results/experiments/generation")
+    output = Path(args.output) / "generation"
     output.mkdir(parents=True, exist_ok=True)
     llm = None
     summary_path = output / "summary.json"
@@ -157,9 +175,10 @@ def run_generation(args, config) -> int:
                 answers = [json.loads(line) for line in answers_path.read_text(encoding="utf-8").splitlines() if line]
             else:
                 path, chunks = ensure_chunks(documents, variant["chunk_size"], variant["overlap"])
-                spec = variant["retriever"] + (f"+rerank{variant['rerank']}" if variant["rerank"] else "")
+                spec = (variant["retriever"] + (f"+hyde-{variant['hyde']}" if variant.get("hyde") else "")
+                        + (f"+rerank{variant['rerank']}" if variant["rerank"] else ""))
                 retriever, _ = open_retriever(spec, chunks, path)
-                llm = llm or make_backend({"backend": "llama_cpp", "model_path": GGUF})
+                llm = llm or experiment_llm()
                 pipeline = RAGPipeline(retriever, llm, GenerationConfig(
                     top_k=variant["top_k"], max_context_tokens=gen["max_context_tokens"]))
                 answers = []
@@ -184,6 +203,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("what", choices=["retrieval", "generation"])
     parser.add_argument("--config", default="configs/experiments.yaml")
+    parser.add_argument("--output", default="results/experiments",
+                        help="каталог результатов; готовые строки и ответы в нём не пересчитываются")
     parser.add_argument("--split", action="append")
     parser.add_argument("--variant", action="append", help="вариант генерации из конфига (по умолчанию все)")
     args = parser.parse_args()

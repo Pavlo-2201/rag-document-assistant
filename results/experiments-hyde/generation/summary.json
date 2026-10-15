@@ -1,0 +1,109 @@
+{
+  "rerank20__dev": {
+    "variant": {
+      "chunk_size": 1000,
+      "overlap": 150,
+      "retriever": "e5-small",
+      "rerank": 20,
+      "top_k": 5
+    },
+    "split": "dev",
+    "answerable": {
+      "questions": 36,
+      "answered": 22,
+      "answered_with_sources": 18,
+      "term_hit": 16,
+      "evidence_in_context": 15,
+      "cited_evidence": 6,
+      "refused_with_evidence_in_context": 4,
+      "answered_without_evidence_in_context": 11,
+      "term_hit_rate": 0.4444,
+      "cited_evidence_rate": 0.1667
+    },
+    "unanswerable": {
+      "questions": 12,
+      "refused": 11,
+      "answered_with_sources": 1,
+      "answered_without_sources": 0
+    },
+    "cost": {
+      "generation_s_median": 11.98,
+      "retrieval_s_median": 1.352,
+      "context_tokens_mean": 1243.1,
+      "chunks_dropped_for_limit": 0,
+      "llm_calls": 50
+    }
+  },
+  "hyde_rerank20__dev": {
+    "variant": {
+      "chunk_size": 1000,
+      "overlap": 150,
+      "retriever": "e5-small",
+      "rerank": 20,
+      "top_k": 5,
+      "hyde": "rrf"
+    },
+    "split": "dev",
+    "answerable": {
+      "questions": 36,
+      "answered": 19,
+      "answered_with_sources": 16,
+      "term_hit": 14,
+      "evidence_in_context": 14,
+      "cited_evidence": 5,
+      "refused_with_evidence_in_context": 5,
+      "answered_without_evidence_in_context": 10,
+      "term_hit_rate": 0.3889,
+      "cited_evidence_rate": 0.1389
+    },
+    "unanswerable": {
+      "questions": 12,
+      "refused": 12,
+      "answered_with_sources": 0,
+      "answered_without_sources": 0
+    },
+    "cost": {
+      "generation_s_median": 13.53,
+      "retrieval_s_median": 1.498,
+      "context_tokens_mean": 1247.7,
+      "chunks_dropped_for_limit": 0,
+      "llm_calls": 49
+    }
+  },
+  "hyde__dev": {
+    "variant": {
+      "chunk_size": 1000,
+      "overlap": 150,
+      "retriever": "e5-small",
+      "rerank": 0,
+      "top_k": 5,
+      "hyde": "rrf"
+    },
+    "split": "dev",
+    "answerable": {
+      "questions": 36,
+      "answered": 25,
+      "answered_with_sources": 20,
+      "term_hit": 21,
+      "evidence_in_context": 15,
+      "cited_evidence": 5,
+      "refused_with_evidence_in_context": 3,
+      "answered_without_evidence_in_context": 13,
+      "term_hit_rate": 0.5833,
+      "cited_evidence_rate": 0.1389
+    },
+    "unanswerable": {
+      "questions": 12,
+      "refused": 12,
+      "answered_with_sources": 0,
+      "answered_without_sources": 0
+    },
+    "cost": {
+      "generation_s_median": 14.1,
+      "retrieval_s_median": 0.057,
+      "context_tokens_mean": 1257.4,
+      "chunks_dropped_for_limit": 0,
+      "llm_calls": 55
+    }
+  }
+}

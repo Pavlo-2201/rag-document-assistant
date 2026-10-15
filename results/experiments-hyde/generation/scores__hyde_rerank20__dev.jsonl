@@ -1,0 +1,48 @@
+{"id": "dev-001", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-002", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-003", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "dev-004", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-005", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "dev-006", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "dev-007", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "dev-008", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "dev-009", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-010", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": false, "unsupported": true, "evidence_in_context": true, "cited_evidence": false, "term_hit": true}
+{"id": "dev-011", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": false, "unsupported": true, "evidence_in_context": true, "cited_evidence": false, "term_hit": true}
+{"id": "dev-012", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-013", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": false}
+{"id": "dev-014", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "dev-015", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "dev-016", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-017", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-018", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "dev-019", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "dev-020", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "dev-021", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-022", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-023", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "dev-024", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-025", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-026", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "dev-027", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "dev-028", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-029", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": false}
+{"id": "dev-030", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-031", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": false, "unsupported": true, "evidence_in_context": true, "cited_evidence": false, "term_hit": true}
+{"id": "dev-032", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": true, "term_hit": true}
+{"id": "dev-033", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-034", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": true}
+{"id": "dev-035", "answerable": true, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false, "evidence_in_context": false, "cited_evidence": false, "term_hit": false}
+{"id": "dev-036", "answerable": true, "refused": false, "refusal_reason": null, "answered_with_sources": true, "unsupported": false, "evidence_in_context": true, "cited_evidence": false, "term_hit": true}
+{"id": "u-dev-01", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-02", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-03", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-04", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-05", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-06", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-07", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-08", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-09", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-10", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-11", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}
+{"id": "u-dev-12", "answerable": false, "refused": true, "refusal_reason": "model", "answered_with_sources": false, "unsupported": false}

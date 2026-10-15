@@ -60,10 +60,18 @@ def build_artifacts(config: dict, log=print) -> Paths:
     return paths
 
 
-def build_retriever(config: dict, paths: Paths | None = None):
+def build_retriever(config: dict, paths: Paths | None = None, llm=None):
+    """`llm` нужен только для переформулировки вопроса (query_rewrite.hyde)."""
     paths = paths or paths_for(config)
     chunks = load_chunks(paths.chunks)
     retriever = build_bm25(chunks) if paths.index is None else load_dense(chunks, paths.index)
+    hyde = (config.get("query_rewrite") or {}).get("hyde")
+    if hyde:
+        from .query_rewrite import HydeRetriever
+
+        if llm is None:
+            raise ValueError("query_rewrite.hyde требует LLM: build_retriever(config, llm=...)")
+        retriever = HydeRetriever(retriever, llm, mode=hyde)
     rerank = config.get("reranker") or {}
     if rerank.get("candidates"):
         from .reranker import CrossEncoderReranker, RerankingRetriever
@@ -86,4 +94,5 @@ def build_llm(config: dict, backend: str | None = None):
 
 def build_pipeline(config: dict, backend: str | None = None, retriever=None) -> RAGPipeline:
     generation = GenerationConfig(**config.get("generation", {}))
-    return RAGPipeline(retriever or build_retriever(config), build_llm(config, backend), generation)
+    llm = build_llm(config, backend)
+    return RAGPipeline(retriever or build_retriever(config, llm=llm), llm, generation)

@@ -1,0 +1,44 @@
+# Переформулировка вопроса перед поиском (HyDE, docs/experiments.md, раздел «HyDE»).
+# Считается на корпусе с раскодированными HTML-сущностями и с llama-cpp-python
+# 0.3.19, поэтому выбранный ранее вариант (rerank@20) пересчитан здесь же как
+# базовая точка, а не взят из results/experiments.
+#
+#   python scripts/run_experiments.py retrieval --config configs/experiments-hyde.yaml \
+#       --output results/experiments-hyde --split dev --split test
+#   python scripts/run_experiments.py generation --config configs/experiments-hyde.yaml \
+#       --output results/experiments-hyde --split dev
+#
+# Правило выбора, записанное до прогона (как в configs/experiments.yaml):
+# 1) поиск — по evidence@5 на dev; разница в 1–2 вопроса из 36 — шум. В генерацию
+#    идёт лучший из режимов HyDE (concat / rrf) вместе с rerank@20;
+# 2) HyDE принимается, если на dev ответов с ключевым термином больше, чем у
+#    rerank@20, хотя бы на 2 вопроса из 36 при не меньше 10 отказах из 12 на
+#    вопросах без ответа. Иначе остаётся rerank@20: HyDE стоит лишний вызов LLM.
+#    Test для выбора не используется.
+
+baseline:
+  chunk_size: 1000
+  overlap: 150
+  retriever: e5-small
+  rerank: 0
+  top_k: 5
+
+retrieval:
+  chunkings:
+    - {chunk_size: 1000, overlap: 150}
+  extra_retrievers:
+    - e5-small+rerank20
+    - e5-small+hyde-concat
+    - e5-small+hyde-rrf
+    - e5-small+hyde-concat+rerank20
+    - e5-small+hyde-rrf+rerank20
+
+generation:
+  max_context_tokens: 3000
+  variants:
+    rerank20: {rerank: 20}
+    # режим по правилу 1: на dev ev@5 у hyde-rrf+rerank20 0.389, у hyde-concat+rerank20 0.306
+    hyde_rerank20: {hyde: rrf, rerank: 20}
+    # добавлен после поиска, для справки: hyde-rrf без cross-encoder'а на dev не хуже
+    # rerank@20 по ev@5 (0.417 и 0.417); в выборе по правилу 2 не участвует
+    hyde: {hyde: rrf}
